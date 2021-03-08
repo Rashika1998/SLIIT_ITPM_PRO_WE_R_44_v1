@@ -18,19 +18,37 @@ namespace SLIIT_ITPM_WE_R_44_V1
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
+        SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=ITPM_Y3S2_WE_R_44;User ID=sa;Password=rashika1998");
 
-        }
-
+       
         private void btnSave_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=ITPM_Y3S2_WE_R_44;User ID=sa;Password=rashika1998");
+      
             con.Open();
             SqlCommand command = new SqlCommand("insert into ProductInfo_Tab values ('"+int.Parse(textBox1.Text)+ "' , '" + textBox2.Text + "' , '" + textBox3.Text + "' , '" + comboBox1.Text + "' , getdate())" , con);
             command.ExecuteNonQuery();
             MessageBox.Show("Successfully Inserted.");
             con.Close();
+
+            //Display data on grid view
+            BindData();
+
+        }
+
+
+        void BindData()
+        {
+            SqlCommand command = new SqlCommand("select * from ProductInfo_Tab" , con);
+            SqlDataAdapter sd = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            dataGridView1.DataSource = dt;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            BindData();
         }
     }
 }

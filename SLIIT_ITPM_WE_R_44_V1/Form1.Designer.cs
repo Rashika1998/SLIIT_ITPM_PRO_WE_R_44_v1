@@ -118,7 +118,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label5.Size = new System.Drawing.Size(122, 21);
             this.label5.TabIndex = 6;
             this.label5.Text = "Product Design";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // comboBox1
             // 
@@ -145,10 +144,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(143, 276);
+            this.dataGridView1.GridColor = System.Drawing.Color.White;
+            this.dataGridView1.Location = new System.Drawing.Point(86, 276);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(655, 220);
+            this.dataGridView1.Size = new System.Drawing.Size(784, 220);
             this.dataGridView1.TabIndex = 10;
             // 
             // Form1
@@ -170,6 +171,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
