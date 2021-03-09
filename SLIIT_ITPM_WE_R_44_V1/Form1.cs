@@ -25,12 +25,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
       
             con.Open();
-            SqlCommand command = new SqlCommand("insert into ProductInfo_Tab values ('"+int.Parse(textBox1.Text)+ "' , '" + textBox2.Text + "' , '" + textBox3.Text + "' , '" + comboBox1.Text + "' , getdate())" , con);
+            SqlCommand command = new SqlCommand("insert into ProductInfo_Tab values ('"+int.Parse(textBox1.Text)+ "' , '" + textBox2.Text + "' , '" + textBox3.Text + "' , '" + comboBox1.Text + "' , getdate() , getdate())" , con);
             command.ExecuteNonQuery();
             MessageBox.Show("Successfully Inserted.");
             con.Close();
 
-            //Display data on grid view
+            //Display data on gridview
             BindData();
 
         }
@@ -49,6 +49,54 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             BindData();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand command = new SqlCommand("update ProductInfo_Tab set ItemName = '"+textBox2.Text+ "' , Design = '" + textBox3.Text + "' , Color = '" + comboBox1.Text + "' , UpdateDate = '"+DateTime.Parse(dateTimePicker1.Text) +"' where ProductID = '"+int.Parse(textBox1.Text)+"'", con);
+            command.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Successfully Updated.");
+            BindData();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+            if (textBox1.Text != "")
+            {
+
+                if (MessageBox.Show("Are you sure to delete ..?", "Delete Record", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+
+                    con.Open();
+                    SqlCommand command = new SqlCommand("Delete ProductInfo_Tab where ProductID = '" + int.Parse(textBox1.Text) + "'", con);
+                    command.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Successfully Deleted.");
+                    BindData();
+
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Enter a product ID here...!");
+            }
+
+
+            
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            comboBox1.Text = "";
+           
         }
     }
 }
