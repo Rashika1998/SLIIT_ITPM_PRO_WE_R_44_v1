@@ -35,5 +35,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             addTagInfo.ShowDialog();
 
         }
+
+        private void btnAddSession_Click(object sender, EventArgs e)
+        {
+            AddSessionInfo addSessionInfo = new AddSessionInfo();
+            addSessionInfo.ShowDialog();
+        }
     }
 }

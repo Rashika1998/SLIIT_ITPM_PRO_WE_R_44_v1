@@ -30,6 +30,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tagName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -43,10 +45,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnDashboard = new System.Windows.Forms.Button();
             this.addStudentGroupLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tagName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.addTagGridView = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
+            this.addTagGridView = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addTagGridView)).BeginInit();
@@ -71,6 +71,24 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(984, 255);
             this.panel2.TabIndex = 24;
+            // 
+            // tagName
+            // 
+            this.tagName.Location = new System.Drawing.Point(254, 105);
+            this.tagName.Name = "tagName";
+            this.tagName.Size = new System.Drawing.Size(149, 20);
+            this.tagName.TabIndex = 43;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gray;
+            this.label2.Location = new System.Drawing.Point(148, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 21);
+            this.label2.TabIndex = 42;
+            this.label2.Text = "Tag Name";
             // 
             // btnClear
             // 
@@ -233,23 +251,16 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1.Size = new System.Drawing.Size(984, 88);
             this.panel1.TabIndex = 23;
             // 
-            // tagName
+            // label3
             // 
-            this.tagName.Location = new System.Drawing.Point(254, 105);
-            this.tagName.Name = "tagName";
-            this.tagName.Size = new System.Drawing.Size(149, 20);
-            this.tagName.TabIndex = 43;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(148, 102);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 21);
-            this.label2.TabIndex = 42;
-            this.label2.Text = "Tag Name";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(817, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Developed by WE_R_44";
             // 
             // addTagGridView
             // 
@@ -262,17 +273,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addTagGridView.Name = "addTagGridView";
             this.addTagGridView.Size = new System.Drawing.Size(883, 276);
             this.addTagGridView.TabIndex = 25;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(817, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Develoed by WE_R_44";
             // 
             // AddTagInfo
             // 

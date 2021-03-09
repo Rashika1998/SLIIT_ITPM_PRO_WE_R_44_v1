@@ -31,6 +31,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             this.addStudentGroupLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.addStudentGroupGridView = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -55,7 +56,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.yearComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addStudentGroupGridView)).BeginInit();
             this.panel2.SuspendLayout();
@@ -85,6 +85,17 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 88);
             this.panel1.TabIndex = 0;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(812, 8);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(137, 15);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Developed by WE_R_44";
             // 
             // btnDashboard
             // 
@@ -379,17 +390,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.Size = new System.Drawing.Size(117, 21);
             this.label1.TabIndex = 21;
             this.label1.Text = "Academic Year";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(812, 8);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(130, 15);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Develoed by WE_R_44";
             // 
             // AddStudentGroupInfo
             // 
