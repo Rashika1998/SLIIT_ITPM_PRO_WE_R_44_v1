@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -22,6 +21,17 @@ namespace SLIIT_ITPM_WE_R_44_V1
         SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=ITPM_Y3S2_WE_R_44;User ID=sa;Password=rashika1998");
 
 
+        public void cleanInputFields()
+        {
+            recordID.Text = "";
+            yearComboBox.Text = "";
+            semesterComboBox.Text = "";
+            programComboBox.Text = "";
+            groupNumber.Value = 0;
+            subGroupNumber.Value = 0;
+        }
+
+
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -30,7 +40,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             command.ExecuteNonQuery();
             MessageBox.Show("Successfully Inserted.");
             con.Close();
-
+            cleanInputFields();
             //Display data on gridview
             BindData();
         }
@@ -52,13 +62,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            recordID.Text = "";
-            yearComboBox.Text = "";
-            semesterComboBox.Text = "";
-            programComboBox.Text = "";
-            groupNumber.Value = 0;
-            subGroupNumber.Value = 0;
-
+            cleanInputFields();
         }
 
 
@@ -75,7 +79,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             command.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Successfully Updated.");
-
+            cleanInputFields();
             BindData();
         }
 
@@ -105,6 +109,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
                     command.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Successfully Deleted.");
+                    cleanInputFields();
                     BindData();
 
                 }

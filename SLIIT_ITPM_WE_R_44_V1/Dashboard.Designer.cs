@@ -34,6 +34,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1 = new System.Windows.Forms.Panel();
             this.addStudentGroup = new System.Windows.Forms.Button();
             this.btnSampleCrud = new System.Windows.Forms.Button();
+            this.addTagInfo = new System.Windows.Forms.Button();
             this.dashBoardPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +66,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.addTagInfo);
             this.panel1.Controls.Add(this.addStudentGroup);
             this.panel1.Controls.Add(this.btnSampleCrud);
             this.panel1.Location = new System.Drawing.Point(34, 100);
@@ -102,6 +104,21 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSampleCrud.UseVisualStyleBackColor = false;
             this.btnSampleCrud.Click += new System.EventHandler(this.btnSampleCrud_Click);
             // 
+            // addTagInfo
+            // 
+            this.addTagInfo.BackColor = System.Drawing.Color.Teal;
+            this.addTagInfo.FlatAppearance.BorderSize = 0;
+            this.addTagInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addTagInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addTagInfo.ForeColor = System.Drawing.Color.White;
+            this.addTagInfo.Location = new System.Drawing.Point(16, 112);
+            this.addTagInfo.Name = "addTagInfo";
+            this.addTagInfo.Size = new System.Drawing.Size(153, 34);
+            this.addTagInfo.TabIndex = 5;
+            this.addTagInfo.Text = "Add Tags";
+            this.addTagInfo.UseVisualStyleBackColor = false;
+            this.addTagInfo.Click += new System.EventHandler(this.addTagInfo_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,5 +144,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button addStudentGroup;
         private System.Windows.Forms.Button btnSampleCrud;
+        private System.Windows.Forms.Button addTagInfo;
     }
 }

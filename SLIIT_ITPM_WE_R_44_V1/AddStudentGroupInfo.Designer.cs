@@ -31,6 +31,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             this.addStudentGroupLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.addStudentGroupGridView = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnClear = new System.Windows.Forms.Button();
@@ -54,7 +55,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.yearComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnDashboard = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addStudentGroupGridView)).BeginInit();
             this.panel2.SuspendLayout();
@@ -76,6 +77,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.addStudentGroupLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -83,6 +85,21 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 88);
             this.panel1.TabIndex = 0;
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Location = new System.Drawing.Point(845, 25);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(113, 34);
+            this.btnDashboard.TabIndex = 1;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // addStudentGroupGridView
             // 
@@ -363,19 +380,16 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.TabIndex = 21;
             this.label1.Text = "Academic Year";
             // 
-            // btnDashboard
+            // label9
             // 
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Location = new System.Drawing.Point(868, 26);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(96, 34);
-            this.btnDashboard.TabIndex = 1;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(812, 8);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(130, 15);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Develoed by WE_R_44";
             // 
             // AddStudentGroupInfo
             // 
@@ -429,5 +443,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Label label9;
     }
 }

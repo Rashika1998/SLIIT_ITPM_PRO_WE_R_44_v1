@@ -52,6 +52,12 @@
     <Compile Include="AddStudentGroupInfo.Designer.cs">
       <DependentUpon>AddStudentGroupInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddTagInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTagInfo.Designer.cs">
+      <DependentUpon>AddTagInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddStudentGroupInfo.resx">
       <DependentUpon>AddStudentGroupInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTagInfo.resx">
+      <DependentUpon>AddTagInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

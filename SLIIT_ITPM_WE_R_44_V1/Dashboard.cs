@@ -29,6 +29,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             addStudentGroupInfo.ShowDialog();
         }
 
-        
+        private void addTagInfo_Click(object sender, EventArgs e)
+        {
+            AddTagInfo addTagInfo = new AddTagInfo();
+            addTagInfo.ShowDialog();
+
+        }
     }
 }
