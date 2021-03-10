@@ -34,9 +34,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnDashboard = new System.Windows.Forms.Button();
             this.addSessionInfoLabel = new System.Windows.Forms.Label();
             this.sessionDataGridView = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textSearchBox = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnAddNewSession = new System.Windows.Forms.Button();
+            this.selectColumnComboBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sessionDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -103,14 +104,14 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.sessionDataGridView.TabIndex = 3;
             this.sessionDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sessionDataGridView_CellContentClick);
             // 
-            // textBox1
+            // textSearchBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(637, 133);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 23);
-            this.textBox1.TabIndex = 4;
+            this.textSearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textSearchBox.Location = new System.Drawing.Point(485, 135);
+            this.textSearchBox.Multiline = true;
+            this.textSearchBox.Name = "textSearchBox";
+            this.textSearchBox.Size = new System.Drawing.Size(231, 21);
+            this.textSearchBox.TabIndex = 4;
             // 
             // btnSearch
             // 
@@ -120,12 +121,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(874, 131);
+            this.btnSearch.Location = new System.Drawing.Point(874, 133);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnAddNewSession
             // 
@@ -142,15 +144,28 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddNewSession.UseVisualStyleBackColor = false;
             this.btnAddNewSession.Click += new System.EventHandler(this.btnAddNewSession_Click);
             // 
+            // selectColumnComboBox
+            // 
+            this.selectColumnComboBox.FormattingEnabled = true;
+            this.selectColumnComboBox.Items.AddRange(new object[] {
+            "Tag",
+            "Lecturer1",
+            "Lecturer2"});
+            this.selectColumnComboBox.Location = new System.Drawing.Point(722, 135);
+            this.selectColumnComboBox.Name = "selectColumnComboBox";
+            this.selectColumnComboBox.Size = new System.Drawing.Size(146, 21);
+            this.selectColumnComboBox.TabIndex = 7;
+            // 
             // AddSessionInfoDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.selectColumnComboBox);
             this.Controls.Add(this.btnAddNewSession);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textSearchBox);
             this.Controls.Add(this.sessionDataGridView);
             this.Controls.Add(this.panel1);
             this.Name = "AddSessionInfoDisplay";
@@ -172,8 +187,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label addSessionInfoLabel;
         private System.Windows.Forms.DataGridView sessionDataGridView;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textSearchBox;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnAddNewSession;
+        private System.Windows.Forms.ComboBox selectColumnComboBox;
     }
 }

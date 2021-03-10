@@ -38,6 +38,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addTagInfo = new System.Windows.Forms.Button();
             this.addStudentGroup = new System.Windows.Forms.Button();
             this.btnSampleCrud = new System.Windows.Forms.Button();
+            this.btnAddWorkingDays = new System.Windows.Forms.Button();
             this.dashBoardPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -96,6 +97,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnAddWorkingDays);
             this.panel1.Controls.Add(this.btnAddSession);
             this.panel1.Controls.Add(this.addTagInfo);
             this.panel1.Controls.Add(this.addStudentGroup);
@@ -114,7 +116,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddSession.ForeColor = System.Drawing.Color.White;
             this.btnAddSession.Location = new System.Drawing.Point(16, 162);
             this.btnAddSession.Name = "btnAddSession";
-            this.btnAddSession.Size = new System.Drawing.Size(153, 34);
+            this.btnAddSession.Size = new System.Drawing.Size(168, 34);
             this.btnAddSession.TabIndex = 6;
             this.btnAddSession.Text = "Add Session";
             this.btnAddSession.UseVisualStyleBackColor = false;
@@ -129,7 +131,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addTagInfo.ForeColor = System.Drawing.Color.White;
             this.addTagInfo.Location = new System.Drawing.Point(16, 112);
             this.addTagInfo.Name = "addTagInfo";
-            this.addTagInfo.Size = new System.Drawing.Size(153, 34);
+            this.addTagInfo.Size = new System.Drawing.Size(168, 34);
             this.addTagInfo.TabIndex = 5;
             this.addTagInfo.Text = "Add Tags";
             this.addTagInfo.UseVisualStyleBackColor = false;
@@ -144,7 +146,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroup.ForeColor = System.Drawing.Color.White;
             this.addStudentGroup.Location = new System.Drawing.Point(16, 62);
             this.addStudentGroup.Name = "addStudentGroup";
-            this.addStudentGroup.Size = new System.Drawing.Size(153, 34);
+            this.addStudentGroup.Size = new System.Drawing.Size(168, 34);
             this.addStudentGroup.TabIndex = 4;
             this.addStudentGroup.Text = "Add Student Group";
             this.addStudentGroup.UseVisualStyleBackColor = false;
@@ -159,11 +161,26 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSampleCrud.ForeColor = System.Drawing.Color.White;
             this.btnSampleCrud.Location = new System.Drawing.Point(16, 13);
             this.btnSampleCrud.Name = "btnSampleCrud";
-            this.btnSampleCrud.Size = new System.Drawing.Size(153, 34);
+            this.btnSampleCrud.Size = new System.Drawing.Size(168, 34);
             this.btnSampleCrud.TabIndex = 3;
             this.btnSampleCrud.Text = "Sample Crud Form";
             this.btnSampleCrud.UseVisualStyleBackColor = false;
             this.btnSampleCrud.Click += new System.EventHandler(this.btnSampleCrud_Click);
+            // 
+            // btnAddWorkingDays
+            // 
+            this.btnAddWorkingDays.BackColor = System.Drawing.Color.Teal;
+            this.btnAddWorkingDays.FlatAppearance.BorderSize = 0;
+            this.btnAddWorkingDays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddWorkingDays.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddWorkingDays.ForeColor = System.Drawing.Color.White;
+            this.btnAddWorkingDays.Location = new System.Drawing.Point(16, 211);
+            this.btnAddWorkingDays.Name = "btnAddWorkingDays";
+            this.btnAddWorkingDays.Size = new System.Drawing.Size(168, 34);
+            this.btnAddWorkingDays.TabIndex = 7;
+            this.btnAddWorkingDays.Text = "Add Workinng Days";
+            this.btnAddWorkingDays.UseVisualStyleBackColor = false;
+            this.btnAddWorkingDays.Click += new System.EventHandler(this.btnAddWorkingDays_Click);
             // 
             // Dashboard
             // 
@@ -194,5 +211,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnAboutUs;
         private System.Windows.Forms.Button btnAddSession;
+        private System.Windows.Forms.Button btnAddWorkingDays;
     }
 }

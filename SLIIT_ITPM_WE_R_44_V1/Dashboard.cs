@@ -41,5 +41,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             AddSessionInfo addSessionInfo = new AddSessionInfo();
             addSessionInfo.ShowDialog();
         }
+
+        private void btnAddWorkingDays_Click(object sender, EventArgs e)
+        {
+            AddWorkingDaysAndHoursInfo addWorkingDaysAndHoursInfo = new AddWorkingDaysAndHoursInfo();
+            addWorkingDaysAndHoursInfo.ShowDialog();
+        }
     }
 }

@@ -13,6 +13,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
 {
     public partial class AddSessionInfoDisplay : Form
     {
+
+        
         public AddSessionInfoDisplay()
         {
             InitializeComponent();
@@ -31,6 +33,18 @@ namespace SLIIT_ITPM_WE_R_44_V1
             sessionDataGridView.DataSource = dt;
 
         }
+
+        //Bind data to a gridview by searching
+        void SearchBindData()
+        {
+            SqlCommand command = new SqlCommand("select * from AddSession where "+selectColumnComboBox.Text+" like '" +textSearchBox.Text+"%'", con);
+            SqlDataAdapter sd = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            sessionDataGridView.DataSource = dt;
+
+        }
+
 
         private void sessionDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -53,6 +67,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             Dashboard dashboard = new Dashboard();
             dashboard.ShowDialog();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            SearchBindData();
         }
     }
 }
