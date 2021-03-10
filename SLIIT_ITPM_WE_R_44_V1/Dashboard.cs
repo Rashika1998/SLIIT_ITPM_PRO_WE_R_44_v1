@@ -53,5 +53,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             AddLecturerInfo addLecturerInfo = new AddLecturerInfo();
             addLecturerInfo.ShowDialog();
         }
+
+        private void btnAddSubject_Click(object sender, EventArgs e)
+        {
+            AddSubjectInfo addSubjectInfo = new AddSubjectInfo();
+            addSubjectInfo.ShowDialog();
+        }
     }
 }
