@@ -127,7 +127,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             con.Close();
 
             //Display data on gridview
-            //BindData();
+            BindData();
         }
 
 
@@ -153,6 +153,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 command.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Successfully Deleted All The Data..");
+                BindData();
             }
 
         }
@@ -165,7 +166,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             command.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Successfully Updated.");
-            //BindData();
+            BindData();
         }
 
     }
