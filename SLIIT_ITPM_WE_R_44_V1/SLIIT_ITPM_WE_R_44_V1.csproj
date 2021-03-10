@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddLecturerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLecturerInfo.Designer.cs">
+      <DependentUpon>AddLecturerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLecturerInfoDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLecturerInfoDisplay.Designer.cs">
+      <DependentUpon>AddLecturerInfoDisplay.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddSessionInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +102,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddLecturerInfo.resx">
+      <DependentUpon>AddLecturerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLecturerInfoDisplay.resx">
+      <DependentUpon>AddLecturerInfoDisplay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddSessionInfo.resx">
       <DependentUpon>AddSessionInfo.cs</DependentUpon>
     </EmbeddedResource>
