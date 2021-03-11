@@ -76,5 +76,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             AddLocationInfo addLocationInfo = new AddLocationInfo();
             addLocationInfo.ShowDialog();
         }
+
+        private void btnStatisticsView_Click(object sender, EventArgs e)
+        {
+            StatisticsDisplay statisticsDisplay = new StatisticsDisplay();
+            statisticsDisplay.ShowDialog();
+        }
     }
 }
