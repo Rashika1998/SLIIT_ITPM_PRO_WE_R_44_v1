@@ -1,7 +1,7 @@
 ﻿
 namespace SLIIT_ITPM_WE_R_44_V1
 {
-    partial class AddLecturerInfoDisplay
+    partial class AddSubjectInfoDisplay
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,51 @@ namespace SLIIT_ITPM_WE_R_44_V1
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnAddSubject = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.addSubjectDataGridView = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.addStudentGroupLabel = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.addLecturerDataGridView = new System.Windows.Forms.DataGridView();
-            this.btnAddLecturer = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.addLecturerDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addSubjectDataGridView)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnAddSubject
+            // 
+            this.btnAddSubject.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnAddSubject.FlatAppearance.BorderSize = 0;
+            this.btnAddSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSubject.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSubject.ForeColor = System.Drawing.Color.White;
+            this.btnAddSubject.Location = new System.Drawing.Point(33, 122);
+            this.btnAddSubject.Name = "btnAddSubject";
+            this.btnAddSubject.Size = new System.Drawing.Size(136, 32);
+            this.btnAddSubject.TabIndex = 30;
+            this.btnAddSubject.Text = "Add Subject";
+            this.btnAddSubject.UseVisualStyleBackColor = false;
+            this.btnAddSubject.Click += new System.EventHandler(this.btnAddSubject_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Controls.Add(this.addSubjectDataGridView);
+            this.panel2.Location = new System.Drawing.Point(13, 181);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(959, 466);
+            this.panel2.TabIndex = 29;
+            // 
+            // addSubjectDataGridView
+            // 
+            this.addSubjectDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.addSubjectDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.addSubjectDataGridView.GridColor = System.Drawing.Color.White;
+            this.addSubjectDataGridView.Location = new System.Drawing.Point(20, 30);
+            this.addSubjectDataGridView.Name = "addSubjectDataGridView";
+            this.addSubjectDataGridView.Size = new System.Drawing.Size(921, 415);
+            this.addSubjectDataGridView.TabIndex = 0;
             // 
             // panel1
             // 
@@ -51,8 +85,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 88);
-            this.panel1.TabIndex = 25;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.TabIndex = 28;
             // 
             // label3
             // 
@@ -87,74 +120,39 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroupLabel.ForeColor = System.Drawing.Color.White;
             this.addStudentGroupLabel.Location = new System.Drawing.Point(12, 23);
             this.addStudentGroupLabel.Name = "addStudentGroupLabel";
-            this.addStudentGroupLabel.Size = new System.Drawing.Size(399, 32);
+            this.addStudentGroupLabel.Size = new System.Drawing.Size(389, 32);
             this.addStudentGroupLabel.TabIndex = 0;
-            this.addStudentGroupLabel.Text = "Add Lecturer Information Display";
+            this.addStudentGroupLabel.Text = "Add Subject Information Display";
             // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel2.Controls.Add(this.addLecturerDataGridView);
-            this.panel2.Location = new System.Drawing.Point(13, 167);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(959, 466);
-            this.panel2.TabIndex = 26;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // addLecturerDataGridView
-            // 
-            this.addLecturerDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.addLecturerDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.addLecturerDataGridView.GridColor = System.Drawing.Color.White;
-            this.addLecturerDataGridView.Location = new System.Drawing.Point(20, 30);
-            this.addLecturerDataGridView.Name = "addLecturerDataGridView";
-            this.addLecturerDataGridView.Size = new System.Drawing.Size(921, 415);
-            this.addLecturerDataGridView.TabIndex = 0;
-            // 
-            // btnAddLecturer
-            // 
-            this.btnAddLecturer.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnAddLecturer.FlatAppearance.BorderSize = 0;
-            this.btnAddLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddLecturer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddLecturer.ForeColor = System.Drawing.Color.White;
-            this.btnAddLecturer.Location = new System.Drawing.Point(33, 108);
-            this.btnAddLecturer.Name = "btnAddLecturer";
-            this.btnAddLecturer.Size = new System.Drawing.Size(136, 32);
-            this.btnAddLecturer.TabIndex = 27;
-            this.btnAddLecturer.Text = "Add Lecturer";
-            this.btnAddLecturer.UseVisualStyleBackColor = false;
-            this.btnAddLecturer.Click += new System.EventHandler(this.btnAddLecturer_Click);
-            // 
-            // AddLecturerInfoDisplay
+            // AddSubjectInfoDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.btnAddLecturer);
+            this.Controls.Add(this.btnAddSubject);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "AddLecturerInfoDisplay";
+            this.Name = "AddSubjectInfoDisplay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddLecturerInfoDisplay";
-            this.Load += new System.EventHandler(this.AddLecturerInfoDisplay_Load);
+            this.Text = "AddSubjectInfoDisplay";
+            this.Load += new System.EventHandler(this.AddSubjectInfoDisplay_Load);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.addSubjectDataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.addLecturerDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Button btnAddSubject;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView addSubjectDataGridView;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label addStudentGroupLabel;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView addLecturerDataGridView;
-        private System.Windows.Forms.Button btnAddLecturer;
     }
 }

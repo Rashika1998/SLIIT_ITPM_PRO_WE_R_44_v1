@@ -30,6 +30,14 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.noEvaluationHours = new System.Windows.Forms.NumericUpDown();
+            this.noLabHours = new System.Windows.Forms.NumericUpDown();
+            this.textSubjectCode = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnView = new System.Windows.Forms.Button();
             this.textSubjectName = new System.Windows.Forms.TextBox();
             this.semester2RadioButton = new System.Windows.Forms.RadioButton();
@@ -52,24 +60,18 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label9 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.addStudentGroupLabel = new System.Windows.Forms.Label();
-            this.textSubjectCode = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.noEvaluationHours = new System.Windows.Forms.NumericUpDown();
-            this.noLabHours = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.noEvaluationHours)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noLabHours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noTutorialHours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noLectureHours)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.noEvaluationHours)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noLabHours)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label6);
@@ -100,6 +102,82 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Size = new System.Drawing.Size(984, 491);
             this.panel2.TabIndex = 25;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Gray;
+            this.label11.Location = new System.Drawing.Point(194, 63);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(61, 13);
+            this.label11.TabIndex = 55;
+            this.label11.Text = "ex :  12345 ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Gray;
+            this.label8.Location = new System.Drawing.Point(573, 230);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(180, 21);
+            this.label8.TabIndex = 54;
+            this.label8.Text = "No Of Evaluation Hours";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Gray;
+            this.label10.Location = new System.Drawing.Point(573, 168);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(132, 21);
+            this.label10.TabIndex = 53;
+            this.label10.Text = "No Of Lab Hours";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Gray;
+            this.label6.Location = new System.Drawing.Point(573, 102);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(161, 21);
+            this.label6.TabIndex = 52;
+            this.label6.Text = "No Of Tutorial Hours";
+            // 
+            // noEvaluationHours
+            // 
+            this.noEvaluationHours.Location = new System.Drawing.Point(775, 234);
+            this.noEvaluationHours.Name = "noEvaluationHours";
+            this.noEvaluationHours.Size = new System.Drawing.Size(155, 20);
+            this.noEvaluationHours.TabIndex = 51;
+            // 
+            // noLabHours
+            // 
+            this.noLabHours.Location = new System.Drawing.Point(775, 169);
+            this.noLabHours.Name = "noLabHours";
+            this.noLabHours.Size = new System.Drawing.Size(155, 20);
+            this.noLabHours.TabIndex = 49;
+            // 
+            // textSubjectCode
+            // 
+            this.textSubjectCode.Location = new System.Drawing.Point(197, 295);
+            this.textSubjectCode.Name = "textSubjectCode";
+            this.textSubjectCode.Size = new System.Drawing.Size(228, 20);
+            this.textSubjectCode.TabIndex = 47;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(35, 292);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(108, 21);
+            this.label7.TabIndex = 46;
+            this.label7.Text = "Subject Code";
+            // 
             // btnView
             // 
             this.btnView.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -108,12 +186,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnView.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnView.ForeColor = System.Drawing.Color.White;
-            this.btnView.Location = new System.Drawing.Point(577, 431);
+            this.btnView.Location = new System.Drawing.Point(590, 430);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(119, 32);
             this.btnView.TabIndex = 45;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // textSubjectName
             // 
@@ -134,6 +213,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.semester2RadioButton.TabStop = true;
             this.semester2RadioButton.Text = "2 nd Semester";
             this.semester2RadioButton.UseVisualStyleBackColor = true;
+            this.semester2RadioButton.CheckedChanged += new System.EventHandler(this.semester2RadioButton_CheckedChanged);
             // 
             // semester1RadioButton
             // 
@@ -147,6 +227,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.semester1RadioButton.TabStop = true;
             this.semester1RadioButton.Text = "1 st Semester";
             this.semester1RadioButton.UseVisualStyleBackColor = true;
+            this.semester1RadioButton.CheckedChanged += new System.EventHandler(this.semester1RadioButton_CheckedChanged);
             // 
             // btnClear
             // 
@@ -156,12 +237,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(739, 431);
+            this.btnClear.Location = new System.Drawing.Point(752, 430);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(119, 32);
             this.btnClear.TabIndex = 41;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnDelete
             // 
@@ -171,12 +253,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(421, 431);
+            this.btnDelete.Location = new System.Drawing.Point(434, 430);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(119, 32);
             this.btnDelete.TabIndex = 40;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -186,12 +269,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(261, 431);
+            this.btnUpdate.Location = new System.Drawing.Point(274, 430);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(119, 32);
             this.btnUpdate.TabIndex = 39;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSave
             // 
@@ -200,12 +284,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(100, 431);
+            this.btnSave.Location = new System.Drawing.Point(113, 430);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(119, 32);
             this.btnSave.TabIndex = 38;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // generateSubjecCode
             // 
@@ -218,8 +303,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.generateSubjecCode.Name = "generateSubjecCode";
             this.generateSubjecCode.Size = new System.Drawing.Size(119, 32);
             this.generateSubjecCode.TabIndex = 37;
-            this.generateSubjecCode.Text = "Generate IDs";
+            this.generateSubjecCode.Text = "Generate Code";
             this.generateSubjecCode.UseVisualStyleBackColor = false;
+            this.generateSubjecCode.Click += new System.EventHandler(this.generateSubjecCode_Click);
             // 
             // noTutorialHours
             // 
@@ -279,10 +365,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.offeredYearComboBox.FormattingEnabled = true;
             this.offeredYearComboBox.Items.AddRange(new object[] {
-            "Y1",
-            "Y2",
-            "Y3",
-            "Y4"});
+            "1",
+            "2",
+            "3",
+            "4"});
             this.offeredYearComboBox.Location = new System.Drawing.Point(197, 105);
             this.offeredYearComboBox.Name = "offeredYearComboBox";
             this.offeredYearComboBox.Size = new System.Drawing.Size(228, 21);
@@ -359,71 +445,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroupLabel.TabIndex = 0;
             this.addStudentGroupLabel.Text = "Add Subject Information";
             // 
-            // textSubjectCode
-            // 
-            this.textSubjectCode.Location = new System.Drawing.Point(197, 295);
-            this.textSubjectCode.Name = "textSubjectCode";
-            this.textSubjectCode.Size = new System.Drawing.Size(228, 20);
-            this.textSubjectCode.TabIndex = 47;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(35, 292);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 21);
-            this.label7.TabIndex = 46;
-            this.label7.Text = "Subject Code";
-            // 
-            // noEvaluationHours
-            // 
-            this.noEvaluationHours.Location = new System.Drawing.Point(775, 234);
-            this.noEvaluationHours.Name = "noEvaluationHours";
-            this.noEvaluationHours.Size = new System.Drawing.Size(155, 20);
-            this.noEvaluationHours.TabIndex = 51;
-            // 
-            // noLabHours
-            // 
-            this.noLabHours.Location = new System.Drawing.Point(775, 169);
-            this.noLabHours.Name = "noLabHours";
-            this.noLabHours.Size = new System.Drawing.Size(155, 20);
-            this.noLabHours.TabIndex = 49;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(573, 102);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(161, 21);
-            this.label6.TabIndex = 52;
-            this.label6.Text = "No Of Tutorial Hours";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(573, 168);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(132, 21);
-            this.label10.TabIndex = 53;
-            this.label10.Text = "No Of Lab Hours";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(573, 230);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(180, 21);
-            this.label8.TabIndex = 54;
-            this.label8.Text = "No Of Evaluation Hours";
-            // 
             // AddSubjectInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -437,12 +458,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.Text = "AddSubjectInfo";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.noEvaluationHours)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noLabHours)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noTutorialHours)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noLectureHours)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.noEvaluationHours)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noLabHours)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -479,5 +500,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown noEvaluationHours;
         private System.Windows.Forms.NumericUpDown noLabHours;
+        private System.Windows.Forms.Label label11;
     }
 }

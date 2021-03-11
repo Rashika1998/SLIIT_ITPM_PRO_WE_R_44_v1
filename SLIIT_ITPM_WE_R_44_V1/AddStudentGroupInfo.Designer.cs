@@ -33,7 +33,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.addStudentGroupGridView = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -48,7 +47,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label6 = new System.Windows.Forms.Label();
             this.groupNumber = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.recordID = new System.Windows.Forms.TextBox();
+            this.studentGroupID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.programComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,8 +55,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.yearComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnView = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.addStudentGroupGridView)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subGroupNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupNumber)).BeginInit();
@@ -112,22 +115,14 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnDashboard.UseVisualStyleBackColor = true;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // addStudentGroupGridView
-            // 
-            this.addStudentGroupGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.addStudentGroupGridView.BackgroundColor = System.Drawing.Color.White;
-            this.addStudentGroupGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.addStudentGroupGridView.GridColor = System.Drawing.Color.White;
-            this.addStudentGroupGridView.Location = new System.Drawing.Point(27, 365);
-            this.addStudentGroupGridView.Name = "addStudentGroupGridView";
-            this.addStudentGroupGridView.Size = new System.Drawing.Size(931, 274);
-            this.addStudentGroupGridView.TabIndex = 21;
-            // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.richTextBox1);
+            this.panel2.Controls.Add(this.btnView);
             this.panel2.Controls.Add(this.btnClear);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnUpdate);
@@ -141,7 +136,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.groupNumber);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.recordID);
+            this.panel2.Controls.Add(this.studentGroupID);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.programComboBox);
             this.panel2.Controls.Add(this.label3);
@@ -151,7 +146,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 94);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(984, 255);
+            this.panel2.Size = new System.Drawing.Size(984, 555);
             this.panel2.TabIndex = 22;
             // 
             // btnClear
@@ -162,7 +157,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(654, 205);
+            this.btnClear.Location = new System.Drawing.Point(738, 446);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(119, 32);
             this.btnClear.TabIndex = 41;
@@ -178,7 +173,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(506, 205);
+            this.btnDelete.Location = new System.Drawing.Point(418, 446);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(119, 32);
             this.btnDelete.TabIndex = 40;
@@ -194,7 +189,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(353, 205);
+            this.btnUpdate.Location = new System.Drawing.Point(265, 446);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(119, 32);
             this.btnUpdate.TabIndex = 39;
@@ -209,7 +204,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(192, 205);
+            this.btnSave.Location = new System.Drawing.Point(104, 446);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(119, 32);
             this.btnSave.TabIndex = 38;
@@ -224,7 +219,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.generateIDs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.generateIDs.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generateIDs.ForeColor = System.Drawing.Color.White;
-            this.generateIDs.Location = new System.Drawing.Point(777, 95);
+            this.generateIDs.Location = new System.Drawing.Point(784, 284);
             this.generateIDs.Name = "generateIDs";
             this.generateIDs.Size = new System.Drawing.Size(119, 32);
             this.generateIDs.TabIndex = 37;
@@ -234,16 +229,16 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // subGroupID
             // 
-            this.subGroupID.Location = new System.Drawing.Point(815, 55);
+            this.subGroupID.Location = new System.Drawing.Point(727, 246);
             this.subGroupID.Name = "subGroupID";
-            this.subGroupID.Size = new System.Drawing.Size(149, 20);
+            this.subGroupID.Size = new System.Drawing.Size(176, 20);
             this.subGroupID.TabIndex = 36;
             // 
             // groupID
             // 
-            this.groupID.Location = new System.Drawing.Point(815, 18);
+            this.groupID.Location = new System.Drawing.Point(727, 209);
             this.groupID.Name = "groupID";
-            this.groupID.Size = new System.Drawing.Size(149, 20);
+            this.groupID.Size = new System.Drawing.Size(176, 20);
             this.groupID.TabIndex = 35;
             // 
             // label8
@@ -251,7 +246,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(697, 55);
+            this.label8.Location = new System.Drawing.Point(562, 244);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(108, 21);
             this.label8.TabIndex = 34;
@@ -262,7 +257,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(697, 17);
+            this.label7.Location = new System.Drawing.Point(562, 206);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 21);
             this.label7.TabIndex = 33;
@@ -270,9 +265,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // subGroupNumber
             // 
-            this.subGroupNumber.Location = new System.Drawing.Point(536, 59);
+            this.subGroupNumber.Location = new System.Drawing.Point(727, 108);
             this.subGroupNumber.Name = "subGroupNumber";
-            this.subGroupNumber.Size = new System.Drawing.Size(134, 20);
+            this.subGroupNumber.Size = new System.Drawing.Size(176, 20);
             this.subGroupNumber.TabIndex = 32;
             // 
             // label6
@@ -280,7 +275,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(380, 59);
+            this.label6.Location = new System.Drawing.Point(551, 108);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(152, 21);
             this.label6.TabIndex = 31;
@@ -288,9 +283,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // groupNumber
             // 
-            this.groupNumber.Location = new System.Drawing.Point(536, 18);
+            this.groupNumber.Location = new System.Drawing.Point(727, 42);
             this.groupNumber.Name = "groupNumber";
-            this.groupNumber.Size = new System.Drawing.Size(134, 20);
+            this.groupNumber.Size = new System.Drawing.Size(176, 20);
             this.groupNumber.TabIndex = 30;
             // 
             // label5
@@ -298,29 +293,29 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(380, 18);
+            this.label5.Location = new System.Drawing.Point(551, 42);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 21);
             this.label5.TabIndex = 29;
             this.label5.Text = "Group Number";
             // 
-            // recordID
+            // studentGroupID
             // 
-            this.recordID.Location = new System.Drawing.Point(182, 21);
-            this.recordID.Name = "recordID";
-            this.recordID.Size = new System.Drawing.Size(149, 20);
-            this.recordID.TabIndex = 28;
+            this.studentGroupID.Location = new System.Drawing.Point(236, 45);
+            this.studentGroupID.Name = "studentGroupID";
+            this.studentGroupID.Size = new System.Drawing.Size(194, 20);
+            this.studentGroupID.TabIndex = 28;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(20, 21);
+            this.label4.Location = new System.Drawing.Point(74, 45);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 21);
+            this.label4.Size = new System.Drawing.Size(138, 21);
             this.label4.TabIndex = 27;
-            this.label4.Text = "Record ID";
+            this.label4.Text = "Student Group ID";
             // 
             // programComboBox
             // 
@@ -329,9 +324,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             "Information Technology",
             "Business Management",
             "Engineering"});
-            this.programComboBox.Location = new System.Drawing.Point(182, 135);
+            this.programComboBox.Location = new System.Drawing.Point(233, 253);
             this.programComboBox.Name = "programComboBox";
-            this.programComboBox.Size = new System.Drawing.Size(149, 21);
+            this.programComboBox.Size = new System.Drawing.Size(197, 21);
             this.programComboBox.TabIndex = 26;
             // 
             // label3
@@ -339,7 +334,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(20, 136);
+            this.label3.Location = new System.Drawing.Point(74, 254);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 21);
             this.label3.TabIndex = 25;
@@ -351,9 +346,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.semesterComboBox.Items.AddRange(new object[] {
             "S1",
             "S2"});
-            this.semesterComboBox.Location = new System.Drawing.Point(182, 95);
+            this.semesterComboBox.Location = new System.Drawing.Point(233, 182);
             this.semesterComboBox.Name = "semesterComboBox";
-            this.semesterComboBox.Size = new System.Drawing.Size(149, 21);
+            this.semesterComboBox.Size = new System.Drawing.Size(197, 21);
             this.semesterComboBox.TabIndex = 24;
             // 
             // yearComboBox
@@ -364,9 +359,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             "Y2",
             "Y3",
             "Y4"});
-            this.yearComboBox.Location = new System.Drawing.Point(182, 59);
+            this.yearComboBox.Location = new System.Drawing.Point(236, 111);
             this.yearComboBox.Name = "yearComboBox";
-            this.yearComboBox.Size = new System.Drawing.Size(149, 21);
+            this.yearComboBox.Size = new System.Drawing.Size(194, 21);
             this.yearComboBox.TabIndex = 23;
             // 
             // label2
@@ -374,7 +369,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(20, 95);
+            this.label2.Location = new System.Drawing.Point(71, 182);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 21);
             this.label2.TabIndex = 22;
@@ -385,11 +380,73 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(20, 59);
+            this.label1.Location = new System.Drawing.Point(74, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 21);
             this.label1.TabIndex = 21;
             this.label1.Text = "Academic Year";
+            // 
+            // btnView
+            // 
+            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnView.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnView.FlatAppearance.BorderSize = 0;
+            this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnView.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.ForeColor = System.Drawing.Color.White;
+            this.btnView.Location = new System.Drawing.Point(584, 446);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(119, 32);
+            this.btnView.TabIndex = 42;
+            this.btnView.Text = "View";
+            this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox1.Location = new System.Drawing.Point(727, 322);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(176, 57);
+            this.richTextBox1.TabIndex = 44;
+            this.richTextBox1.Text = "Press on \'Generate IDs\' button to generate Group ID and the Sub Group ID";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Gray;
+            this.label10.Location = new System.Drawing.Point(233, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(68, 15);
+            this.label10.TabIndex = 45;
+            this.label10.Text = "ex : 123456";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Gray;
+            this.label11.Location = new System.Drawing.Point(724, 65);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 15);
+            this.label11.TabIndex = 46;
+            this.label11.Text = "ex : 98";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Gray;
+            this.label12.Location = new System.Drawing.Point(724, 131);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(49, 15);
+            this.label12.TabIndex = 47;
+            this.label12.Text = "ex : 980";
             // 
             // AddStudentGroupInfo
             // 
@@ -398,7 +455,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.addStudentGroupGridView);
             this.Controls.Add(this.panel1);
             this.Name = "AddStudentGroupInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -406,7 +462,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.Load += new System.EventHandler(this.AddStudentGroupInfo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.addStudentGroupGridView)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subGroupNumber)).EndInit();
@@ -419,7 +474,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private System.Windows.Forms.Label addStudentGroupLabel;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView addStudentGroupGridView;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
@@ -433,7 +487,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown groupNumber;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox recordID;
+        private System.Windows.Forms.TextBox studentGroupID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox programComboBox;
         private System.Windows.Forms.Label label3;
@@ -444,5 +498,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -48,5 +48,15 @@ namespace SLIIT_ITPM_WE_R_44_V1
             Dashboard dashboard = new Dashboard();
             dashboard.ShowDialog();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

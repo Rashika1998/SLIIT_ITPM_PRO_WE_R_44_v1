@@ -76,11 +76,23 @@
     <Compile Include="AddStudentGroupInfo.Designer.cs">
       <DependentUpon>AddStudentGroupInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddStudentGroupInfoDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudentGroupInfoDisplay.Designer.cs">
+      <DependentUpon>AddStudentGroupInfoDisplay.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddSubjectInfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddSubjectInfo.Designer.cs">
       <DependentUpon>AddSubjectInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubjectInfoDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubjectInfoDisplay.Designer.cs">
+      <DependentUpon>AddSubjectInfoDisplay.cs</DependentUpon>
     </Compile>
     <Compile Include="AddTagInfo.cs">
       <SubType>Form</SubType>
@@ -123,8 +135,14 @@
     <EmbeddedResource Include="AddStudentGroupInfo.resx">
       <DependentUpon>AddStudentGroupInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddStudentGroupInfoDisplay.resx">
+      <DependentUpon>AddStudentGroupInfoDisplay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddSubjectInfo.resx">
       <DependentUpon>AddSubjectInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubjectInfoDisplay.resx">
+      <DependentUpon>AddSubjectInfoDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddTagInfo.resx">
       <DependentUpon>AddTagInfo.cs</DependentUpon>
