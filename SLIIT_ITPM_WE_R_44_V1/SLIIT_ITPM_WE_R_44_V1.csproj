@@ -64,6 +64,18 @@
     <Compile Include="AddLecturerInfoDisplay.Designer.cs">
       <DependentUpon>AddLecturerInfoDisplay.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddLocationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLocationInfo.Designer.cs">
+      <DependentUpon>AddLocationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLocationInfoDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLocationInfoDisplay.Designer.cs">
+      <DependentUpon>AddLocationInfoDisplay.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddSessionInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +146,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddLecturerInfoDisplay.resx">
       <DependentUpon>AddLecturerInfoDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLocationInfo.resx">
+      <DependentUpon>AddLocationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLocationInfoDisplay.resx">
+      <DependentUpon>AddLocationInfoDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddSessionInfo.resx">
       <DependentUpon>AddSessionInfo.cs</DependentUpon>

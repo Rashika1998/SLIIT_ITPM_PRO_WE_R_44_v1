@@ -114,6 +114,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.Controls.Add(this.btnUpdate);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.workingDaysGridView);

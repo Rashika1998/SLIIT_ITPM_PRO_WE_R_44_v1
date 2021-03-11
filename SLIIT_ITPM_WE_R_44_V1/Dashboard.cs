@@ -70,5 +70,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
 
         }
+
+        private void btnAddLocation_Click(object sender, EventArgs e)
+        {
+            AddLocationInfo addLocationInfo = new AddLocationInfo();
+            addLocationInfo.ShowDialog();
+        }
     }
 }
