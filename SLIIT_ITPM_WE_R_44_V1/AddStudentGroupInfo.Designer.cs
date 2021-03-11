@@ -34,6 +34,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label9 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnView = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -55,11 +60,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.yearComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnView = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subGroupNumber)).BeginInit();
@@ -91,6 +91,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
@@ -148,6 +149,68 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(984, 555);
             this.panel2.TabIndex = 22;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Gray;
+            this.label12.Location = new System.Drawing.Point(724, 131);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(49, 15);
+            this.label12.TabIndex = 47;
+            this.label12.Text = "ex : 980";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Gray;
+            this.label11.Location = new System.Drawing.Point(724, 65);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 15);
+            this.label11.TabIndex = 46;
+            this.label11.Text = "ex : 98";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Gray;
+            this.label10.Location = new System.Drawing.Point(233, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(68, 15);
+            this.label10.TabIndex = 45;
+            this.label10.Text = "ex : 123456";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox1.Location = new System.Drawing.Point(727, 322);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(176, 57);
+            this.richTextBox1.TabIndex = 44;
+            this.richTextBox1.Text = "Press on \'Generate IDs\' button to generate Group ID and the Sub Group ID";
+            // 
+            // btnView
+            // 
+            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnView.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnView.FlatAppearance.BorderSize = 0;
+            this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnView.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.ForeColor = System.Drawing.Color.White;
+            this.btnView.Location = new System.Drawing.Point(584, 446);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(119, 32);
+            this.btnView.TabIndex = 42;
+            this.btnView.Text = "View";
+            this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // btnClear
             // 
@@ -386,68 +449,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.TabIndex = 21;
             this.label1.Text = "Academic Year";
             // 
-            // btnView
-            // 
-            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnView.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnView.FlatAppearance.BorderSize = 0;
-            this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnView.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnView.ForeColor = System.Drawing.Color.White;
-            this.btnView.Location = new System.Drawing.Point(584, 446);
-            this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(119, 32);
-            this.btnView.TabIndex = 42;
-            this.btnView.Text = "View";
-            this.btnView.UseVisualStyleBackColor = false;
-            this.btnView.Click += new System.EventHandler(this.btnView_Click);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.White;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.Gray;
-            this.richTextBox1.Location = new System.Drawing.Point(727, 322);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(176, 57);
-            this.richTextBox1.TabIndex = 44;
-            this.richTextBox1.Text = "Press on \'Generate IDs\' button to generate Group ID and the Sub Group ID";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(233, 68);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 15);
-            this.label10.TabIndex = 45;
-            this.label10.Text = "ex : 123456";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(724, 65);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 15);
-            this.label11.TabIndex = 46;
-            this.label11.Text = "ex : 98";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(724, 131);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 15);
-            this.label12.TabIndex = 47;
-            this.label12.Text = "ex : 980";
-            // 
             // AddStudentGroupInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -459,6 +460,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.Name = "AddStudentGroupInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddStudentGroupInfo";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AddStudentGroupInfo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

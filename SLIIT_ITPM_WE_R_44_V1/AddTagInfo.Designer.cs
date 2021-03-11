@@ -253,6 +253,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
@@ -286,6 +287,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.Name = "AddTagInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddTagInfo";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AddTagInfo_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

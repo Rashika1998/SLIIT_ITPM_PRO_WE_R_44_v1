@@ -84,6 +84,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
@@ -528,6 +529,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.Name = "AddSessionInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddSessionInfo";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AddSessionInfo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

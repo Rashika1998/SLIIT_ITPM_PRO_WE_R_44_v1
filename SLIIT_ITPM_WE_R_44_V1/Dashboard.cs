@@ -59,5 +59,16 @@ namespace SLIIT_ITPM_WE_R_44_V1
             AddSubjectInfo addSubjectInfo = new AddSubjectInfo();
             addSubjectInfo.ShowDialog();
         }
+
+        private void btnAboutUs_Click(object sender, EventArgs e)
+        {
+            AboutUs aboutUs = new AboutUs();
+            aboutUs.ShowDialog();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
