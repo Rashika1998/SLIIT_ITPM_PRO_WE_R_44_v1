@@ -34,6 +34,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAboutUs = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnStatisticsView = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAddLocation = new System.Windows.Forms.Button();
@@ -45,7 +46,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddSession = new System.Windows.Forms.Button();
             this.addTagInfo = new System.Windows.Forms.Button();
             this.addStudentGroup = new System.Windows.Forms.Button();
-            this.btnStatisticsView = new System.Windows.Forms.Button();
+            this.sessionAndNotAvailableTimeAllocation = new System.Windows.Forms.Button();
             this.dashBoardPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -103,7 +104,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.panel1.Controls.Add(this.sessionAndNotAvailableTimeAllocation);
             this.panel1.Controls.Add(this.btnStatisticsView);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -122,12 +124,28 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1.Size = new System.Drawing.Size(232, 568);
             this.panel1.TabIndex = 1;
             // 
+            // btnStatisticsView
+            // 
+            this.btnStatisticsView.BackColor = System.Drawing.Color.Transparent;
+            this.btnStatisticsView.FlatAppearance.BorderSize = 0;
+            this.btnStatisticsView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatisticsView.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatisticsView.ForeColor = System.Drawing.Color.Gray;
+            this.btnStatisticsView.Location = new System.Drawing.Point(32, 247);
+            this.btnStatisticsView.Name = "btnStatisticsView";
+            this.btnStatisticsView.Size = new System.Drawing.Size(138, 27);
+            this.btnStatisticsView.TabIndex = 12;
+            this.btnStatisticsView.Text = "Statistics View";
+            this.btnStatisticsView.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStatisticsView.UseVisualStyleBackColor = false;
+            this.btnStatisticsView.Click += new System.EventHandler(this.btnStatisticsView_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.ForeColor = System.Drawing.Color.DimGray;
             this.label4.Location = new System.Drawing.Point(12, 314);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 21);
@@ -139,7 +157,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
             this.label3.Location = new System.Drawing.Point(12, 33);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 21);
@@ -287,21 +305,21 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroup.UseVisualStyleBackColor = false;
             this.addStudentGroup.Click += new System.EventHandler(this.addStudentGroup_Click);
             // 
-            // btnStatisticsView
+            // sessionAndNotAvailableTimeAllocation
             // 
-            this.btnStatisticsView.BackColor = System.Drawing.Color.Transparent;
-            this.btnStatisticsView.FlatAppearance.BorderSize = 0;
-            this.btnStatisticsView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatisticsView.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatisticsView.ForeColor = System.Drawing.Color.Gray;
-            this.btnStatisticsView.Location = new System.Drawing.Point(32, 247);
-            this.btnStatisticsView.Name = "btnStatisticsView";
-            this.btnStatisticsView.Size = new System.Drawing.Size(138, 27);
-            this.btnStatisticsView.TabIndex = 12;
-            this.btnStatisticsView.Text = "Statistics View";
-            this.btnStatisticsView.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStatisticsView.UseVisualStyleBackColor = false;
-            this.btnStatisticsView.Click += new System.EventHandler(this.btnStatisticsView_Click);
+            this.sessionAndNotAvailableTimeAllocation.BackColor = System.Drawing.Color.Transparent;
+            this.sessionAndNotAvailableTimeAllocation.FlatAppearance.BorderSize = 0;
+            this.sessionAndNotAvailableTimeAllocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sessionAndNotAvailableTimeAllocation.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessionAndNotAvailableTimeAllocation.ForeColor = System.Drawing.Color.Gray;
+            this.sessionAndNotAvailableTimeAllocation.Location = new System.Drawing.Point(32, 375);
+            this.sessionAndNotAvailableTimeAllocation.Name = "sessionAndNotAvailableTimeAllocation";
+            this.sessionAndNotAvailableTimeAllocation.Size = new System.Drawing.Size(172, 49);
+            this.sessionAndNotAvailableTimeAllocation.TabIndex = 13;
+            this.sessionAndNotAvailableTimeAllocation.Text = "Add Session And Not Available Time Allocation";
+            this.sessionAndNotAvailableTimeAllocation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sessionAndNotAvailableTimeAllocation.UseVisualStyleBackColor = false;
+            this.sessionAndNotAvailableTimeAllocation.Click += new System.EventHandler(this.sessionAndNotAvailableTimeAllocation_Click);
             // 
             // Dashboard
             // 
@@ -343,5 +361,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnStatisticsView;
+        private System.Windows.Forms.Button sessionAndNotAvailableTimeAllocation;
     }
 }

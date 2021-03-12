@@ -124,6 +124,12 @@
     <Compile Include="AddWorkingDaysAndHoursInfo.Designer.cs">
       <DependentUpon>AddWorkingDaysAndHoursInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsecutiveSessionUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsecutiveSessionUserControl.Designer.cs">
+      <DependentUpon>ConsecutiveSessionUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,8 +142,20 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ParallelSessionUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParallelSessionUserControl.Designer.cs">
+      <DependentUpon>ParallelSessionUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionsAndNotAvailableTimeAllocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SessionsAndNotAvailableTimeAllocations.Designer.cs">
+      <DependentUpon>SessionsAndNotAvailableTimeAllocations.cs</DependentUpon>
+    </Compile>
     <Compile Include="StatisticsDisplay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,11 +201,17 @@
     <EmbeddedResource Include="AddWorkingDaysAndHoursInfo.resx">
       <DependentUpon>AddWorkingDaysAndHoursInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsecutiveSessionUserControl.resx">
+      <DependentUpon>ConsecutiveSessionUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParallelSessionUserControl.resx">
+      <DependentUpon>ParallelSessionUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -198,6 +222,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SessionsAndNotAvailableTimeAllocations.resx">
+      <DependentUpon>SessionsAndNotAvailableTimeAllocations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StatisticsDisplay.resx">
       <DependentUpon>StatisticsDisplay.cs</DependentUpon>
     </EmbeddedResource>

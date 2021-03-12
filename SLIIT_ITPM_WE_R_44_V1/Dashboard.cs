@@ -82,5 +82,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             StatisticsDisplay statisticsDisplay = new StatisticsDisplay();
             statisticsDisplay.ShowDialog();
         }
+
+        private void sessionAndNotAvailableTimeAllocation_Click(object sender, EventArgs e)
+        {
+            SessionsAndNotAvailableTimeAllocations sessionsAndNotAvailableTimeAllocations = new SessionsAndNotAvailableTimeAllocations();
+            sessionsAndNotAvailableTimeAllocations.ShowDialog();
+        }
     }
 }
