@@ -29,7 +29,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         public void cleanInputFields()
         {
-            recordID.Text = "";
+            tagID.Text = "";
             tagName.Text = "";
             tagCode.Text = "";
             relatedTagComboBox.Text = "";
@@ -38,7 +38,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void btnSave_Click(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand command = new SqlCommand("insert into AddTag values ('" + int.Parse(recordID.Text) + "' , '" + tagName.Text + "' , '" + tagCode.Text + "' , '" + relatedTagComboBox.Text + "' , getdate() , getdate())", con);
+            SqlCommand command = new SqlCommand("insert into AddTag values ('" + int.Parse(tagID.Text) + "' , '" + tagName.Text + "' , '" + tagCode.Text + "' , '" + relatedTagComboBox.Text + "' , getdate() , getdate())", con);
             command.ExecuteNonQuery();
             MessageBox.Show("Successfully Inserted.");
             con.Close();
@@ -62,7 +62,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand command = new SqlCommand("update AddTag set TagName = '" + tagName.Text + "' , TagCode = '" + tagCode.Text + "' , RelatedTag = '" + relatedTagComboBox.Text + "' , UpdateDate = getdate() where RecordID = '" + int.Parse(recordID.Text) + "'", con);
+            SqlCommand command = new SqlCommand("update AddTag set TagName = '" + tagName.Text + "' , TagCode = '" + tagCode.Text + "' , RelatedTag = '" + relatedTagComboBox.Text + "' , UpdateDate = getdate() where TagID = '" + int.Parse(tagID.Text) + "'", con);
             command.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Successfully Updated.");
@@ -78,14 +78,14 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (recordID.Text != "")
+            if (tagID.Text != "")
             {
 
                 if (MessageBox.Show("Are you sure to delete ..?", "Delete Record", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
 
                     con.Open();
-                    SqlCommand command = new SqlCommand("Delete AddTag where RecordID = '" + int.Parse(recordID.Text) + "'", con);
+                    SqlCommand command = new SqlCommand("Delete AddTag where TagID = '" + int.Parse(tagID.Text) + "'", con);
                     command.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Successfully Deleted.");
@@ -97,7 +97,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             }
             else
             {
-                MessageBox.Show("Enter The Record ID here...!");
+                MessageBox.Show("Enter The Tag ID here...!");
             }
         }
 
@@ -106,6 +106,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             cleanInputFields();
         }
 
-      
+        private void btnGenerateCode_Click(object sender, EventArgs e)
+        {
+            tagCode.Text = tagID.Text + "." + tagName.Text;
+        }
     }
 }

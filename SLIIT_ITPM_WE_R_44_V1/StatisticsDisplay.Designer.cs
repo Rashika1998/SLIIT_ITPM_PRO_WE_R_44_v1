@@ -54,6 +54,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.textLatestLecturer = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.barPanelLecturer = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.registeredRoomPanel.SuspendLayout();
@@ -185,7 +188,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // registeredRoomPanel
             // 
             this.registeredRoomPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.registeredRoomPanel.BackColor = System.Drawing.Color.DarkGray;
+            this.registeredRoomPanel.BackColor = System.Drawing.Color.Teal;
             this.registeredRoomPanel.Controls.Add(this.textRegisteredRoom);
             this.registeredRoomPanel.Location = new System.Drawing.Point(820, 12);
             this.registeredRoomPanel.Name = "registeredRoomPanel";
@@ -208,7 +211,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // registeredSubjectPanel
             // 
             this.registeredSubjectPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.registeredSubjectPanel.BackColor = System.Drawing.Color.DarkGray;
+            this.registeredSubjectPanel.BackColor = System.Drawing.Color.Teal;
             this.registeredSubjectPanel.Controls.Add(this.textRegisteredSubject);
             this.registeredSubjectPanel.Location = new System.Drawing.Point(571, 12);
             this.registeredSubjectPanel.Name = "registeredSubjectPanel";
@@ -231,7 +234,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // registeredStudentPanel
             // 
             this.registeredStudentPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.registeredStudentPanel.BackColor = System.Drawing.Color.DarkGray;
+            this.registeredStudentPanel.BackColor = System.Drawing.Color.Teal;
             this.registeredStudentPanel.Controls.Add(this.textRegisteredStudent);
             this.registeredStudentPanel.Location = new System.Drawing.Point(327, 12);
             this.registeredStudentPanel.Name = "registeredStudentPanel";
@@ -254,7 +257,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // registeredLecturerPanel
             // 
             this.registeredLecturerPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.registeredLecturerPanel.BackColor = System.Drawing.Color.DarkGray;
+            this.registeredLecturerPanel.BackColor = System.Drawing.Color.Teal;
             this.registeredLecturerPanel.Controls.Add(this.textRegisteredLecturer);
             this.registeredLecturerPanel.Location = new System.Drawing.Point(76, 12);
             this.registeredLecturerPanel.Name = "registeredLecturerPanel";
@@ -276,8 +279,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Controls.Add(this.textLatestSubject);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.textLatestGroup);
@@ -292,10 +295,15 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // textLatestSubject
             // 
+            this.textLatestSubject.BackColor = System.Drawing.Color.White;
+            this.textLatestSubject.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textLatestSubject.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textLatestSubject.ForeColor = System.Drawing.Color.Gray;
             this.textLatestSubject.Location = new System.Drawing.Point(163, 245);
             this.textLatestSubject.Name = "textLatestSubject";
             this.textLatestSubject.Size = new System.Drawing.Size(203, 20);
             this.textLatestSubject.TabIndex = 34;
+            this.textLatestSubject.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
@@ -310,10 +318,15 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // textLatestGroup
             // 
+            this.textLatestGroup.BackColor = System.Drawing.Color.White;
+            this.textLatestGroup.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textLatestGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textLatestGroup.ForeColor = System.Drawing.Color.Gray;
             this.textLatestGroup.Location = new System.Drawing.Point(163, 176);
             this.textLatestGroup.Name = "textLatestGroup";
             this.textLatestGroup.Size = new System.Drawing.Size(203, 20);
             this.textLatestGroup.TabIndex = 32;
+            this.textLatestGroup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -328,10 +341,15 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // textLatestLecturer
             // 
+            this.textLatestLecturer.BackColor = System.Drawing.Color.White;
+            this.textLatestLecturer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textLatestLecturer.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textLatestLecturer.ForeColor = System.Drawing.Color.Gray;
             this.textLatestLecturer.Location = new System.Drawing.Point(163, 114);
             this.textLatestLecturer.Name = "textLatestLecturer";
             this.textLatestLecturer.Size = new System.Drawing.Size(203, 20);
             this.textLatestLecturer.TabIndex = 30;
+            this.textLatestLecturer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
             // 
@@ -355,12 +373,67 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label6.TabIndex = 28;
             this.label6.Text = "What\'s New";
             // 
+            // panel5
+            // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel5.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel5.Location = new System.Drawing.Point(162, 405);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(56, 42);
+            this.panel5.TabIndex = 30;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel2.ColumnCount = 14;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(162, 300);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 9;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(295, 189);
+            this.tableLayoutPanel2.TabIndex = 31;
+            // 
+            // barPanelLecturer
+            // 
+            this.barPanelLecturer.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.barPanelLecturer.BackColor = System.Drawing.Color.Green;
+            this.barPanelLecturer.Location = new System.Drawing.Point(162, 343);
+            this.barPanelLecturer.Name = "barPanelLecturer";
+            this.barPanelLecturer.Size = new System.Drawing.Size(56, 42);
+            this.barPanelLecturer.TabIndex = 31;
+            // 
             // StatisticsDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.barPanelLecturer);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -414,5 +487,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.TextBox textLatestLecturer;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Panel barPanelLecturer;
     }
 }

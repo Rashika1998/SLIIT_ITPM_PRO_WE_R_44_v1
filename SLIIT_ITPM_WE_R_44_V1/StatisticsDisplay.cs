@@ -34,6 +34,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             getRegisteredStudentCount();
             getRegisteredSubjectCount();
             getRegisteredRoomCount();
+            getLatestLecturer();
+            getLatestStudentGroup();
+            getLatestSubject();
+            createBar();
         }
 
 
@@ -132,6 +136,75 @@ namespace SLIIT_ITPM_WE_R_44_V1
             addLocationInfoDisplay.ShowDialog();
         }
 
-     
+
+
+
+
+
+        //Get latest detatail we added into the system.
+
+        public void getLatestLecturer()
+        {
+
+            con.Open();
+            SqlCommand command = new SqlCommand("SELECT TOP 1 LecturerName FROM AddLecturer ORDER BY InsertDate DESC;", con);
+            String latestValue = (String)command.ExecuteScalar();
+            textLatestLecturer.Text = latestValue;
+            con.Close();
+
+        }
+
+
+        public void getLatestStudentGroup()
+        {
+
+            con.Open();
+            SqlCommand command = new SqlCommand("SELECT TOP 1 GroupID FROM AddStudentGroup ORDER BY InsertDate DESC;", con);
+            String latestValue = (String)command.ExecuteScalar();
+            textLatestGroup.Text = latestValue;
+            con.Close();
+
+        }
+
+
+        public void getLatestSubject()
+        {
+
+            con.Open();
+            SqlCommand command = new SqlCommand("SELECT TOP 1 SubjectName FROM AddSubject ORDER BY InsertDate DESC;", con);
+            String latestValue = (String)command.ExecuteScalar();
+            textLatestSubject.Text = latestValue;
+            con.Close();
+
+        }
+
+
+        public void createBar()
+        {
+            con.Open();
+            SqlCommand command = new SqlCommand("SELECT COUNT(EmpID) FROM AddLecturer;", con);
+            Int32 count = Convert.ToInt32(command.ExecuteScalar());
+            //textRegisteredLecturer.Text = Convert.ToString(count.ToString());
+
+
+
+            //int newWidth = 200;
+            //barPanelLecturer.MaximumSize = new Size(newWidth, barPanelLecturer.Height);
+            //barPanelLecturer.Size = new Size(newWidth, barPanelLecturer.Height);
+
+            int newWidth = count;
+            barPanelLecturer.MaximumSize = new Size(newWidth, barPanelLecturer.Height);
+            barPanelLecturer.Size = new Size(newWidth, barPanelLecturer.Height);
+            //barPanelLecturer.Location = new System.Drawing.Point(60, 215);
+
+
+            //this.barPanelLecturer.Size = new System.Drawing.Size(227, 324);
+
+            //barPanelLecturer.Height = 100;
+            con.Close();
+        }
+
+
+
     }
 }

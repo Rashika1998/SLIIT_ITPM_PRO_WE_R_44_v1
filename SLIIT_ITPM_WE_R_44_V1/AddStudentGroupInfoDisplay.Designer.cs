@@ -44,6 +44,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // selectColumnComboBox
             // 
+            this.selectColumnComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.selectColumnComboBox.FormattingEnabled = true;
             this.selectColumnComboBox.Items.AddRange(new object[] {
             "AcademicYear",
