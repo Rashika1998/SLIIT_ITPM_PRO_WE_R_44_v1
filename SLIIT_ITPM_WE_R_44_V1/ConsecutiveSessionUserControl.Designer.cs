@@ -38,10 +38,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // consecutiveSessionDataGridView
             // 
             this.consecutiveSessionDataGridView.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.consecutiveSessionDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.consecutiveSessionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.consecutiveSessionDataGridView.Location = new System.Drawing.Point(12, 14);
+            this.consecutiveSessionDataGridView.GridColor = System.Drawing.Color.White;
+            this.consecutiveSessionDataGridView.Location = new System.Drawing.Point(12, 20);
             this.consecutiveSessionDataGridView.Name = "consecutiveSessionDataGridView";
-            this.consecutiveSessionDataGridView.Size = new System.Drawing.Size(874, 407);
+            this.consecutiveSessionDataGridView.Size = new System.Drawing.Size(874, 401);
             this.consecutiveSessionDataGridView.TabIndex = 0;
             // 
             // btnSave

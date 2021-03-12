@@ -94,7 +94,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // btnAddConsecutiveSession
             // 
             this.btnAddConsecutiveSession.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnAddConsecutiveSession.BackColor = System.Drawing.Color.DarkGray;
+            this.btnAddConsecutiveSession.BackColor = System.Drawing.Color.Teal;
             this.btnAddConsecutiveSession.FlatAppearance.BorderSize = 0;
             this.btnAddConsecutiveSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddConsecutiveSession.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,7 +110,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // btnParallel
             // 
             this.btnParallel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnParallel.BackColor = System.Drawing.Color.DarkGray;
+            this.btnParallel.BackColor = System.Drawing.Color.Teal;
             this.btnParallel.FlatAppearance.BorderSize = 0;
             this.btnParallel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnParallel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -126,7 +126,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // btnNonOverlapping
             // 
             this.btnNonOverlapping.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnNonOverlapping.BackColor = System.Drawing.Color.DarkGray;
+            this.btnNonOverlapping.BackColor = System.Drawing.Color.Teal;
             this.btnNonOverlapping.FlatAppearance.BorderSize = 0;
             this.btnNonOverlapping.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNonOverlapping.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -141,7 +141,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.Color.DarkGray;
+            this.button1.BackColor = System.Drawing.Color.Teal;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
