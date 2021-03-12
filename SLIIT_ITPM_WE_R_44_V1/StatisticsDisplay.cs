@@ -14,6 +14,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
     public partial class StatisticsDisplay : Form
     {
 
+        public string roomType;
+
         public StatisticsDisplay()
         {
             InitializeComponent();
@@ -37,7 +39,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             getLatestLecturer();
             getLatestStudentGroup();
             getLatestSubject();
-            createBar();
+            createBarForCountLectureHall();
+            createBarForCountLab();
         }
 
 
@@ -179,32 +182,35 @@ namespace SLIIT_ITPM_WE_R_44_V1
         }
 
 
-        public void createBar()
+        public void createBarForCountLectureHall()
         {
+            roomType = "Lecture Hall";
+
             con.Open();
-            SqlCommand command = new SqlCommand("SELECT COUNT(EmpID) FROM AddLecturer;", con);
+            SqlCommand command = new SqlCommand("SELECT COUNT(LocationID) FROM AddLocation WHERE RoomType = '" + roomType + "';", con);
             Int32 count = Convert.ToInt32(command.ExecuteScalar());
-            //textRegisteredLecturer.Text = Convert.ToString(count.ToString());
-
-
-
-            //int newWidth = 200;
-            //barPanelLecturer.MaximumSize = new Size(newWidth, barPanelLecturer.Height);
-            //barPanelLecturer.Size = new Size(newWidth, barPanelLecturer.Height);
-
             int newWidth = count;
-            barPanelLecturer.MaximumSize = new Size(newWidth, barPanelLecturer.Height);
-            barPanelLecturer.Size = new Size(newWidth, barPanelLecturer.Height);
-            //barPanelLecturer.Location = new System.Drawing.Point(60, 215);
-
-
-            //this.barPanelLecturer.Size = new System.Drawing.Size(227, 324);
-
-            //barPanelLecturer.Height = 100;
+            barPanelLectureHall.MaximumSize = new Size(newWidth * 20, barPanelLectureHall.Height);
+            barPanelLectureHall.Size = new Size(newWidth * 20, barPanelLectureHall.Height);
+           
             con.Close();
         }
 
 
+
+        public void createBarForCountLab()
+        {
+            roomType = "Laboratory";
+
+            con.Open();
+            SqlCommand command = new SqlCommand("SELECT COUNT(LocationID) FROM AddLocation WHERE RoomType = '" + roomType + "';", con);
+            Int32 count = Convert.ToInt32(command.ExecuteScalar());
+            int newWidth = count;
+            barPanelLab.MaximumSize = new Size(newWidth * 20, barPanelLectureHall.Height);
+            barPanelLab.Size = new Size(newWidth * 20, barPanelLectureHall.Height);
+
+            con.Close();
+        }
 
     }
 }
