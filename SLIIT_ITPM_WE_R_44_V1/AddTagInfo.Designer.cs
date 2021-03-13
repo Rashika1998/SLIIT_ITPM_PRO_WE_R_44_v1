@@ -30,6 +30,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnGenerateCode = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.tagName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
@@ -47,10 +51,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.addTagGridView = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btnGenerateCode = new System.Windows.Forms.Button();
+            this.toUpdate = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addTagGridView)).BeginInit();
@@ -59,6 +61,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Controls.Add(this.richTextBox1);
+            this.panel2.Controls.Add(this.toUpdate);
             this.panel2.Controls.Add(this.btnGenerateCode);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label6);
@@ -80,9 +84,58 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Size = new System.Drawing.Size(984, 255);
             this.panel2.TabIndex = 24;
             // 
+            // btnGenerateCode
+            // 
+            this.btnGenerateCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGenerateCode.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnGenerateCode.FlatAppearance.BorderSize = 0;
+            this.btnGenerateCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerateCode.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerateCode.ForeColor = System.Drawing.Color.White;
+            this.btnGenerateCode.Location = new System.Drawing.Point(703, 66);
+            this.btnGenerateCode.Name = "btnGenerateCode";
+            this.btnGenerateCode.Size = new System.Drawing.Size(149, 32);
+            this.btnGenerateCode.TabIndex = 47;
+            this.btnGenerateCode.Text = "Generate Code";
+            this.btnGenerateCode.UseVisualStyleBackColor = false;
+            this.btnGenerateCode.Click += new System.EventHandler(this.btnGenerateCode_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.DimGray;
+            this.label8.Location = new System.Drawing.Point(219, 93);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 15);
+            this.label8.TabIndex = 46;
+            this.label8.Text = "ex : Lec";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DimGray;
+            this.label6.Location = new System.Drawing.Point(700, 46);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 15);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "ex : 1001.Lec";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DimGray;
+            this.label5.Location = new System.Drawing.Point(219, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 15);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "ex : 1001";
+            // 
             // tagName
             // 
-            this.tagName.Location = new System.Drawing.Point(264, 75);
+            this.tagName.Location = new System.Drawing.Point(222, 70);
             this.tagName.Name = "tagName";
             this.tagName.Size = new System.Drawing.Size(149, 20);
             this.tagName.TabIndex = 43;
@@ -92,7 +145,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(148, 75);
+            this.label2.Location = new System.Drawing.Point(106, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 21);
             this.label2.TabIndex = 42;
@@ -163,7 +216,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // tagCode
             // 
-            this.tagCode.Location = new System.Drawing.Point(618, 23);
+            this.tagCode.Location = new System.Drawing.Point(703, 20);
             this.tagCode.Name = "tagCode";
             this.tagCode.Size = new System.Drawing.Size(149, 20);
             this.tagCode.TabIndex = 35;
@@ -173,7 +226,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(502, 23);
+            this.label7.Location = new System.Drawing.Point(587, 20);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 21);
             this.label7.TabIndex = 33;
@@ -181,7 +234,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // tagID
             // 
-            this.tagID.Location = new System.Drawing.Point(264, 26);
+            this.tagID.Location = new System.Drawing.Point(222, 21);
             this.tagID.Name = "tagID";
             this.tagID.Size = new System.Drawing.Size(149, 20);
             this.tagID.TabIndex = 28;
@@ -191,7 +244,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(148, 28);
+            this.label4.Location = new System.Drawing.Point(106, 23);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 21);
             this.label4.TabIndex = 27;
@@ -205,7 +258,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             "Tutorial",
             "Lab",
             "Evaluation"});
-            this.relatedTagComboBox.Location = new System.Drawing.Point(264, 123);
+            this.relatedTagComboBox.Location = new System.Drawing.Point(222, 118);
             this.relatedTagComboBox.Name = "relatedTagComboBox";
             this.relatedTagComboBox.Size = new System.Drawing.Size(149, 21);
             this.relatedTagComboBox.TabIndex = 23;
@@ -215,7 +268,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(148, 121);
+            this.label1.Location = new System.Drawing.Point(106, 116);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 21);
             this.label1.TabIndex = 21;
@@ -284,54 +337,31 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addTagGridView.Size = new System.Drawing.Size(883, 276);
             this.addTagGridView.TabIndex = 25;
             // 
-            // label5
+            // toUpdate
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(261, 49);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 15);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "ex : 1001";
+            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
+            this.toUpdate.FlatAppearance.BorderSize = 0;
+            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toUpdate.ForeColor = System.Drawing.Color.White;
+            this.toUpdate.Location = new System.Drawing.Point(406, 19);
+            this.toUpdate.Name = "toUpdate";
+            this.toUpdate.Size = new System.Drawing.Size(75, 23);
+            this.toUpdate.TabIndex = 48;
+            this.toUpdate.Text = "Update?";
+            this.toUpdate.UseVisualStyleBackColor = false;
+            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
             // 
-            // label6
+            // richTextBox1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(615, 49);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 15);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "ex : 1001.Lec";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(261, 98);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 15);
-            this.label8.TabIndex = 46;
-            this.label8.Text = "ex : Lec";
-            // 
-            // btnGenerateCode
-            // 
-            this.btnGenerateCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGenerateCode.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnGenerateCode.FlatAppearance.BorderSize = 0;
-            this.btnGenerateCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerateCode.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerateCode.ForeColor = System.Drawing.Color.White;
-            this.btnGenerateCode.Location = new System.Drawing.Point(618, 69);
-            this.btnGenerateCode.Name = "btnGenerateCode";
-            this.btnGenerateCode.Size = new System.Drawing.Size(149, 32);
-            this.btnGenerateCode.TabIndex = 47;
-            this.btnGenerateCode.Text = "Generate Code";
-            this.btnGenerateCode.UseVisualStyleBackColor = false;
-            this.btnGenerateCode.Click += new System.EventHandler(this.btnGenerateCode_Click);
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox1.Location = new System.Drawing.Point(406, 49);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(121, 41);
+            this.richTextBox1.TabIndex = 49;
+            this.richTextBox1.Text = "enter the Tag ID to get other details.";
             // 
             // AddTagInfo
             // 
@@ -380,5 +410,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button toUpdate;
     }
 }

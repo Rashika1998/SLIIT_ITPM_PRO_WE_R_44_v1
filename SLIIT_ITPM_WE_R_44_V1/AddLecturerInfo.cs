@@ -104,5 +104,46 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             cleanInputFields();
         }
+
+        private void toUpdate_Click(object sender, EventArgs e)
+        {
+
+            if (empID.Text != "")
+            {
+
+                con.Open();
+                SqlCommand command1 = new SqlCommand("select LecturerName from AddLecturer where EmpID = '" + int.Parse(empID.Text) + "' ", con);
+                SqlCommand command2 = new SqlCommand("select Faculty from AddLecturer where EmpID = '" + int.Parse(empID.Text) + "' ", con);
+                SqlCommand command3 = new SqlCommand("select Department from AddLecturer where EmpID = '" + int.Parse(empID.Text) + "' ", con);
+                SqlCommand command4 = new SqlCommand("select Center from AddLecturer where EmpID = '" + int.Parse(empID.Text) + "' ", con);
+                SqlCommand command5 = new SqlCommand("select Building from AddLecturer where EmpID = '" + int.Parse(empID.Text) + "' ", con);
+                SqlCommand command6 = new SqlCommand("select LecturerLevel from AddLecturer where EmpID = '" + int.Parse(empID.Text) + "' ", con);
+
+
+                String lecturer_name = command1.ExecuteScalar().ToString();
+                String faculty = command2.ExecuteScalar().ToString();
+                String department = command3.ExecuteScalar().ToString();
+                String center = command4.ExecuteScalar().ToString();
+                String building = command5.ExecuteScalar().ToString();
+                String lecturer_level = command6.ExecuteScalar().ToString();
+
+
+                txtLecturerName.Text = lecturer_name;
+                facultyComboBox.Text = faculty;
+                departmentComboBox.Text = department;
+                centerComboBox.Text = center;
+                buildingComboBox.Text = building;
+                levelComboBox.Text = lecturer_level;
+
+
+                con.Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Enter the Employee ID");
+            }
+
+        }
     }
 }

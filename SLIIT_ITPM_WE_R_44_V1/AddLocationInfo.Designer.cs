@@ -30,6 +30,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.toUpdate = new System.Windows.Forms.Button();
+            this.capacityComboBox = new System.Windows.Forms.ComboBox();
             this.btnView = new System.Windows.Forms.Button();
             this.buildingNameComboBox = new System.Windows.Forms.ComboBox();
             this.laboratoryRadioButton = new System.Windows.Forms.RadioButton();
@@ -49,7 +52,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label3 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.addStudentGroupLabel = new System.Windows.Forms.Label();
-            this.capacityComboBox = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +59,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Controls.Add(this.richTextBox2);
+            this.panel2.Controls.Add(this.toUpdate);
             this.panel2.Controls.Add(this.capacityComboBox);
             this.panel2.Controls.Add(this.btnView);
             this.panel2.Controls.Add(this.buildingNameComboBox);
@@ -78,6 +82,44 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Size = new System.Drawing.Size(984, 485);
             this.panel2.TabIndex = 26;
             // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox2.Location = new System.Drawing.Point(231, 165);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(151, 41);
+            this.richTextBox2.TabIndex = 68;
+            this.richTextBox2.Text = "enter the lecturer ID to get other details.";
+            // 
+            // toUpdate
+            // 
+            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
+            this.toUpdate.FlatAppearance.BorderSize = 0;
+            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toUpdate.ForeColor = System.Drawing.Color.White;
+            this.toUpdate.Location = new System.Drawing.Point(231, 135);
+            this.toUpdate.Name = "toUpdate";
+            this.toUpdate.Size = new System.Drawing.Size(75, 23);
+            this.toUpdate.TabIndex = 67;
+            this.toUpdate.Text = "Update?";
+            this.toUpdate.UseVisualStyleBackColor = false;
+            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
+            // 
+            // capacityComboBox
+            // 
+            this.capacityComboBox.FormattingEnabled = true;
+            this.capacityComboBox.Items.AddRange(new object[] {
+            "120",
+            "60",
+            "30"});
+            this.capacityComboBox.Location = new System.Drawing.Point(696, 84);
+            this.capacityComboBox.Name = "capacityComboBox";
+            this.capacityComboBox.Size = new System.Drawing.Size(198, 21);
+            this.capacityComboBox.TabIndex = 50;
+            // 
             // btnView
             // 
             this.btnView.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -86,7 +128,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnView.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnView.ForeColor = System.Drawing.Color.White;
-            this.btnView.Location = new System.Drawing.Point(682, 344);
+            this.btnView.Location = new System.Drawing.Point(682, 392);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(119, 32);
             this.btnView.TabIndex = 49;
@@ -103,7 +145,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             "C",
             "D",
             "E"});
-            this.buildingNameComboBox.Location = new System.Drawing.Point(231, 162);
+            this.buildingNameComboBox.Location = new System.Drawing.Point(231, 225);
             this.buildingNameComboBox.Name = "buildingNameComboBox";
             this.buildingNameComboBox.Size = new System.Drawing.Size(198, 21);
             this.buildingNameComboBox.TabIndex = 48;
@@ -159,7 +201,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(87, 162);
+            this.label2.Location = new System.Drawing.Point(87, 225);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 21);
             this.label2.TabIndex = 42;
@@ -189,7 +231,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(528, 344);
+            this.btnDelete.Location = new System.Drawing.Point(528, 392);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(119, 32);
             this.btnDelete.TabIndex = 40;
@@ -205,7 +247,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(375, 344);
+            this.btnUpdate.Location = new System.Drawing.Point(375, 392);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(119, 32);
             this.btnUpdate.TabIndex = 39;
@@ -220,7 +262,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(214, 344);
+            this.btnSave.Location = new System.Drawing.Point(214, 392);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(119, 32);
             this.btnSave.TabIndex = 38;
@@ -230,7 +272,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // textRoomName
             // 
-            this.textRoomName.Location = new System.Drawing.Point(231, 237);
+            this.textRoomName.Location = new System.Drawing.Point(231, 300);
             this.textRoomName.Name = "textRoomName";
             this.textRoomName.Size = new System.Drawing.Size(198, 20);
             this.textRoomName.TabIndex = 35;
@@ -240,7 +282,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(87, 234);
+            this.label7.Location = new System.Drawing.Point(87, 297);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 21);
             this.label7.TabIndex = 33;
@@ -317,18 +359,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroupLabel.TabIndex = 0;
             this.addStudentGroupLabel.Text = "Add Location Information";
             // 
-            // capacityComboBox
-            // 
-            this.capacityComboBox.FormattingEnabled = true;
-            this.capacityComboBox.Items.AddRange(new object[] {
-            "120",
-            "60",
-            "30"});
-            this.capacityComboBox.Location = new System.Drawing.Point(696, 84);
-            this.capacityComboBox.Name = "capacityComboBox";
-            this.capacityComboBox.Size = new System.Drawing.Size(198, 21);
-            this.capacityComboBox.TabIndex = 50;
-            // 
             // AddLocationInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -341,6 +371,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddLocationInfo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AddLocationInfo_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -372,5 +403,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.RadioButton lectureHallRadioButton;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox capacityComboBox;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button toUpdate;
     }
 }

@@ -109,5 +109,62 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             cleanInputFields();
         }
+
+        private void toUpdate_Click(object sender, EventArgs e)
+        {
+
+            if (subjectID.Text != "")
+            {
+
+                con.Open();
+                SqlCommand command1 = new SqlCommand("select OfferedYear from AddSubject where SubjectID = '" + int.Parse(subjectID.Text) + "' ", con);
+                SqlCommand command2 = new SqlCommand("select OfferedSemester from AddSubject where SubjectID = '" + int.Parse(subjectID.Text) + "' ", con);
+                SqlCommand command3 = new SqlCommand("select SubjectName from AddSubject where SubjectID = '" + int.Parse(subjectID.Text) + "' ", con);
+                SqlCommand command4 = new SqlCommand("select SubjectCode from AddSubject where SubjectID = '" + int.Parse(subjectID.Text) + "' ", con);
+                SqlCommand command5 = new SqlCommand("select NoOfLecHours from AddSubject where SubjectID = '" + int.Parse(subjectID.Text) + "' ", con);
+                SqlCommand command6 = new SqlCommand("select NoOfTuteHours from AddSubject where SubjectID = '" + int.Parse(subjectID.Text) + "' ", con);
+                SqlCommand command7 = new SqlCommand("select NoOfLabHours from AddSubject where SubjectID = '" + int.Parse(subjectID.Text) + "' ", con);
+                SqlCommand command8 = new SqlCommand("select NoOfEvHours from AddSubject where SubjectID = '" + int.Parse(subjectID.Text) + "' ", con);
+
+
+
+                String offered_year = command1.ExecuteScalar().ToString();
+                String offered_semester = command2.ExecuteScalar().ToString();
+                String subject_name = command3.ExecuteScalar().ToString();
+                String subject_code = command4.ExecuteScalar().ToString();
+                String no_of_lec_hours = command5.ExecuteScalar().ToString();
+                String no_of_tute_hours = command6.ExecuteScalar().ToString();
+                String no_of_lab_hours = command7.ExecuteScalar().ToString();
+                String no_of_ev_hours = command8.ExecuteScalar().ToString();
+
+
+                offeredYearComboBox.Text = offered_year;
+
+                if (offered_semester == "1")
+                {
+                    semester1RadioButton.Checked = true;
+                }
+                else
+                {
+                    semester2RadioButton.Checked = true;
+                }
+
+                textSubjectName.Text = subject_name;
+                textSubjectCode.Text = subject_code;
+                noLectureHours.Value = int.Parse(no_of_lec_hours);
+                noTutorialHours.Value = int.Parse(no_of_tute_hours);
+                noLabHours.Value = int.Parse(no_of_lab_hours);
+                noEvaluationHours.Value = int.Parse(no_of_ev_hours);
+
+
+                con.Close();
+
+            }
+            
+            {
+                MessageBox.Show("Enter the Subject ID");
+            }
+
+        }
     }
 }

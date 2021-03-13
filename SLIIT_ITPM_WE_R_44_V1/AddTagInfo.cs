@@ -13,6 +13,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 {
     public partial class AddTagInfo : Form
     {
+
         public AddTagInfo()
         {
             InitializeComponent();
@@ -43,6 +44,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             MessageBox.Show("Successfully Inserted.");
             con.Close();
             cleanInputFields();
+
             //Display data on gridview
             BindData();
         }
@@ -109,6 +111,33 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void btnGenerateCode_Click(object sender, EventArgs e)
         {
             tagCode.Text = tagID.Text + "." + tagName.Text;
+        }
+
+        private void toUpdate_Click(object sender, EventArgs e)
+        {
+            if(tagID.Text != "")
+            {
+                con.Open();
+                SqlCommand command1 = new SqlCommand("select TagName from AddTag where TagID = '" + int.Parse(tagID.Text) + "' ", con);
+                SqlCommand command2 = new SqlCommand("select TagCode from AddTag where TagID = '" + int.Parse(tagID.Text) + "' ", con);
+                SqlCommand command3 = new SqlCommand("select RelatedTag from AddTag where TagID = '" + int.Parse(tagID.Text) + "' ", con);
+
+                String tag_name = command1.ExecuteScalar().ToString();
+                String tag_code = command2.ExecuteScalar().ToString();
+                String related_tag = command3.ExecuteScalar().ToString();
+
+
+                tagName.Text = tag_name;
+                tagCode.Text = tag_code;
+                relatedTagComboBox.Text = related_tag;
+
+                con.Close();
+            }
+            else
+            {
+                MessageBox.Show("Enter the Tag ID");
+            }
+  
         }
     }
 }

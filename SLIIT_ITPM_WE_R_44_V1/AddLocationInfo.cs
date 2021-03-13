@@ -102,5 +102,54 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 MessageBox.Show("Enter The Location ID here...!");
             }
         }
+
+        private void toUpdate_Click(object sender, EventArgs e)
+        {
+            if (locationID.Text != "")
+            {
+
+                con.Open();
+                SqlCommand command1 = new SqlCommand("select BuildingName from AddLocation where LocationID = '" + int.Parse(locationID.Text) + "' ", con);
+                SqlCommand command2 = new SqlCommand("select RoomName from AddLocation where LocationID = '" + int.Parse(locationID.Text) + "' ", con);
+                SqlCommand command3 = new SqlCommand("select Capacity from AddLocation where LocationID = '" + int.Parse(locationID.Text) + "' ", con);
+                SqlCommand command4 = new SqlCommand("select RoomType from AddLocation where LocationID = '" + int.Parse(locationID.Text) + "' ", con);
+                
+
+
+                String building_name = command1.ExecuteScalar().ToString();
+                String room_name = command2.ExecuteScalar().ToString();
+                String capacity = command3.ExecuteScalar().ToString();
+                String room_type = command4.ExecuteScalar().ToString();
+
+
+
+                buildingNameComboBox.Text = building_name;
+                textRoomName.Text = room_name;
+                capacityComboBox.Text = capacity;
+                
+
+                if(room_type == "Lecture Hall")
+                {
+                    lectureHallRadioButton.Checked = true;
+                }
+                else
+                {
+                    laboratoryRadioButton.Checked = true;
+                }
+
+
+                con.Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Enter the Tag ID");
+            }
+        }
+
+        private void AddLocationInfo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

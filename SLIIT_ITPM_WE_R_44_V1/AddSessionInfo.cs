@@ -123,5 +123,51 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 MessageBox.Show("Enter The Session ID here...!");
             }
         }
+
+        private void toUpdate_Click(object sender, EventArgs e)
+        {
+
+            if (sessionID.Text != "")
+            {
+
+                con.Open();
+                SqlCommand command1 = new SqlCommand("select Tag from AddSession where SessionID = '" + int.Parse(sessionID.Text) + "' ", con);
+                SqlCommand command2 = new SqlCommand("select Lecturer1 from AddSession where SessionID = '" + int.Parse(sessionID.Text) + "' ", con);
+                SqlCommand command3 = new SqlCommand("select Lecturer2 from AddSession where SessionID = '" + int.Parse(sessionID.Text) + "' ", con);
+                SqlCommand command4 = new SqlCommand("select Hrs from AddSession where SessionID = '" + int.Parse(sessionID.Text) + "' ", con);
+                SqlCommand command5 = new SqlCommand("select Min from AddSession where SessionID = '" + int.Parse(sessionID.Text) + "' ", con);
+                SqlCommand command6 = new SqlCommand("select NoOfStudents from AddSession where SessionID = '" + int.Parse(sessionID.Text) + "' ", con);
+                SqlCommand command7 = new SqlCommand("select Subject from AddSession where SessionID = '" + int.Parse(sessionID.Text) + "' ", con);
+                SqlCommand command8 = new SqlCommand("select StudentGroup from AddSession where SessionID = '" + int.Parse(sessionID.Text) + "' ", con);
+
+
+                String tag = command1.ExecuteScalar().ToString();
+                String lecturer1 = command2.ExecuteScalar().ToString();
+                String lecturer2 = command3.ExecuteScalar().ToString();
+                String hrs = command4.ExecuteScalar().ToString();
+                String min = command5.ExecuteScalar().ToString();
+                String no_of_student = command6.ExecuteScalar().ToString();
+                String subject = command7.ExecuteScalar().ToString();
+                String student_group = command8.ExecuteScalar().ToString();
+
+
+                selectTagcomboBox.Text = tag;
+                selectLecturercomboBox1.Text = lecturer1;
+                selectLecturercomboBox2.Text = lecturer2;
+                addHour.Text = hrs;
+                addMin.Text = min;
+                noOfStudent.Text = no_of_student;
+                selectSubjectComboBox.Text = subject;
+                selectGroupComboBox.Text = student_group;
+
+
+                con.Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Enter the Employee ID");
+            }
+        }
     }
 }

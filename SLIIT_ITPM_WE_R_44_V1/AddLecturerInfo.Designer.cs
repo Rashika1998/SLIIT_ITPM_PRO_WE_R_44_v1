@@ -69,6 +69,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label4 = new System.Windows.Forms.Label();
             this.facultyComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.toUpdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -127,6 +129,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Controls.Add(this.richTextBox2);
+            this.panel2.Controls.Add(this.toUpdate);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.textRank);
             this.panel2.Controls.Add(this.label9);
@@ -440,7 +444,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             "IT",
             "BM",
             "EN"});
-            this.departmentComboBox.Location = new System.Drawing.Point(196, 206);
+            this.departmentComboBox.Location = new System.Drawing.Point(196, 334);
             this.departmentComboBox.Name = "departmentComboBox";
             this.departmentComboBox.Size = new System.Drawing.Size(167, 21);
             this.departmentComboBox.TabIndex = 53;
@@ -450,7 +454,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(47, 206);
+            this.label5.Location = new System.Drawing.Point(47, 334);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 21);
             this.label5.TabIndex = 52;
@@ -458,7 +462,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // txtLecturerName
             // 
-            this.txtLecturerName.Location = new System.Drawing.Point(197, 111);
+            this.txtLecturerName.Location = new System.Drawing.Point(197, 239);
             this.txtLecturerName.Name = "txtLecturerName";
             this.txtLecturerName.Size = new System.Drawing.Size(166, 20);
             this.txtLecturerName.TabIndex = 51;
@@ -468,7 +472,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(47, 111);
+            this.label2.Location = new System.Drawing.Point(47, 239);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 21);
             this.label2.TabIndex = 50;
@@ -562,7 +566,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             "Computing",
             "Business",
             "Engineering"});
-            this.facultyComboBox.Location = new System.Drawing.Point(196, 160);
+            this.facultyComboBox.Location = new System.Drawing.Point(196, 288);
             this.facultyComboBox.Name = "facultyComboBox";
             this.facultyComboBox.Size = new System.Drawing.Size(167, 21);
             this.facultyComboBox.TabIndex = 43;
@@ -572,11 +576,37 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(47, 160);
+            this.label1.Location = new System.Drawing.Point(47, 288);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 21);
             this.label1.TabIndex = 42;
             this.label1.Text = "Faculty";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox2.Location = new System.Drawing.Point(196, 150);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(151, 41);
+            this.richTextBox2.TabIndex = 66;
+            this.richTextBox2.Text = "enter the lecturer ID to get other details.";
+            // 
+            // toUpdate
+            // 
+            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
+            this.toUpdate.FlatAppearance.BorderSize = 0;
+            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toUpdate.ForeColor = System.Drawing.Color.White;
+            this.toUpdate.Location = new System.Drawing.Point(196, 120);
+            this.toUpdate.Name = "toUpdate";
+            this.toUpdate.Size = new System.Drawing.Size(75, 23);
+            this.toUpdate.TabIndex = 65;
+            this.toUpdate.Text = "Update?";
+            this.toUpdate.UseVisualStyleBackColor = false;
+            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
             // 
             // AddLecturerInfo
             // 
@@ -643,5 +673,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button toUpdate;
     }
 }

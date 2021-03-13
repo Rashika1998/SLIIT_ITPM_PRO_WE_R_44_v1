@@ -60,6 +60,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.yearComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.toUpdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subGroupNumber)).BeginInit();
@@ -119,6 +121,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Controls.Add(this.richTextBox2);
+            this.panel2.Controls.Add(this.toUpdate);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
@@ -387,7 +391,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             "Information Technology",
             "Business Management",
             "Engineering"});
-            this.programComboBox.Location = new System.Drawing.Point(233, 253);
+            this.programComboBox.Location = new System.Drawing.Point(233, 338);
             this.programComboBox.Name = "programComboBox";
             this.programComboBox.Size = new System.Drawing.Size(197, 21);
             this.programComboBox.TabIndex = 26;
@@ -397,7 +401,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(74, 254);
+            this.label3.Location = new System.Drawing.Point(74, 339);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 21);
             this.label3.TabIndex = 25;
@@ -409,7 +413,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.semesterComboBox.Items.AddRange(new object[] {
             "S1",
             "S2"});
-            this.semesterComboBox.Location = new System.Drawing.Point(233, 182);
+            this.semesterComboBox.Location = new System.Drawing.Point(233, 267);
             this.semesterComboBox.Name = "semesterComboBox";
             this.semesterComboBox.Size = new System.Drawing.Size(197, 21);
             this.semesterComboBox.TabIndex = 24;
@@ -422,7 +426,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             "Y2",
             "Y3",
             "Y4"});
-            this.yearComboBox.Location = new System.Drawing.Point(236, 111);
+            this.yearComboBox.Location = new System.Drawing.Point(236, 196);
             this.yearComboBox.Name = "yearComboBox";
             this.yearComboBox.Size = new System.Drawing.Size(194, 21);
             this.yearComboBox.TabIndex = 23;
@@ -432,7 +436,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(71, 182);
+            this.label2.Location = new System.Drawing.Point(71, 267);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 21);
             this.label2.TabIndex = 22;
@@ -443,11 +447,37 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(74, 111);
+            this.label1.Location = new System.Drawing.Point(74, 196);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 21);
             this.label1.TabIndex = 21;
             this.label1.Text = "Academic Year";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox2.Location = new System.Drawing.Point(233, 126);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(151, 41);
+            this.richTextBox2.TabIndex = 51;
+            this.richTextBox2.Text = "enter the student group ID to get other details.";
+            // 
+            // toUpdate
+            // 
+            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
+            this.toUpdate.FlatAppearance.BorderSize = 0;
+            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toUpdate.ForeColor = System.Drawing.Color.White;
+            this.toUpdate.Location = new System.Drawing.Point(233, 96);
+            this.toUpdate.Name = "toUpdate";
+            this.toUpdate.Size = new System.Drawing.Size(75, 23);
+            this.toUpdate.TabIndex = 50;
+            this.toUpdate.Text = "Update?";
+            this.toUpdate.UseVisualStyleBackColor = false;
+            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
             // 
             // AddStudentGroupInfo
             // 
@@ -505,5 +535,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button toUpdate;
     }
 }

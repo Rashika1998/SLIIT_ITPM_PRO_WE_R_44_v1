@@ -65,6 +65,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addHour = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.toUpdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -124,6 +126,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.richTextBox2);
+            this.panel2.Controls.Add(this.toUpdate);
             this.panel2.Controls.Add(this.btnShowSelectedLecturers);
             this.panel2.Controls.Add(this.btnClear1);
             this.panel2.Controls.Add(this.selectedLecturers);
@@ -221,7 +225,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.selectLecturercomboBox2.Items.AddRange(new object[] {
             "Mr. Manjula Sirisena",
             "Ms. Kavindi Gunasingha"});
-            this.selectLecturercomboBox2.Location = new System.Drawing.Point(613, 111);
+            this.selectLecturercomboBox2.Location = new System.Drawing.Point(613, 134);
             this.selectLecturercomboBox2.Name = "selectLecturercomboBox2";
             this.selectLecturercomboBox2.Size = new System.Drawing.Size(194, 21);
             this.selectLecturercomboBox2.TabIndex = 6;
@@ -231,7 +235,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(480, 111);
+            this.label4.Location = new System.Drawing.Point(480, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 17);
             this.label4.TabIndex = 5;
@@ -243,7 +247,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.selectLecturercomboBox1.Items.AddRange(new object[] {
             "Mr. Manjula Sirisena",
             "Ms. Kavindi Gunasingha"});
-            this.selectLecturercomboBox1.Location = new System.Drawing.Point(183, 111);
+            this.selectLecturercomboBox1.Location = new System.Drawing.Point(615, 84);
             this.selectLecturercomboBox1.Name = "selectLecturercomboBox1";
             this.selectLecturercomboBox1.Size = new System.Drawing.Size(194, 21);
             this.selectLecturercomboBox1.TabIndex = 4;
@@ -271,7 +275,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(50, 111);
+            this.label2.Location = new System.Drawing.Point(482, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 17);
             this.label2.TabIndex = 1;
@@ -517,6 +521,32 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label13.TabIndex = 0;
             this.label13.Text = "Step 02";
             // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox2.Location = new System.Drawing.Point(187, 123);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(151, 41);
+            this.richTextBox2.TabIndex = 68;
+            this.richTextBox2.Text = "enter the lecturer ID to get other details.";
+            // 
+            // toUpdate
+            // 
+            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
+            this.toUpdate.FlatAppearance.BorderSize = 0;
+            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toUpdate.ForeColor = System.Drawing.Color.White;
+            this.toUpdate.Location = new System.Drawing.Point(187, 94);
+            this.toUpdate.Name = "toUpdate";
+            this.toUpdate.Size = new System.Drawing.Size(75, 23);
+            this.toUpdate.TabIndex = 67;
+            this.toUpdate.Text = "Update?";
+            this.toUpdate.UseVisualStyleBackColor = false;
+            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
+            // 
             // AddSessionInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -579,5 +609,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.TextBox addMin;
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnShowSelectedLecturers;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button toUpdate;
     }
 }

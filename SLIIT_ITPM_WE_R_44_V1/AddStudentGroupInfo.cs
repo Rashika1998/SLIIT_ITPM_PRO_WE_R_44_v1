@@ -115,5 +115,43 @@ namespace SLIIT_ITPM_WE_R_44_V1
             AddStudentGroupInfoDisplay addStudentGroupInfoDisplay = new AddStudentGroupInfoDisplay();
             addStudentGroupInfoDisplay.ShowDialog();
         }
+
+        private void toUpdate_Click(object sender, EventArgs e)
+        {
+            if (studentGroupID.Text != "")
+            {
+                con.Open();
+                SqlCommand command1 = new SqlCommand("select AcademicYear from AddStudentGroup where StudentGroupID = '" + int.Parse(studentGroupID.Text) + "' ", con);
+                SqlCommand command2 = new SqlCommand("select AcademicSemester from AddStudentGroup where StudentGroupID = '" + int.Parse(studentGroupID.Text) + "' ", con);
+                SqlCommand command3 = new SqlCommand("select Program from AddStudentGroup where StudentGroupID = '" + int.Parse(studentGroupID.Text) + "' ", con);
+                SqlCommand command4 = new SqlCommand("select GroupNo from AddStudentGroup where StudentGroupID = '" + int.Parse(studentGroupID.Text) + "' ", con);
+                SqlCommand command5 = new SqlCommand("select SubGroupNo from AddStudentGroup where StudentGroupID = '" + int.Parse(studentGroupID.Text) + "' ", con);
+                
+
+
+                String academic_year = command1.ExecuteScalar().ToString();
+                String academic_semester = command2.ExecuteScalar().ToString();
+                String program = command3.ExecuteScalar().ToString();
+                String group_no = command4.ExecuteScalar().ToString();
+                String sub_group_no = command5.ExecuteScalar().ToString();
+
+
+                yearComboBox.Text = academic_year;
+                semesterComboBox.Text = academic_semester;
+                programComboBox.Text = program;
+                groupNumber.Value = int.Parse(group_no);
+                subGroupNumber.Value = int.Parse(sub_group_no);
+
+
+                con.Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Enter the Student Group ID");
+            }
+
+
+        }
     }
 }

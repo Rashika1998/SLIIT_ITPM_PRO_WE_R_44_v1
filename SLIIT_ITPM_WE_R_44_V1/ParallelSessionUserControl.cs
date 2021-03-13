@@ -14,7 +14,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
     public partial class ParallelSessionUserControl : UserControl
     {
 
-        public string sampleValueForID = "null";
+        
         public ParallelSessionUserControl()
         {
             InitializeComponent();
@@ -51,12 +51,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         void insertData()
         {
+
             con.Open();
-            SqlCommand command = new SqlCommand("INSERT INTO AddConsecutiveSession VALUES ('" + sampleValueForID + "' , '" + ids + "')", con);
+            SqlCommand command = new SqlCommand("INSERT INTO AddParallelSession VALUES ('" + int.Parse(textParallelSessionID.Text) + "' , '" + ids + "')", con);
             command.ExecuteNonQuery();
             MessageBox.Show("Successfully Inserted.");
             con.Close();
-            
             
         }
 
@@ -87,19 +87,18 @@ namespace SLIIT_ITPM_WE_R_44_V1
                         ids += "," + Convert.ToString(row.Cells["SessionID"].Value);
                         
                     }
-
-                    
-
-                    
+    
                 }
                 
-
             }
-            MessageBox.Show(ids);
+            
 
             if(ids != "")
             {
-                insertData();
+                if (MessageBox.Show("Selected Session(s) : " + ids, "Add Selected Session(s)...?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    insertData();
+                }
             }
             else
             {
@@ -108,9 +107,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
             //Most important thing I have found
             ids = "";
-            this.parallelSessionDataGridView.Refresh();
-
-
 
         }
     }
