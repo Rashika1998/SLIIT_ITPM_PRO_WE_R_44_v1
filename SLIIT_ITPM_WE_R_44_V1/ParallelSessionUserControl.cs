@@ -32,7 +32,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         void BindData()
         {
             con.Open();
-            SqlCommand command = new SqlCommand("select * from ProductInfo_Tab", con);
+            SqlCommand command = new SqlCommand("select * from AddSession", con);
             SqlDataAdapter sd = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             sd.Fill(dt);
@@ -43,7 +43,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             dataCheckBox.Width = 30;
             dataCheckBox.Name = "Checkbox";
             parallelSessionDataGridView.Columns.Insert(0, dataCheckBox);
-
+            
             con.Close();
 
         }
@@ -56,7 +56,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             command.ExecuteNonQuery();
             MessageBox.Show("Successfully Inserted.");
             con.Close();
-            this.Refresh();
+            
+            
         }
 
 
@@ -64,7 +65,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         string ids = string.Empty;
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //string ids = string.Empty;
+            
             int i = 0;
 
             foreach (DataGridViewRow row in parallelSessionDataGridView.Rows)
@@ -74,19 +75,25 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 if (isSelected)
                 {
 
-                    //ids += Environment.NewLine;
                     if(i == 0)
                     {
-                        ids += Convert.ToString(row.Cells["ProductID"].Value);
+                   
+                        ids += Convert.ToString(row.Cells["SessionID"].Value);
                         i++;
+
                     }
                     else
                     {
-                        ids += "," + Convert.ToString(row.Cells["ProductID"].Value);
+                        ids += "," + Convert.ToString(row.Cells["SessionID"].Value);
+                        
                     }
 
                     
+
+                    
                 }
+                
+
             }
             MessageBox.Show(ids);
 
@@ -98,6 +105,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             {
                 MessageBox.Show("Select Session IDs.");
             }
+
+            //Most important thing I have found
+            ids = "";
+            this.parallelSessionDataGridView.Refresh();
+
 
 
         }
