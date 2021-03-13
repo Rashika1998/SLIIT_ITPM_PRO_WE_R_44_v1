@@ -34,6 +34,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAboutUs = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.sessionAndNotAvailableTimeAllocation = new System.Windows.Forms.Button();
             this.btnStatisticsView = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,7 +47,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddSession = new System.Windows.Forms.Button();
             this.addTagInfo = new System.Windows.Forms.Button();
             this.addStudentGroup = new System.Windows.Forms.Button();
-            this.sessionAndNotAvailableTimeAllocation = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.dashBoardPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +55,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // dashBoardPanel
             // 
             this.dashBoardPanel.BackColor = System.Drawing.Color.Teal;
+            this.dashBoardPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dashBoardPanel.Controls.Add(this.label9);
             this.dashBoardPanel.Controls.Add(this.btnAboutUs);
             this.dashBoardPanel.Controls.Add(this.label1);
@@ -69,7 +71,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(823, 23);
+            this.label9.Location = new System.Drawing.Point(821, 23);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(137, 15);
             this.label9.TabIndex = 5;
@@ -82,7 +84,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAboutUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAboutUs.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutUs.ForeColor = System.Drawing.Color.White;
-            this.btnAboutUs.Location = new System.Drawing.Point(854, 40);
+            this.btnAboutUs.Location = new System.Drawing.Point(852, 40);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.Size = new System.Drawing.Size(113, 34);
             this.btnAboutUs.TabIndex = 4;
@@ -96,7 +98,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(263, 23);
+            this.label1.Location = new System.Drawing.Point(262, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(491, 37);
             this.label1.TabIndex = 0;
@@ -104,7 +106,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.sessionAndNotAvailableTimeAllocation);
             this.panel1.Controls.Add(this.btnStatisticsView);
             this.panel1.Controls.Add(this.label4);
@@ -123,6 +126,22 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(232, 568);
             this.panel1.TabIndex = 1;
+            // 
+            // sessionAndNotAvailableTimeAllocation
+            // 
+            this.sessionAndNotAvailableTimeAllocation.BackColor = System.Drawing.Color.Transparent;
+            this.sessionAndNotAvailableTimeAllocation.FlatAppearance.BorderSize = 0;
+            this.sessionAndNotAvailableTimeAllocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sessionAndNotAvailableTimeAllocation.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessionAndNotAvailableTimeAllocation.ForeColor = System.Drawing.Color.Gray;
+            this.sessionAndNotAvailableTimeAllocation.Location = new System.Drawing.Point(32, 375);
+            this.sessionAndNotAvailableTimeAllocation.Name = "sessionAndNotAvailableTimeAllocation";
+            this.sessionAndNotAvailableTimeAllocation.Size = new System.Drawing.Size(172, 49);
+            this.sessionAndNotAvailableTimeAllocation.TabIndex = 13;
+            this.sessionAndNotAvailableTimeAllocation.Text = "Add Session And Not Available Time Allocation";
+            this.sessionAndNotAvailableTimeAllocation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sessionAndNotAvailableTimeAllocation.UseVisualStyleBackColor = false;
+            this.sessionAndNotAvailableTimeAllocation.Click += new System.EventHandler(this.sessionAndNotAvailableTimeAllocation_Click);
             // 
             // btnStatisticsView
             // 
@@ -186,7 +205,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(48, 542);
+            this.label2.Location = new System.Drawing.Point(48, 538);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 17);
             this.label2.TabIndex = 5;
@@ -248,7 +267,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSampleCrud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSampleCrud.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSampleCrud.ForeColor = System.Drawing.Color.DimGray;
-            this.btnSampleCrud.Location = new System.Drawing.Point(16, 505);
+            this.btnSampleCrud.Location = new System.Drawing.Point(32, 501);
             this.btnSampleCrud.Name = "btnSampleCrud";
             this.btnSampleCrud.Size = new System.Drawing.Size(130, 34);
             this.btnSampleCrud.TabIndex = 3;
@@ -305,21 +324,14 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroup.UseVisualStyleBackColor = false;
             this.addStudentGroup.Click += new System.EventHandler(this.addStudentGroup_Click);
             // 
-            // sessionAndNotAvailableTimeAllocation
+            // panel2
             // 
-            this.sessionAndNotAvailableTimeAllocation.BackColor = System.Drawing.Color.Transparent;
-            this.sessionAndNotAvailableTimeAllocation.FlatAppearance.BorderSize = 0;
-            this.sessionAndNotAvailableTimeAllocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sessionAndNotAvailableTimeAllocation.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sessionAndNotAvailableTimeAllocation.ForeColor = System.Drawing.Color.Gray;
-            this.sessionAndNotAvailableTimeAllocation.Location = new System.Drawing.Point(32, 375);
-            this.sessionAndNotAvailableTimeAllocation.Name = "sessionAndNotAvailableTimeAllocation";
-            this.sessionAndNotAvailableTimeAllocation.Size = new System.Drawing.Size(172, 49);
-            this.sessionAndNotAvailableTimeAllocation.TabIndex = 13;
-            this.sessionAndNotAvailableTimeAllocation.Text = "Add Session And Not Available Time Allocation";
-            this.sessionAndNotAvailableTimeAllocation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sessionAndNotAvailableTimeAllocation.UseVisualStyleBackColor = false;
-            this.sessionAndNotAvailableTimeAllocation.Click += new System.EventHandler(this.sessionAndNotAvailableTimeAllocation_Click);
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(232, 93);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(752, 568);
+            this.panel2.TabIndex = 2;
             // 
             // Dashboard
             // 
@@ -327,6 +339,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dashBoardPanel);
             this.Name = "Dashboard";
@@ -362,5 +375,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnStatisticsView;
         private System.Windows.Forms.Button sessionAndNotAvailableTimeAllocation;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -44,7 +44,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label4 = new System.Windows.Forms.Label();
             this.selectLecturercomboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.recordID = new System.Windows.Forms.TextBox();
+            this.sessionID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -134,7 +134,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.selectLecturercomboBox1);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.recordID);
+            this.panel2.Controls.Add(this.sessionID);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(57, 94);
@@ -255,16 +255,16 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label3.ForeColor = System.Drawing.Color.Gray;
             this.label3.Location = new System.Drawing.Point(50, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 17);
+            this.label3.Size = new System.Drawing.Size(70, 17);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Record ID";
+            this.label3.Text = "Session ID";
             // 
-            // recordID
+            // sessionID
             // 
-            this.recordID.Location = new System.Drawing.Point(183, 42);
-            this.recordID.Name = "recordID";
-            this.recordID.Size = new System.Drawing.Size(194, 20);
-            this.recordID.TabIndex = 2;
+            this.sessionID.Location = new System.Drawing.Point(183, 42);
+            this.sessionID.Name = "sessionID";
+            this.sessionID.Size = new System.Drawing.Size(194, 20);
+            this.sessionID.TabIndex = 2;
             // 
             // label2
             // 
@@ -556,7 +556,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox selectLecturercomboBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox recordID;
+        private System.Windows.Forms.TextBox sessionID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClear1;

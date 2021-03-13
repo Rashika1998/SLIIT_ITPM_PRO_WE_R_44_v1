@@ -29,7 +29,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         public void cleanInputFields()
         {
-            recordID.Text = "";
+            sessionID.Text = "";
             selectTagcomboBox.Text = "";
             selectLecturercomboBox1.Text = "";
             selectLecturercomboBox2.Text = "";
@@ -44,13 +44,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand command = new SqlCommand("insert into AddSession values ('" + int.Parse(recordID.Text) + "' , '" + selectTagcomboBox.Text + "' , '" + selectLecturercomboBox1.Text + "' , '" + selectLecturercomboBox2.Text + "' , '" + addHour.Text + "' , '" + addMin.Text + "' , '" + noOfStudent.Text + "' , '" + selectSubjectComboBox.Text + "' , '" + selectGroupComboBox.Text + "' , getdate() , getdate())", con);
+            SqlCommand command = new SqlCommand("insert into AddSession values ('" + int.Parse(sessionID.Text) + "' , '" + selectTagcomboBox.Text + "' , '" + selectLecturercomboBox1.Text + "' , '" + selectLecturercomboBox2.Text + "' , '" + addHour.Text + "' , '" + addMin.Text + "' , '" + noOfStudent.Text + "' , '" + selectSubjectComboBox.Text + "' , '" + selectGroupComboBox.Text + "' , getdate() , getdate())", con);
             command.ExecuteNonQuery();
             MessageBox.Show("Successfully Inserted.");
             con.Close();
             cleanInputFields();
-            //Display data on gridview
-            //BindData();
+            
         }
 
         private void btnView_Click(object sender, EventArgs e)
@@ -72,7 +71,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void btnClear1_Click(object sender, EventArgs e)
         {
-            recordID.Text = "";
+            sessionID.Text = "";
             selectTagcomboBox.Text = "";
             selectLecturercomboBox1.Text = "";
             selectLecturercomboBox2.Text = "";
@@ -93,7 +92,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand command = new SqlCommand("update AddSession set Tag = '" + selectTagcomboBox.Text + "' , Lecturer1 = '" + selectLecturercomboBox1.Text + "' , Lecturer2 = '" + selectLecturercomboBox2.Text + "' , Hrs = '" + addHour.Text + "' , Min = '" + addMin.Text + "' , NoOfStudents = '" + noOfStudent.Text + "' , Subject = '" + selectSubjectComboBox.Text + "' , StudentGroup = '" + selectGroupComboBox.Text + "' , UpdateDate = getdate() where RecordID = '" + int.Parse(recordID.Text) + "'", con);
+            SqlCommand command = new SqlCommand("update AddSession set Tag = '" + selectTagcomboBox.Text + "' , Lecturer1 = '" + selectLecturercomboBox1.Text + "' , Lecturer2 = '" + selectLecturercomboBox2.Text + "' , Hrs = '" + addHour.Text + "' , Min = '" + addMin.Text + "' , NoOfStudents = '" + noOfStudent.Text + "' , Subject = '" + selectSubjectComboBox.Text + "' , StudentGroup = '" + selectGroupComboBox.Text + "' , UpdateDate = getdate() where SessionID = '" + int.Parse(sessionID.Text) + "'", con);
             command.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Successfully Updated.");
@@ -103,24 +102,25 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (recordID.Text != "")
+            if (sessionID.Text != "")
             {
 
                 if (MessageBox.Show("Are you sure to delete ..?", "Delete Record", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
 
                     con.Open();
-                    SqlCommand command = new SqlCommand("Delete AddSession where RecordID = '" + int.Parse(recordID.Text) + "'", con);
+                    SqlCommand command = new SqlCommand("Delete AddSession where SessionID = '" + int.Parse(sessionID.Text) + "'", con);
                     command.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Successfully Deleted.");
+                    cleanInputFields();
 
                 }
 
             }
             else
             {
-                MessageBox.Show("Enter The Record ID here...!");
+                MessageBox.Show("Enter The Session ID here...!");
             }
         }
     }
