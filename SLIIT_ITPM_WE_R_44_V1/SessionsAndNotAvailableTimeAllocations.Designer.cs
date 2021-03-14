@@ -37,10 +37,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnParallel = new System.Windows.Forms.Button();
             this.btnNonOverlapping = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.userControlType = new System.Windows.Forms.Label();
             this.nonOverlappingUserControl1 = new SLIIT_ITPM_WE_R_44_V1.NonOverlappingUserControl();
             this.parallelSessionUserControl1 = new SLIIT_ITPM_WE_R_44_V1.ParallelSessionUserControl();
             this.consecutiveSessionUserControl1 = new SLIIT_ITPM_WE_R_44_V1.ConsecutiveSessionUserControl();
-            this.userControlType = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,7 +101,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddConsecutiveSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddConsecutiveSession.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddConsecutiveSession.ForeColor = System.Drawing.Color.White;
-            this.btnAddConsecutiveSession.Location = new System.Drawing.Point(94, 93);
+            this.btnAddConsecutiveSession.Location = new System.Drawing.Point(57, 93);
             this.btnAddConsecutiveSession.Name = "btnAddConsecutiveSession";
             this.btnAddConsecutiveSession.Size = new System.Drawing.Size(173, 32);
             this.btnAddConsecutiveSession.TabIndex = 26;
@@ -117,7 +117,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnParallel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnParallel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnParallel.ForeColor = System.Drawing.Color.White;
-            this.btnParallel.Location = new System.Drawing.Point(288, 93);
+            this.btnParallel.Location = new System.Drawing.Point(236, 93);
             this.btnParallel.Name = "btnParallel";
             this.btnParallel.Size = new System.Drawing.Size(178, 32);
             this.btnParallel.TabIndex = 28;
@@ -133,7 +133,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnNonOverlapping.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNonOverlapping.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNonOverlapping.ForeColor = System.Drawing.Color.White;
-            this.btnNonOverlapping.Location = new System.Drawing.Point(485, 93);
+            this.btnNonOverlapping.Location = new System.Drawing.Point(420, 93);
             this.btnNonOverlapping.Name = "btnNonOverlapping";
             this.btnNonOverlapping.Size = new System.Drawing.Size(191, 32);
             this.btnNonOverlapping.TabIndex = 29;
@@ -149,12 +149,24 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(692, 93);
+            this.button1.Location = new System.Drawing.Point(617, 93);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(191, 32);
             this.button1.TabIndex = 30;
             this.button1.Text = "Not Available Time";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // userControlType
+            // 
+            this.userControlType.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.userControlType.AutoSize = true;
+            this.userControlType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlType.ForeColor = System.Drawing.Color.Gray;
+            this.userControlType.Location = new System.Drawing.Point(412, 134);
+            this.userControlType.Name = "userControlType";
+            this.userControlType.Size = new System.Drawing.Size(165, 17);
+            this.userControlType.TabIndex = 34;
+            this.userControlType.Text = "Add Consecutive Sessions";
             // 
             // nonOverlappingUserControl1
             // 
@@ -182,18 +194,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.consecutiveSessionUserControl1.Name = "consecutiveSessionUserControl1";
             this.consecutiveSessionUserControl1.Size = new System.Drawing.Size(946, 495);
             this.consecutiveSessionUserControl1.TabIndex = 31;
-            // 
-            // userControlType
-            // 
-            this.userControlType.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.userControlType.AutoSize = true;
-            this.userControlType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControlType.ForeColor = System.Drawing.Color.Gray;
-            this.userControlType.Location = new System.Drawing.Point(412, 134);
-            this.userControlType.Name = "userControlType";
-            this.userControlType.Size = new System.Drawing.Size(165, 17);
-            this.userControlType.TabIndex = 34;
-            this.userControlType.Text = "Add Consecutive Sessions";
             // 
             // SessionsAndNotAvailableTimeAllocations
             // 

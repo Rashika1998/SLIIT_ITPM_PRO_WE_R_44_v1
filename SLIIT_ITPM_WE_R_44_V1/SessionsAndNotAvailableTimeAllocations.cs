@@ -26,6 +26,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             consecutiveSessionUserControl1.BringToFront();
             userControlType.Text = "Add Consecutive Sessions";
 
+            //btn colors
+            btnAddConsecutiveSession.BackColor = Color.DarkOrange;
+            btnParallel.BackColor = Color.Teal;
+            btnNonOverlapping.BackColor = Color.Teal;
+
         }
 
         private void btnParallel_Click(object sender, EventArgs e)
@@ -35,6 +40,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             parallelSessionUserControl1.Visible = true;
             parallelSessionUserControl1.BringToFront();
             userControlType.Text = "Add Parallel Sessions";
+
+            //btn colors
+            btnParallel.BackColor = Color.DarkOrange;
+            btnAddConsecutiveSession.BackColor = Color.Teal;
+            btnNonOverlapping.BackColor = Color.Teal;
         }
 
         private void SessionsAndNotAvailableTimeAllocations_Load(object sender, EventArgs e)
@@ -44,6 +54,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             consecutiveSessionUserControl1.Visible = true;
             consecutiveSessionUserControl1.BringToFront();
             userControlType.Text = "Add Consecutive Sessions";
+            btnAddConsecutiveSession.BackColor = Color.DarkOrange;
         }
 
         private void btnNonOverlapping_Click(object sender, EventArgs e)
@@ -53,6 +64,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             nonOverlappingUserControl1.Visible = true;
             nonOverlappingUserControl1.BringToFront();
             userControlType.Text = "Add Non Overlapping Sessions";
+
+            //btn color
+            btnNonOverlapping.BackColor = Color.DarkOrange;
+            btnAddConsecutiveSession.BackColor = Color.Teal;
+            btnParallel.BackColor = Color.Teal;
         }
     }
 }
