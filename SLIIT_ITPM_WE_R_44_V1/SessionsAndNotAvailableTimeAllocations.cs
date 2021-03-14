@@ -21,23 +21,38 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
 
             parallelSessionUserControl1.Visible = false;
+            nonOverlappingUserControl1.Visible = false;
             consecutiveSessionUserControl1.Visible = true;
             consecutiveSessionUserControl1.BringToFront();
+            userControlType.Text = "Add Consecutive Sessions";
 
         }
 
         private void btnParallel_Click(object sender, EventArgs e)
         {
             consecutiveSessionUserControl1.Visible = false;
+            nonOverlappingUserControl1.Visible = false;
             parallelSessionUserControl1.Visible = true;
             parallelSessionUserControl1.BringToFront();
+            userControlType.Text = "Add Parallel Sessions";
         }
 
         private void SessionsAndNotAvailableTimeAllocations_Load(object sender, EventArgs e)
         {
             parallelSessionUserControl1.Visible = false;
+            nonOverlappingUserControl1.Visible = false;
             consecutiveSessionUserControl1.Visible = true;
             consecutiveSessionUserControl1.BringToFront();
+            userControlType.Text = "Add Consecutive Sessions";
+        }
+
+        private void btnNonOverlapping_Click(object sender, EventArgs e)
+        {
+            consecutiveSessionUserControl1.Visible = false;
+            parallelSessionUserControl1.Visible = false;
+            nonOverlappingUserControl1.Visible = true;
+            nonOverlappingUserControl1.BringToFront();
+            userControlType.Text = "Add Non Overlapping Sessions";
         }
     }
 }

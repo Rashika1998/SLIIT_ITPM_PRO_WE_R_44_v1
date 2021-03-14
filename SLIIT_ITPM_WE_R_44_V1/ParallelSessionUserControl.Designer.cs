@@ -46,7 +46,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnView.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnView.ForeColor = System.Drawing.Color.White;
-            this.btnView.Location = new System.Drawing.Point(781, 447);
+            this.btnView.Location = new System.Drawing.Point(778, 441);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(106, 35);
             this.btnView.TabIndex = 5;
@@ -61,7 +61,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(669, 447);
+            this.btnSave.Location = new System.Drawing.Point(657, 441);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(106, 35);
             this.btnSave.TabIndex = 4;
@@ -75,7 +75,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.parallelSessionDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.parallelSessionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.parallelSessionDataGridView.GridColor = System.Drawing.Color.White;
-            this.parallelSessionDataGridView.Location = new System.Drawing.Point(13, 19);
+            this.parallelSessionDataGridView.Location = new System.Drawing.Point(15, 16);
             this.parallelSessionDataGridView.Name = "parallelSessionDataGridView";
             this.parallelSessionDataGridView.Size = new System.Drawing.Size(874, 407);
             this.parallelSessionDataGridView.TabIndex = 3;

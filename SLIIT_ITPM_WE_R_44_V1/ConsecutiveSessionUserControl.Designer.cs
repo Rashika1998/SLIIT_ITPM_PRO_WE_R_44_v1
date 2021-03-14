@@ -44,9 +44,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.consecutiveSessionDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.consecutiveSessionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.consecutiveSessionDataGridView.GridColor = System.Drawing.Color.White;
-            this.consecutiveSessionDataGridView.Location = new System.Drawing.Point(12, 20);
+            this.consecutiveSessionDataGridView.Location = new System.Drawing.Point(15, 16);
             this.consecutiveSessionDataGridView.Name = "consecutiveSessionDataGridView";
-            this.consecutiveSessionDataGridView.Size = new System.Drawing.Size(874, 401);
+            this.consecutiveSessionDataGridView.Size = new System.Drawing.Size(874, 404);
             this.consecutiveSessionDataGridView.TabIndex = 0;
             // 
             // btnSave
@@ -86,7 +86,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(250, 465);
+            this.label2.Location = new System.Drawing.Point(250, 471);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 17);
             this.label2.TabIndex = 11;
@@ -95,7 +95,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // textConsecutiveSessionID
             // 
             this.textConsecutiveSessionID.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textConsecutiveSessionID.Location = new System.Drawing.Point(253, 442);
+            this.textConsecutiveSessionID.Location = new System.Drawing.Point(253, 448);
             this.textConsecutiveSessionID.Name = "textConsecutiveSessionID";
             this.textConsecutiveSessionID.Size = new System.Drawing.Size(266, 20);
             this.textConsecutiveSessionID.TabIndex = 10;
@@ -106,7 +106,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(8, 442);
+            this.label1.Location = new System.Drawing.Point(8, 448);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(227, 21);
             this.label1.TabIndex = 9;
