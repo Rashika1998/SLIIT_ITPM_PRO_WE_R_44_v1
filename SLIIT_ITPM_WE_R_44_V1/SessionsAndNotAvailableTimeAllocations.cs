@@ -28,8 +28,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
             //btn colors
             btnAddConsecutiveSession.BackColor = Color.DarkOrange;
-            btnParallel.BackColor = Color.Teal;
-            btnNonOverlapping.BackColor = Color.Teal;
+            btnParallel.BackColor = Color.DimGray;
+            btnNonOverlapping.BackColor = Color.DimGray;
 
         }
 
@@ -43,8 +43,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
             //btn colors
             btnParallel.BackColor = Color.DarkOrange;
-            btnAddConsecutiveSession.BackColor = Color.Teal;
-            btnNonOverlapping.BackColor = Color.Teal;
+            btnAddConsecutiveSession.BackColor = Color.DimGray;
+            btnNonOverlapping.BackColor = Color.DimGray;
         }
 
         private void SessionsAndNotAvailableTimeAllocations_Load(object sender, EventArgs e)
@@ -67,8 +67,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
             //btn color
             btnNonOverlapping.BackColor = Color.DarkOrange;
-            btnAddConsecutiveSession.BackColor = Color.Teal;
-            btnParallel.BackColor = Color.Teal;
+            btnAddConsecutiveSession.BackColor = Color.DimGray;
+            btnParallel.BackColor = Color.DimGray;
         }
     }
 }

@@ -96,14 +96,14 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // btnAddConsecutiveSession
             // 
             this.btnAddConsecutiveSession.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnAddConsecutiveSession.BackColor = System.Drawing.Color.Teal;
+            this.btnAddConsecutiveSession.BackColor = System.Drawing.Color.DimGray;
             this.btnAddConsecutiveSession.FlatAppearance.BorderSize = 0;
             this.btnAddConsecutiveSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddConsecutiveSession.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddConsecutiveSession.ForeColor = System.Drawing.Color.White;
             this.btnAddConsecutiveSession.Location = new System.Drawing.Point(57, 93);
             this.btnAddConsecutiveSession.Name = "btnAddConsecutiveSession";
-            this.btnAddConsecutiveSession.Size = new System.Drawing.Size(173, 32);
+            this.btnAddConsecutiveSession.Size = new System.Drawing.Size(112, 32);
             this.btnAddConsecutiveSession.TabIndex = 26;
             this.btnAddConsecutiveSession.Text = "Consecutive";
             this.btnAddConsecutiveSession.UseVisualStyleBackColor = false;
@@ -112,14 +112,14 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // btnParallel
             // 
             this.btnParallel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnParallel.BackColor = System.Drawing.Color.Teal;
+            this.btnParallel.BackColor = System.Drawing.Color.DimGray;
             this.btnParallel.FlatAppearance.BorderSize = 0;
             this.btnParallel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnParallel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnParallel.ForeColor = System.Drawing.Color.White;
-            this.btnParallel.Location = new System.Drawing.Point(236, 93);
+            this.btnParallel.Location = new System.Drawing.Point(175, 93);
             this.btnParallel.Name = "btnParallel";
-            this.btnParallel.Size = new System.Drawing.Size(178, 32);
+            this.btnParallel.Size = new System.Drawing.Size(111, 32);
             this.btnParallel.TabIndex = 28;
             this.btnParallel.Text = "Parallel";
             this.btnParallel.UseVisualStyleBackColor = false;
@@ -128,14 +128,14 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // btnNonOverlapping
             // 
             this.btnNonOverlapping.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnNonOverlapping.BackColor = System.Drawing.Color.Teal;
+            this.btnNonOverlapping.BackColor = System.Drawing.Color.DimGray;
             this.btnNonOverlapping.FlatAppearance.BorderSize = 0;
             this.btnNonOverlapping.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNonOverlapping.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNonOverlapping.ForeColor = System.Drawing.Color.White;
-            this.btnNonOverlapping.Location = new System.Drawing.Point(420, 93);
+            this.btnNonOverlapping.Location = new System.Drawing.Point(292, 93);
             this.btnNonOverlapping.Name = "btnNonOverlapping";
-            this.btnNonOverlapping.Size = new System.Drawing.Size(191, 32);
+            this.btnNonOverlapping.Size = new System.Drawing.Size(163, 32);
             this.btnNonOverlapping.TabIndex = 29;
             this.btnNonOverlapping.Text = "Non Overlapping";
             this.btnNonOverlapping.UseVisualStyleBackColor = false;
@@ -144,14 +144,14 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.BackColor = System.Drawing.Color.DimGray;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(617, 93);
+            this.button1.Location = new System.Drawing.Point(461, 93);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(191, 32);
+            this.button1.Size = new System.Drawing.Size(164, 32);
             this.button1.TabIndex = 30;
             this.button1.Text = "Not Available Time";
             this.button1.UseVisualStyleBackColor = false;
