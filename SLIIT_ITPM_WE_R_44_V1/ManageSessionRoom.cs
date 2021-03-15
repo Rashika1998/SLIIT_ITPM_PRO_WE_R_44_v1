@@ -105,6 +105,85 @@ namespace SLIIT_ITPM_WE_R_44_V1
             }
 
 
-        
+
+
+        string s_tag , s_l1 , s_l2 , s_hrs, s_min , s_no_std , s_sub , s_grp = string.Empty;
+
+
+        public void clearFormData()
+        {
+            sessionRoomID.Text = "";
+            selectSessionComboBox.Text = "";
+            selectRoomComboBox.Text = "";
+            selectedSessions.Text = "";
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+            clearFormData();
+
+        }
+
+        void showSelectedSessionDetails()
+        {
+            string selectSql1 = "select Tag , Lecturer1 , Lecturer2 , Hrs , Min , NoOfStudents , Subject , StudentGroup from AddSession where SessionID = '" + selectSessionComboBox.Text + "'";
+            SqlCommand com1 = new SqlCommand(selectSql1, con);
+
+            try
+            {
+                con.Open();
+
+                using (SqlDataReader read = com1.ExecuteReader())
+                {
+                    while (read.Read())
+                    {
+
+
+                        s_tag = (read["Tag"].ToString());
+                        s_l1 = (read["Lecturer1"].ToString());
+                        s_l2 = (read["Lecturer2"].ToString());
+                        s_hrs = (read["Hrs"].ToString());
+                        s_min = (read["Min"].ToString());
+                        s_no_std = (read["NoOfStudents"].ToString());
+                        s_sub = (read["Subject"].ToString());
+                        s_grp = (read["StudentGroup"].ToString());
+
+
+                    }
+
+
+                    selectedSessions.Text = "Session ID: " + selectSessionComboBox.Text + "\n" + "Tag: " + s_tag + "\n" + "Lecturer 1: " + s_l1 + "\n" + "Lecturer 2" + s_l2 + "\n" + "Duration :" + s_hrs + "Hrs " + s_min + "min" + "\n" + "No Of Students: " + s_no_std + "\n" + "Subject :" + s_sub + "\n" + "Student Group: " + s_grp + "\n";
+
+                }
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            showSelectedSessionDetails();
+
+            //con.Open();
+            //SqlCommand command = new SqlCommand("insert into AddTag values ('" + int.Parse(sessionRoomID.Text) + "' , '" + s_l1 + "' , '" + tagCode.Text + "' , '" + relatedTagComboBox.Text + "' , getdate() , getdate())", con);
+            //command.ExecuteNonQuery();
+            //MessageBox.Show("Successfully Inserted.");
+            //con.Close();
+
+            MessageBox.Show(s_l1);
+
+        }
+
+        private void btnSelectedSession_Click(object sender, EventArgs e)
+        {
+
+            showSelectedSessionDetails();
+            
+        }
+
     }
 }

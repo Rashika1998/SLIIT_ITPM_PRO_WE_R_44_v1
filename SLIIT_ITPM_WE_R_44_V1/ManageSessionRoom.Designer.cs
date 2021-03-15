@@ -30,6 +30,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSelectedSession = new System.Windows.Forms.Button();
             this.selectedSessions = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.selectRoomComboBox = new System.Windows.Forms.ComboBox();
@@ -52,6 +53,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Controls.Add(this.btnSelectedSession);
             this.panel2.Controls.Add(this.selectedSessions);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.selectRoomComboBox);
@@ -65,14 +67,29 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 168);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(984, 413);
+            this.panel2.Size = new System.Drawing.Size(984, 468);
             this.panel2.TabIndex = 28;
+            // 
+            // btnSelectedSession
+            // 
+            this.btnSelectedSession.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSelectedSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectedSession.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectedSession.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnSelectedSession.Location = new System.Drawing.Point(526, 358);
+            this.btnSelectedSession.Name = "btnSelectedSession";
+            this.btnSelectedSession.Size = new System.Drawing.Size(162, 23);
+            this.btnSelectedSession.TabIndex = 48;
+            this.btnSelectedSession.Text = "See Selected Session...?";
+            this.btnSelectedSession.UseVisualStyleBackColor = true;
+            this.btnSelectedSession.Click += new System.EventHandler(this.btnSelectedSession_Click);
             // 
             // selectedSessions
             // 
+            this.selectedSessions.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.selectedSessions.Location = new System.Drawing.Point(474, 223);
             this.selectedSessions.Name = "selectedSessions";
-            this.selectedSessions.Size = new System.Drawing.Size(214, 67);
+            this.selectedSessions.Size = new System.Drawing.Size(214, 129);
             this.selectedSessions.TabIndex = 47;
             this.selectedSessions.Text = "";
             // 
@@ -114,12 +131,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(512, 350);
+            this.btnClear.Location = new System.Drawing.Point(510, 417);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(119, 32);
             this.btnClear.TabIndex = 41;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -128,12 +146,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(387, 350);
+            this.btnSave.Location = new System.Drawing.Point(385, 417);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(119, 32);
             this.btnSave.TabIndex = 38;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label7
             // 
@@ -271,5 +290,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label addStudentGroupLabel;
+        private System.Windows.Forms.Button btnSelectedSession;
     }
 }
