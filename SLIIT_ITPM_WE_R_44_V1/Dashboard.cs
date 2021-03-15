@@ -89,6 +89,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             sessionsAndNotAvailableTimeAllocations.ShowDialog();
         }
 
-      
+        private void btnManageSession_Click(object sender, EventArgs e)
+        {
+            ManageSessionRoom manageSessionRoom = new ManageSessionRoom();
+            manageSessionRoom.ShowDialog();
+        }
     }
 }
