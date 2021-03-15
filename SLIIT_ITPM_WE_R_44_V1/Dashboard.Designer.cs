@@ -127,8 +127,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnManageNotAvailableTimeAllocation);
             this.panel1.Controls.Add(this.btnManageSession);
             this.panel1.Controls.Add(this.panel7);
@@ -157,7 +157,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnManageNotAvailableTimeAllocation.FlatAppearance.BorderSize = 0;
             this.btnManageNotAvailableTimeAllocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManageNotAvailableTimeAllocation.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageNotAvailableTimeAllocation.ForeColor = System.Drawing.Color.Gray;
+            this.btnManageNotAvailableTimeAllocation.ForeColor = System.Drawing.Color.DarkGray;
             this.btnManageNotAvailableTimeAllocation.Location = new System.Drawing.Point(32, 548);
             this.btnManageNotAvailableTimeAllocation.Name = "btnManageNotAvailableTimeAllocation";
             this.btnManageNotAvailableTimeAllocation.Size = new System.Drawing.Size(164, 43);
@@ -172,7 +172,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnManageSession.FlatAppearance.BorderSize = 0;
             this.btnManageSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManageSession.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageSession.ForeColor = System.Drawing.Color.Gray;
+            this.btnManageSession.ForeColor = System.Drawing.Color.DarkGray;
             this.btnManageSession.Location = new System.Drawing.Point(32, 450);
             this.btnManageSession.Name = "btnManageSession";
             this.btnManageSession.Size = new System.Drawing.Size(144, 52);
@@ -184,7 +184,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.DimGray;
+            this.panel7.BackColor = System.Drawing.Color.DarkGray;
             this.panel7.Controls.Add(this.label7);
             this.panel7.Location = new System.Drawing.Point(1, 508);
             this.panel7.Name = "panel7";
@@ -205,7 +205,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.DimGray;
+            this.panel6.BackColor = System.Drawing.Color.DarkGray;
             this.panel6.Controls.Add(this.label6);
             this.panel6.Location = new System.Drawing.Point(0, 410);
             this.panel6.Name = "panel6";
@@ -226,7 +226,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.DimGray;
+            this.panel5.BackColor = System.Drawing.Color.DarkGray;
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(0, 315);
             this.panel5.Name = "panel5";
@@ -247,7 +247,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.DimGray;
+            this.panel4.BackColor = System.Drawing.Color.DarkGray;
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(0, 247);
             this.panel4.Name = "panel4";
@@ -268,12 +268,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.DimGray;
+            this.panel3.BackColor = System.Drawing.Color.DarkGray;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(210, 32);
+            this.panel3.Size = new System.Drawing.Size(208, 32);
             this.panel3.TabIndex = 3;
             // 
             // label3
@@ -294,7 +294,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.sessionAndNotAvailableTimeAllocation.FlatAppearance.BorderSize = 0;
             this.sessionAndNotAvailableTimeAllocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sessionAndNotAvailableTimeAllocation.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sessionAndNotAvailableTimeAllocation.ForeColor = System.Drawing.Color.Gray;
+            this.sessionAndNotAvailableTimeAllocation.ForeColor = System.Drawing.Color.DarkGray;
             this.sessionAndNotAvailableTimeAllocation.Location = new System.Drawing.Point(32, 355);
             this.sessionAndNotAvailableTimeAllocation.Name = "sessionAndNotAvailableTimeAllocation";
             this.sessionAndNotAvailableTimeAllocation.Size = new System.Drawing.Size(167, 49);
@@ -310,7 +310,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnStatisticsView.FlatAppearance.BorderSize = 0;
             this.btnStatisticsView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatisticsView.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatisticsView.ForeColor = System.Drawing.Color.Gray;
+            this.btnStatisticsView.ForeColor = System.Drawing.Color.DarkGray;
             this.btnStatisticsView.Location = new System.Drawing.Point(38, 214);
             this.btnStatisticsView.Name = "btnStatisticsView";
             this.btnStatisticsView.Size = new System.Drawing.Size(138, 27);
@@ -326,7 +326,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddLocation.FlatAppearance.BorderSize = 0;
             this.btnAddLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddLocation.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddLocation.ForeColor = System.Drawing.Color.Gray;
+            this.btnAddLocation.ForeColor = System.Drawing.Color.DarkGray;
             this.btnAddLocation.Location = new System.Drawing.Point(38, 124);
             this.btnAddLocation.Name = "btnAddLocation";
             this.btnAddLocation.Size = new System.Drawing.Size(138, 27);
@@ -342,7 +342,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddSubject.FlatAppearance.BorderSize = 0;
             this.btnAddSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSubject.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSubject.ForeColor = System.Drawing.Color.Gray;
+            this.btnAddSubject.ForeColor = System.Drawing.Color.DarkGray;
             this.btnAddSubject.Location = new System.Drawing.Point(38, 184);
             this.btnAddSubject.Name = "btnAddSubject";
             this.btnAddSubject.Size = new System.Drawing.Size(138, 27);
@@ -358,7 +358,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddLecturer.FlatAppearance.BorderSize = 0;
             this.btnAddLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddLecturer.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddLecturer.ForeColor = System.Drawing.Color.Gray;
+            this.btnAddLecturer.ForeColor = System.Drawing.Color.DarkGray;
             this.btnAddLecturer.Location = new System.Drawing.Point(38, 154);
             this.btnAddLecturer.Name = "btnAddLecturer";
             this.btnAddLecturer.Size = new System.Drawing.Size(138, 27);
@@ -374,7 +374,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddWorkingDays.FlatAppearance.BorderSize = 0;
             this.btnAddWorkingDays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddWorkingDays.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddWorkingDays.ForeColor = System.Drawing.Color.Gray;
+            this.btnAddWorkingDays.ForeColor = System.Drawing.Color.DarkGray;
             this.btnAddWorkingDays.Location = new System.Drawing.Point(38, 34);
             this.btnAddWorkingDays.Name = "btnAddWorkingDays";
             this.btnAddWorkingDays.Size = new System.Drawing.Size(158, 27);
@@ -390,7 +390,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddSession.FlatAppearance.BorderSize = 0;
             this.btnAddSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSession.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSession.ForeColor = System.Drawing.Color.Gray;
+            this.btnAddSession.ForeColor = System.Drawing.Color.DarkGray;
             this.btnAddSession.Location = new System.Drawing.Point(32, 287);
             this.btnAddSession.Name = "btnAddSession";
             this.btnAddSession.Size = new System.Drawing.Size(138, 22);
@@ -406,7 +406,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addTagInfo.FlatAppearance.BorderSize = 0;
             this.addTagInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addTagInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addTagInfo.ForeColor = System.Drawing.Color.Gray;
+            this.addTagInfo.ForeColor = System.Drawing.Color.DarkGray;
             this.addTagInfo.Location = new System.Drawing.Point(38, 94);
             this.addTagInfo.Name = "addTagInfo";
             this.addTagInfo.Size = new System.Drawing.Size(138, 27);
@@ -422,7 +422,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroup.FlatAppearance.BorderSize = 0;
             this.addStudentGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addStudentGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addStudentGroup.ForeColor = System.Drawing.Color.Gray;
+            this.addStudentGroup.ForeColor = System.Drawing.Color.DarkGray;
             this.addStudentGroup.Location = new System.Drawing.Point(38, 64);
             this.addStudentGroup.Name = "addStudentGroup";
             this.addStudentGroup.Size = new System.Drawing.Size(158, 27);
@@ -440,7 +440,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSampleCrud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSampleCrud.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSampleCrud.ForeColor = System.Drawing.Color.DimGray;
-            this.btnSampleCrud.Location = new System.Drawing.Point(6, 468);
+            this.btnSampleCrud.Location = new System.Drawing.Point(6, 464);
             this.btnSampleCrud.Name = "btnSampleCrud";
             this.btnSampleCrud.Size = new System.Drawing.Size(130, 27);
             this.btnSampleCrud.TabIndex = 3;
@@ -456,7 +456,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(459, 575);
+            this.label2.Location = new System.Drawing.Point(455, 571);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(296, 17);
             this.label2.TabIndex = 5;
@@ -465,6 +465,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.tabControl1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -487,7 +488,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.tabControl1.Location = new System.Drawing.Point(18, 39);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(737, 533);
+            this.tabControl1.Size = new System.Drawing.Size(733, 529);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -498,7 +499,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(729, 503);
+            this.tabPage1.Size = new System.Drawing.Size(725, 499);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Time Tables by Lecturer";
             // 
@@ -509,7 +510,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(729, 488);
+            this.tabPage2.Size = new System.Drawing.Size(729, 503);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Time Tables by Student Group";
             // 
@@ -520,7 +521,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(729, 488);
+            this.tabPage3.Size = new System.Drawing.Size(729, 503);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Time Table by Location";
             // 

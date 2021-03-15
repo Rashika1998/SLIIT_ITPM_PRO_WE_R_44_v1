@@ -35,6 +35,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroupLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.locationDataGridView = new System.Windows.Forms.DataGridView();
+            this.btnAddLocation = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.locationDataGridView)).BeginInit();
@@ -109,12 +110,29 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.locationDataGridView.Size = new System.Drawing.Size(879, 337);
             this.locationDataGridView.TabIndex = 0;
             // 
+            // btnAddLocation
+            // 
+            this.btnAddLocation.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAddLocation.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddLocation.FlatAppearance.BorderSize = 0;
+            this.btnAddLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddLocation.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddLocation.ForeColor = System.Drawing.Color.White;
+            this.btnAddLocation.Location = new System.Drawing.Point(53, 133);
+            this.btnAddLocation.Name = "btnAddLocation";
+            this.btnAddLocation.Size = new System.Drawing.Size(119, 32);
+            this.btnAddLocation.TabIndex = 39;
+            this.btnAddLocation.Text = "Add Location";
+            this.btnAddLocation.UseVisualStyleBackColor = false;
+            this.btnAddLocation.Click += new System.EventHandler(this.btnAddLocation_Click);
+            // 
             // AddLocationInfoDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.btnAddLocation);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AddLocationInfoDisplay";
@@ -138,5 +156,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label addStudentGroupLabel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView locationDataGridView;
+        private System.Windows.Forms.Button btnAddLocation;
     }
 }
