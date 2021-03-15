@@ -70,39 +70,39 @@ namespace SLIIT_ITPM_WE_R_44_V1
         }
 
 
-            string roomID = string.Empty;
-            void setRoomComboBoxValues()
+        string roomID = string.Empty;
+        void setRoomComboBoxValues()
+        {
+
+            //Steps to create this function
+            //read values
+            //set a while statement to set values for combo box
+
+            string selectSql1 = "select LocationID from AddLocation";
+            SqlCommand com1 = new SqlCommand(selectSql1, con);
+
+            try
             {
+                con.Open();
 
-                //Steps to create this function
-                //read values
-                //set a while statement to set values for combo box
-
-                string selectSql1 = "select LocationID from AddLocation";
-                SqlCommand com1 = new SqlCommand(selectSql1, con);
-
-                try
+                using (SqlDataReader read = com1.ExecuteReader())
                 {
-                    con.Open();
-
-                    using (SqlDataReader read = com1.ExecuteReader())
+                    while (read.Read())
                     {
-                        while (read.Read())
-                        {
 
-                            roomID = (read["LocationID"].ToString());
-                            selectRoomComboBox.Items.Add(roomID);
+                        roomID = (read["LocationID"].ToString());
+                        selectRoomComboBox.Items.Add(roomID);
 
 
-                        }
                     }
                 }
-                finally
-                {
-                    con.Close();
-                }
-
             }
+            finally
+            {
+                con.Close();
+            }
+
+        }
 
 
 
@@ -166,15 +166,15 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+
             showSelectedSessionDetails();
 
-            //con.Open();
-            //SqlCommand command = new SqlCommand("insert into AddTag values ('" + int.Parse(sessionRoomID.Text) + "' , '" + s_l1 + "' , '" + tagCode.Text + "' , '" + relatedTagComboBox.Text + "' , getdate() , getdate())", con);
-            //command.ExecuteNonQuery();
-            //MessageBox.Show("Successfully Inserted.");
-            //con.Close();
+            con.Open();
+            SqlCommand command = new SqlCommand("insert into ManageSessionRoom values ('" + int.Parse(sessionRoomID.Text) + "' , '" + selectSessionComboBox.Text + "' , '" + s_tag + "' , '" + s_l1 + "',  '" + s_l2 + "', '" + s_hrs + "Hrs" + s_min + "min" + "', '" + s_no_std + "', '" + s_sub + "', '" + s_grp + "', '" + selectRoomComboBox.Text + "', getdate() , getdate())", con);
+            command.ExecuteNonQuery();
+            MessageBox.Show("Successfully Inserted.");
+            con.Close();
 
-            MessageBox.Show(s_l1);
 
         }
 
