@@ -32,6 +32,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
 
 
+
+
         string sessionID = string.Empty;
         void setSessionComboBoxValues()
         {
@@ -107,8 +109,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
 
 
-        string s_tag , s_l1 , s_l2 , s_hrs, s_min , s_no_std , s_sub , s_grp = string.Empty;
-
+        
 
         public void clearFormData()
         {
@@ -125,6 +126,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         }
 
+
+        string s_tag, s_l1, s_l2, s_hrs, s_min, s_no_std, s_sub, s_grp = string.Empty;
         void showSelectedSessionDetails()
         {
             string selectSql1 = "select Tag , Lecturer1 , Lecturer2 , Hrs , Min , NoOfStudents , Subject , StudentGroup from AddSession where SessionID = '" + selectSessionComboBox.Text + "'";
@@ -174,7 +177,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             command.ExecuteNonQuery();
             MessageBox.Show("Successfully Inserted.");
             con.Close();
-
+            clearFormData();
 
         }
 

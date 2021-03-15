@@ -65,7 +65,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.selectSessionComboBox);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(0, 168);
+            this.panel2.Location = new System.Drawing.Point(0, 155);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(984, 468);
             this.panel2.TabIndex = 28;
@@ -76,7 +76,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSelectedSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectedSession.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectedSession.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnSelectedSession.Location = new System.Drawing.Point(526, 358);
+            this.btnSelectedSession.Location = new System.Drawing.Point(736, 262);
             this.btnSelectedSession.Name = "btnSelectedSession";
             this.btnSelectedSession.Size = new System.Drawing.Size(162, 23);
             this.btnSelectedSession.TabIndex = 48;
@@ -87,7 +87,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // selectedSessions
             // 
             this.selectedSessions.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.selectedSessions.Location = new System.Drawing.Point(474, 223);
+            this.selectedSessions.Location = new System.Drawing.Point(684, 127);
             this.selectedSessions.Name = "selectedSessions";
             this.selectedSessions.Size = new System.Drawing.Size(214, 129);
             this.selectedSessions.TabIndex = 47;
@@ -98,7 +98,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(300, 223);
+            this.label2.Location = new System.Drawing.Point(545, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 21);
             this.label2.TabIndex = 46;
@@ -107,7 +107,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // selectRoomComboBox
             // 
             this.selectRoomComboBox.FormattingEnabled = true;
-            this.selectRoomComboBox.Location = new System.Drawing.Point(474, 152);
+            this.selectRoomComboBox.Location = new System.Drawing.Point(265, 130);
             this.selectRoomComboBox.Name = "selectRoomComboBox";
             this.selectRoomComboBox.Size = new System.Drawing.Size(214, 21);
             this.selectRoomComboBox.TabIndex = 45;
@@ -117,7 +117,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(471, 46);
+            this.label5.Location = new System.Drawing.Point(262, 65);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 15);
             this.label5.TabIndex = 44;
@@ -131,7 +131,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(510, 417);
+            this.btnClear.Location = new System.Drawing.Point(779, 325);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(119, 32);
             this.btnClear.TabIndex = 41;
@@ -146,7 +146,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(385, 417);
+            this.btnSave.Location = new System.Drawing.Point(653, 325);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(119, 32);
             this.btnSave.TabIndex = 38;
@@ -159,7 +159,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(300, 152);
+            this.label7.Location = new System.Drawing.Point(113, 127);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 21);
             this.label7.TabIndex = 33;
@@ -167,7 +167,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // sessionRoomID
             // 
-            this.sessionRoomID.Location = new System.Drawing.Point(474, 23);
+            this.sessionRoomID.Location = new System.Drawing.Point(265, 42);
             this.sessionRoomID.Name = "sessionRoomID";
             this.sessionRoomID.Size = new System.Drawing.Size(214, 20);
             this.sessionRoomID.TabIndex = 28;
@@ -177,7 +177,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(300, 25);
+            this.label4.Location = new System.Drawing.Point(113, 41);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 21);
             this.label4.TabIndex = 27;
@@ -186,7 +186,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // selectSessionComboBox
             // 
             this.selectSessionComboBox.FormattingEnabled = true;
-            this.selectSessionComboBox.Location = new System.Drawing.Point(474, 87);
+            this.selectSessionComboBox.Location = new System.Drawing.Point(675, 39);
             this.selectSessionComboBox.Name = "selectSessionComboBox";
             this.selectSessionComboBox.Size = new System.Drawing.Size(214, 21);
             this.selectSessionComboBox.TabIndex = 23;
@@ -196,7 +196,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(300, 87);
+            this.label1.Location = new System.Drawing.Point(545, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 21);
             this.label1.TabIndex = 21;

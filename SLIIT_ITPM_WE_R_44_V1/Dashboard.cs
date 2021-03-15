@@ -94,5 +94,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             ManageSessionRoom manageSessionRoom = new ManageSessionRoom();
             manageSessionRoom.ShowDialog();
         }
+
+        private void btnContactUs_Click(object sender, EventArgs e)
+        {
+            AboutUs aboutUs = new AboutUs();
+            aboutUs.ShowDialog();
+        }
     }
 }

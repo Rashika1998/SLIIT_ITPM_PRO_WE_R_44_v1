@@ -60,7 +60,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void AddSessionInfo_Load(object sender, EventArgs e)
         {
-            
+            setLectureComboBoxValues();
+            setTagComboBoxValues();
         }
 
 
@@ -169,5 +170,89 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 MessageBox.Show("Enter the Employee ID");
             }
         }
+
+
+
+
+
+
+        //Newly added into the system
+        string lecturer_name = string.Empty;
+        void setLectureComboBoxValues()
+        {
+
+            //Steps to create this function
+            //read values
+            //set a while statement to set values for combo box
+
+
+            string selectSql = "select LecturerName from AddLecturer";
+            SqlCommand com = new SqlCommand(selectSql, con);
+
+            try
+            {
+                con.Open();
+
+                using (SqlDataReader read = com.ExecuteReader())
+                {
+                    while (read.Read())
+                    {
+
+                        lecturer_name = (read["LecturerName"].ToString());
+                        selectLecturercomboBox1.Items.Add(lecturer_name);
+                        selectLecturercomboBox2.Items.Add(lecturer_name);
+
+
+                    }
+                }
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
+
+
+        //Newly added into the system
+        string tag_name = string.Empty;
+        void setTagComboBoxValues()
+        {
+
+            //Steps to create this function
+            //read values
+            //set a while statement to set values for combo box
+
+
+            string selectSql = "select TagName from AddTag";
+            SqlCommand com = new SqlCommand(selectSql, con);
+
+            try
+            {
+                con.Open();
+
+                using (SqlDataReader read = com.ExecuteReader())
+                {
+                    while (read.Read())
+                    {
+
+                        tag_name = (read["TagName"].ToString());
+                        selectTagcomboBox.Items.Add(tag_name);
+
+                    }
+                }
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
+
+
+
+
     }
 }

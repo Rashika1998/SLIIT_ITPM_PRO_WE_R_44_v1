@@ -37,13 +37,22 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand command = new SqlCommand("insert into AddStudentGroup values ('" + int.Parse(studentGroupID.Text) + "' , '" + yearComboBox.Text + "' , '" + semesterComboBox.Text + "' , '" + programComboBox.Text + "' , '" + groupNumber.Text + "' , '" + subGroupNumber.Text + "' , '" + groupID.Text + "' , '" + subGroupID.Text + "' , getdate() , getdate())", con);
-            command.ExecuteNonQuery();
-            MessageBox.Show("Successfully Inserted.");
-            con.Close();
-            cleanInputFields();
-            
+
+            try
+            {
+                con.Open();
+                SqlCommand command = new SqlCommand("INSERT INTO AddStudentGroup VALUES('" + int.Parse(studentGroupID.Text) + "' , '" + yearComboBox.Text + "' , '" + semesterComboBox.Text + "' , '" + programComboBox.Text + "' , '" + groupNumber.Text + "' , '" + subGroupNumber.Text + "' , '" + groupID.Text + "' , '" + subGroupID.Text + "' , getdate() , getdate())", con);
+                command.ExecuteNonQuery();
+                MessageBox.Show("Successfully Inserted.");
+                con.Close();
+                cleanInputFields();
+
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+            }
+
         }
 
 
