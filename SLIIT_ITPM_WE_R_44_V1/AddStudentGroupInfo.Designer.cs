@@ -34,6 +34,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label9 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.toUpdate = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -60,8 +62,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.yearComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.toUpdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subGroupNumber)).BeginInit();
@@ -153,6 +153,32 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(984, 555);
             this.panel2.TabIndex = 22;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox2.Location = new System.Drawing.Point(233, 126);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(151, 41);
+            this.richTextBox2.TabIndex = 51;
+            this.richTextBox2.Text = "enter the student group ID to get other details.";
+            // 
+            // toUpdate
+            // 
+            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
+            this.toUpdate.FlatAppearance.BorderSize = 0;
+            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toUpdate.ForeColor = System.Drawing.Color.White;
+            this.toUpdate.Location = new System.Drawing.Point(233, 96);
+            this.toUpdate.Name = "toUpdate";
+            this.toUpdate.Size = new System.Drawing.Size(75, 23);
+            this.toUpdate.TabIndex = 50;
+            this.toUpdate.Text = "Update?";
+            this.toUpdate.UseVisualStyleBackColor = false;
+            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
             // 
             // label12
             // 
@@ -388,9 +414,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.programComboBox.FormattingEnabled = true;
             this.programComboBox.Items.AddRange(new object[] {
-            "Information Technology",
-            "Business Management",
-            "Engineering"});
+            "IT",
+            "EN",
+            "BM"});
             this.programComboBox.Location = new System.Drawing.Point(233, 338);
             this.programComboBox.Name = "programComboBox";
             this.programComboBox.Size = new System.Drawing.Size(197, 21);
@@ -452,32 +478,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.Size = new System.Drawing.Size(117, 21);
             this.label1.TabIndex = 21;
             this.label1.Text = "Academic Year";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.ForeColor = System.Drawing.Color.Gray;
-            this.richTextBox2.Location = new System.Drawing.Point(233, 126);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(151, 41);
-            this.richTextBox2.TabIndex = 51;
-            this.richTextBox2.Text = "enter the student group ID to get other details.";
-            // 
-            // toUpdate
-            // 
-            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
-            this.toUpdate.FlatAppearance.BorderSize = 0;
-            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toUpdate.ForeColor = System.Drawing.Color.White;
-            this.toUpdate.Location = new System.Drawing.Point(233, 96);
-            this.toUpdate.Name = "toUpdate";
-            this.toUpdate.Size = new System.Drawing.Size(75, 23);
-            this.toUpdate.TabIndex = 50;
-            this.toUpdate.Text = "Update?";
-            this.toUpdate.UseVisualStyleBackColor = false;
-            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
             // 
             // AddStudentGroupInfo
             // 

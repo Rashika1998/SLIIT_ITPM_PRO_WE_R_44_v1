@@ -82,9 +82,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void generateIDs_Click(object sender, EventArgs e)
         {
+
+            
             groupID.Text = yearComboBox.Text + "." + semesterComboBox.Text + "." + groupNumber.Value;
             subGroupID.Text = yearComboBox.Text + "." + semesterComboBox.Text + "." + groupNumber.Value + "." + subGroupNumber.Value;
-
+            
+            
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -162,5 +165,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
 
         }
+
+
     }
 }
