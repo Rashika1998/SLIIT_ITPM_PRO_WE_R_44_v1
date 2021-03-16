@@ -136,6 +136,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DisplayNotAvailableTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayNotAvailableTime.Designer.cs">
+      <DependentUpon>DisplayNotAvailableTime.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,12 @@
     </Compile>
     <Compile Include="NonOverlappingUserControl.Designer.cs">
       <DependentUpon>NonOverlappingUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotAvailableTimeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NotAvailableTimeUserControl.Designer.cs">
+      <DependentUpon>NotAvailableTimeUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="ParallelSessionUserControl.cs">
       <SubType>UserControl</SubType>
@@ -219,6 +231,9 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DisplayNotAvailableTime.resx">
+      <DependentUpon>DisplayNotAvailableTime.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NonOverlappingUserControl.resx">
       <DependentUpon>NonOverlappingUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotAvailableTimeUserControl.resx">
+      <DependentUpon>NotAvailableTimeUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParallelSessionUserControl.resx">
       <DependentUpon>ParallelSessionUserControl.cs</DependentUpon>

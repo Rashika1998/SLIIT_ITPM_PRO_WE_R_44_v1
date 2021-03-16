@@ -32,9 +32,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.dashBoardPanel = new System.Windows.Forms.Panel();
             this.btnContactUs = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnAboutUs = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnManageNotAvailableTimeAllocation = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -89,13 +89,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnContactUs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnContactUs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnContactUs.FlatAppearance.BorderSize = 0;
-            this.btnContactUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnContactUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.btnContactUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnContactUs.Font = new System.Drawing.Font("Lucida Bright", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContactUs.ForeColor = System.Drawing.Color.Gray;
-            this.btnContactUs.Location = new System.Drawing.Point(566, 28);
+            this.btnContactUs.Location = new System.Drawing.Point(578, 28);
             this.btnContactUs.Name = "btnContactUs";
-            this.btnContactUs.Size = new System.Drawing.Size(82, 27);
+            this.btnContactUs.Size = new System.Drawing.Size(70, 27);
             this.btnContactUs.TabIndex = 7;
             this.btnContactUs.Text = "Contact us";
             this.btnContactUs.UseVisualStyleBackColor = true;
@@ -107,24 +107,35 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(438, 31);
+            this.label8.Location = new System.Drawing.Point(450, 31);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 18);
             this.label8.TabIndex = 6;
             this.label8.Text = "ABC Company";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.DarkGray;
+            this.label9.Location = new System.Drawing.Point(138, 55);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(137, 15);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Developed by WE_R_44";
             // 
             // btnAboutUs
             // 
             this.btnAboutUs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAboutUs.FlatAppearance.BorderSize = 0;
-            this.btnAboutUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAboutUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.btnAboutUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAboutUs.Font = new System.Drawing.Font("Lucida Bright", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutUs.ForeColor = System.Drawing.Color.Gray;
             this.btnAboutUs.Location = new System.Drawing.Point(654, 28);
             this.btnAboutUs.Name = "btnAboutUs";
-            this.btnAboutUs.Size = new System.Drawing.Size(73, 27);
+            this.btnAboutUs.Size = new System.Drawing.Size(59, 27);
             this.btnAboutUs.TabIndex = 4;
             this.btnAboutUs.Text = "About us";
             this.btnAboutUs.UseVisualStyleBackColor = true;
@@ -140,17 +151,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.Size = new System.Drawing.Size(154, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Logo or Name";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.DimGray;
-            this.label9.Location = new System.Drawing.Point(138, 55);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 15);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Developed by WE_R_44";
             // 
             // panel1
             // 
@@ -182,23 +182,24 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnManageNotAvailableTimeAllocation.BackColor = System.Drawing.Color.Teal;
             this.btnManageNotAvailableTimeAllocation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnManageNotAvailableTimeAllocation.FlatAppearance.BorderSize = 0;
-            this.btnManageNotAvailableTimeAllocation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnManageNotAvailableTimeAllocation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnManageNotAvailableTimeAllocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManageNotAvailableTimeAllocation.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageNotAvailableTimeAllocation.ForeColor = System.Drawing.Color.White;
-            this.btnManageNotAvailableTimeAllocation.Location = new System.Drawing.Point(32, 569);
+            this.btnManageNotAvailableTimeAllocation.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnManageNotAvailableTimeAllocation.Location = new System.Drawing.Point(32, 602);
             this.btnManageNotAvailableTimeAllocation.Name = "btnManageNotAvailableTimeAllocation";
             this.btnManageNotAvailableTimeAllocation.Size = new System.Drawing.Size(164, 43);
             this.btnManageNotAvailableTimeAllocation.TabIndex = 16;
             this.btnManageNotAvailableTimeAllocation.Text = "-> Manage Not available time Allocation";
             this.btnManageNotAvailableTimeAllocation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnManageNotAvailableTimeAllocation.UseVisualStyleBackColor = false;
+            this.btnManageNotAvailableTimeAllocation.Click += new System.EventHandler(this.btnManageNotAvailableTimeAllocation_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Teal;
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(0, 277);
+            this.panel4.Location = new System.Drawing.Point(0, 310);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(244, 36);
             this.panel4.TabIndex = 0;
@@ -219,7 +220,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.panel7.BackColor = System.Drawing.Color.Teal;
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(0, 529);
+            this.panel7.Location = new System.Drawing.Point(0, 562);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(244, 34);
             this.panel7.TabIndex = 14;
@@ -241,11 +242,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnManageSession.BackColor = System.Drawing.Color.Teal;
             this.btnManageSession.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnManageSession.FlatAppearance.BorderSize = 0;
-            this.btnManageSession.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnManageSession.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnManageSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManageSession.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageSession.ForeColor = System.Drawing.Color.White;
-            this.btnManageSession.Location = new System.Drawing.Point(32, 492);
+            this.btnManageSession.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnManageSession.Location = new System.Drawing.Point(32, 525);
             this.btnManageSession.Name = "btnManageSession";
             this.btnManageSession.Size = new System.Drawing.Size(176, 28);
             this.btnManageSession.TabIndex = 15;
@@ -258,7 +259,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.panel6.BackColor = System.Drawing.Color.Teal;
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(0, 452);
+            this.panel6.Location = new System.Drawing.Point(0, 485);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(244, 34);
             this.panel6.TabIndex = 13;
@@ -280,11 +281,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.sessionAndNotAvailableTimeAllocation.BackColor = System.Drawing.Color.Teal;
             this.sessionAndNotAvailableTimeAllocation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sessionAndNotAvailableTimeAllocation.FlatAppearance.BorderSize = 0;
-            this.sessionAndNotAvailableTimeAllocation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.sessionAndNotAvailableTimeAllocation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.sessionAndNotAvailableTimeAllocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sessionAndNotAvailableTimeAllocation.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sessionAndNotAvailableTimeAllocation.ForeColor = System.Drawing.Color.White;
-            this.sessionAndNotAvailableTimeAllocation.Location = new System.Drawing.Point(32, 400);
+            this.sessionAndNotAvailableTimeAllocation.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.sessionAndNotAvailableTimeAllocation.Location = new System.Drawing.Point(32, 433);
             this.sessionAndNotAvailableTimeAllocation.Name = "sessionAndNotAvailableTimeAllocation";
             this.sessionAndNotAvailableTimeAllocation.Size = new System.Drawing.Size(167, 49);
             this.sessionAndNotAvailableTimeAllocation.TabIndex = 13;
@@ -298,7 +299,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Controls.Add(this.label3);
             this.panel3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Location = new System.Drawing.Point(0, 33);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(244, 38);
             this.panel3.TabIndex = 3;
@@ -319,7 +320,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.panel5.BackColor = System.Drawing.Color.Teal;
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(0, 352);
+            this.panel5.Location = new System.Drawing.Point(0, 385);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(244, 35);
             this.panel5.TabIndex = 12;
@@ -341,11 +342,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnStatisticsView.BackColor = System.Drawing.Color.Teal;
             this.btnStatisticsView.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStatisticsView.FlatAppearance.BorderSize = 0;
-            this.btnStatisticsView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnStatisticsView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnStatisticsView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatisticsView.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatisticsView.ForeColor = System.Drawing.Color.White;
-            this.btnStatisticsView.Location = new System.Drawing.Point(32, 241);
+            this.btnStatisticsView.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnStatisticsView.Location = new System.Drawing.Point(32, 274);
             this.btnStatisticsView.Name = "btnStatisticsView";
             this.btnStatisticsView.Size = new System.Drawing.Size(138, 27);
             this.btnStatisticsView.TabIndex = 12;
@@ -359,11 +360,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddLocation.BackColor = System.Drawing.Color.Teal;
             this.btnAddLocation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddLocation.FlatAppearance.BorderSize = 0;
-            this.btnAddLocation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnAddLocation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnAddLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddLocation.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddLocation.ForeColor = System.Drawing.Color.White;
-            this.btnAddLocation.Location = new System.Drawing.Point(32, 143);
+            this.btnAddLocation.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAddLocation.Location = new System.Drawing.Point(32, 176);
             this.btnAddLocation.Name = "btnAddLocation";
             this.btnAddLocation.Size = new System.Drawing.Size(138, 27);
             this.btnAddLocation.TabIndex = 10;
@@ -377,11 +378,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddSubject.BackColor = System.Drawing.Color.Teal;
             this.btnAddSubject.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddSubject.FlatAppearance.BorderSize = 0;
-            this.btnAddSubject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnAddSubject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnAddSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSubject.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSubject.ForeColor = System.Drawing.Color.White;
-            this.btnAddSubject.Location = new System.Drawing.Point(32, 208);
+            this.btnAddSubject.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAddSubject.Location = new System.Drawing.Point(32, 241);
             this.btnAddSubject.Name = "btnAddSubject";
             this.btnAddSubject.Size = new System.Drawing.Size(138, 27);
             this.btnAddSubject.TabIndex = 9;
@@ -395,11 +396,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddLecturer.BackColor = System.Drawing.Color.Teal;
             this.btnAddLecturer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddLecturer.FlatAppearance.BorderSize = 0;
-            this.btnAddLecturer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnAddLecturer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnAddLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddLecturer.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddLecturer.ForeColor = System.Drawing.Color.White;
-            this.btnAddLecturer.Location = new System.Drawing.Point(32, 176);
+            this.btnAddLecturer.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAddLecturer.Location = new System.Drawing.Point(32, 209);
             this.btnAddLecturer.Name = "btnAddLecturer";
             this.btnAddLecturer.Size = new System.Drawing.Size(138, 27);
             this.btnAddLecturer.TabIndex = 8;
@@ -413,11 +414,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddWorkingDays.BackColor = System.Drawing.Color.Teal;
             this.btnAddWorkingDays.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddWorkingDays.FlatAppearance.BorderSize = 0;
-            this.btnAddWorkingDays.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnAddWorkingDays.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnAddWorkingDays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddWorkingDays.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddWorkingDays.ForeColor = System.Drawing.Color.White;
-            this.btnAddWorkingDays.Location = new System.Drawing.Point(32, 44);
+            this.btnAddWorkingDays.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAddWorkingDays.Location = new System.Drawing.Point(32, 77);
             this.btnAddWorkingDays.Name = "btnAddWorkingDays";
             this.btnAddWorkingDays.Size = new System.Drawing.Size(158, 27);
             this.btnAddWorkingDays.TabIndex = 7;
@@ -431,11 +432,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddSession.BackColor = System.Drawing.Color.Teal;
             this.btnAddSession.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddSession.FlatAppearance.BorderSize = 0;
-            this.btnAddSession.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnAddSession.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnAddSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSession.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSession.ForeColor = System.Drawing.Color.White;
-            this.btnAddSession.Location = new System.Drawing.Point(32, 319);
+            this.btnAddSession.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAddSession.Location = new System.Drawing.Point(32, 352);
             this.btnAddSession.Name = "btnAddSession";
             this.btnAddSession.Size = new System.Drawing.Size(138, 26);
             this.btnAddSession.TabIndex = 6;
@@ -449,11 +450,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addTagInfo.BackColor = System.Drawing.Color.Teal;
             this.addTagInfo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addTagInfo.FlatAppearance.BorderSize = 0;
-            this.addTagInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.addTagInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.addTagInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addTagInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addTagInfo.ForeColor = System.Drawing.Color.White;
-            this.addTagInfo.Location = new System.Drawing.Point(32, 110);
+            this.addTagInfo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.addTagInfo.Location = new System.Drawing.Point(32, 143);
             this.addTagInfo.Name = "addTagInfo";
             this.addTagInfo.Size = new System.Drawing.Size(138, 27);
             this.addTagInfo.TabIndex = 5;
@@ -467,11 +468,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroup.BackColor = System.Drawing.Color.Teal;
             this.addStudentGroup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addStudentGroup.FlatAppearance.BorderSize = 0;
-            this.addStudentGroup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.addStudentGroup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.addStudentGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addStudentGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addStudentGroup.ForeColor = System.Drawing.Color.White;
-            this.addStudentGroup.Location = new System.Drawing.Point(32, 77);
+            this.addStudentGroup.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.addStudentGroup.Location = new System.Drawing.Point(32, 110);
             this.addStudentGroup.Name = "addStudentGroup";
             this.addStudentGroup.Size = new System.Drawing.Size(158, 27);
             this.addStudentGroup.TabIndex = 4;

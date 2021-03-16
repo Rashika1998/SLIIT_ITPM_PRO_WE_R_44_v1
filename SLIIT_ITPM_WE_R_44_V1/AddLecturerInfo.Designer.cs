@@ -29,11 +29,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.addStudentGroupLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.toUpdate = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -69,62 +67,14 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label4 = new System.Windows.Forms.Label();
             this.facultyComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.toUpdate = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.addStudentGroupLabel = new System.Windows.Forms.Label();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.btnDashboard);
-            this.panel1.Controls.Add(this.addStudentGroupLabel);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 88);
-            this.panel1.TabIndex = 24;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(817, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Developed by WE_R_44";
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Location = new System.Drawing.Point(854, 26);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(110, 34);
-            this.btnDashboard.TabIndex = 1;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            // 
-            // addStudentGroupLabel
-            // 
-            this.addStudentGroupLabel.AutoSize = true;
-            this.addStudentGroupLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addStudentGroupLabel.ForeColor = System.Drawing.Color.White;
-            this.addStudentGroupLabel.Location = new System.Drawing.Point(12, 23);
-            this.addStudentGroupLabel.Name = "addStudentGroupLabel";
-            this.addStudentGroupLabel.Size = new System.Drawing.Size(308, 32);
-            this.addStudentGroupLabel.TabIndex = 0;
-            this.addStudentGroupLabel.Text = "Add Lecturer Information";
             // 
             // panel2
             // 
@@ -158,6 +108,32 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(946, 519);
             this.panel2.TabIndex = 25;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox2.Location = new System.Drawing.Point(196, 150);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(151, 41);
+            this.richTextBox2.TabIndex = 66;
+            this.richTextBox2.Text = "enter the lecturer ID to get other details.";
+            // 
+            // toUpdate
+            // 
+            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
+            this.toUpdate.FlatAppearance.BorderSize = 0;
+            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toUpdate.ForeColor = System.Drawing.Color.White;
+            this.toUpdate.Location = new System.Drawing.Point(196, 120);
+            this.toUpdate.Name = "toUpdate";
+            this.toUpdate.Size = new System.Drawing.Size(75, 23);
+            this.toUpdate.TabIndex = 65;
+            this.toUpdate.Text = "Update?";
+            this.toUpdate.UseVisualStyleBackColor = false;
+            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
             // 
             // panel3
             // 
@@ -582,31 +558,55 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.TabIndex = 42;
             this.label1.Text = "Faculty";
             // 
-            // richTextBox2
+            // addStudentGroupLabel
             // 
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.ForeColor = System.Drawing.Color.Gray;
-            this.richTextBox2.Location = new System.Drawing.Point(196, 150);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(151, 41);
-            this.richTextBox2.TabIndex = 66;
-            this.richTextBox2.Text = "enter the lecturer ID to get other details.";
+            this.addStudentGroupLabel.AutoSize = true;
+            this.addStudentGroupLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addStudentGroupLabel.ForeColor = System.Drawing.Color.White;
+            this.addStudentGroupLabel.Location = new System.Drawing.Point(12, 23);
+            this.addStudentGroupLabel.Name = "addStudentGroupLabel";
+            this.addStudentGroupLabel.Size = new System.Drawing.Size(308, 32);
+            this.addStudentGroupLabel.TabIndex = 0;
+            this.addStudentGroupLabel.Text = "Add Lecturer Information";
             // 
-            // toUpdate
+            // btnDashboard
             // 
-            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
-            this.toUpdate.FlatAppearance.BorderSize = 0;
-            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toUpdate.ForeColor = System.Drawing.Color.White;
-            this.toUpdate.Location = new System.Drawing.Point(196, 120);
-            this.toUpdate.Name = "toUpdate";
-            this.toUpdate.Size = new System.Drawing.Size(75, 23);
-            this.toUpdate.TabIndex = 65;
-            this.toUpdate.Text = "Update?";
-            this.toUpdate.UseVisualStyleBackColor = false;
-            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
+            this.btnDashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Location = new System.Drawing.Point(854, 26);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(110, 34);
+            this.btnDashboard.TabIndex = 1;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(817, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Developed by WE_R_44";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.btnDashboard);
+            this.panel1.Controls.Add(this.addStudentGroupLabel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(984, 88);
+            this.panel1.TabIndex = 24;
             // 
             // AddLecturerInfo
             // 
@@ -621,22 +621,17 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.Text = "AddLecturerInfo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AddLecturerInfo_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Label addStudentGroupLabel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnDelete;
@@ -675,5 +670,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Button toUpdate;
+        private System.Windows.Forms.Label addStudentGroupLabel;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
     }
 }
