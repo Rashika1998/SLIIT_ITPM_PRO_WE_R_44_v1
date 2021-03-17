@@ -36,6 +36,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2 = new System.Windows.Forms.Panel();
             this.addLecturerDataGridView = new System.Windows.Forms.DataGridView();
             this.btnAddLecturer = new System.Windows.Forms.Button();
+            this.selectColumnComboBox = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.textSearchBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addLecturerDataGridView)).BeginInit();
@@ -52,7 +55,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 88);
             this.panel1.TabIndex = 25;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label3
             // 
@@ -100,7 +102,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(959, 466);
             this.panel2.TabIndex = 26;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // addLecturerDataGridView
             // 
@@ -114,6 +115,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // btnAddLecturer
             // 
+            this.btnAddLecturer.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAddLecturer.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnAddLecturer.FlatAppearance.BorderSize = 0;
             this.btnAddLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -127,12 +129,55 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddLecturer.UseVisualStyleBackColor = false;
             this.btnAddLecturer.Click += new System.EventHandler(this.btnAddLecturer_Click);
             // 
+            // selectColumnComboBox
+            // 
+            this.selectColumnComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.selectColumnComboBox.FormattingEnabled = true;
+            this.selectColumnComboBox.Items.AddRange(new object[] {
+            "LecturerName",
+            "Faculty",
+            "Department",
+            "Center",
+            "LecturerLevel"});
+            this.selectColumnComboBox.Location = new System.Drawing.Point(726, 108);
+            this.selectColumnComboBox.Name = "selectColumnComboBox";
+            this.selectColumnComboBox.Size = new System.Drawing.Size(146, 21);
+            this.selectColumnComboBox.TabIndex = 30;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSearch.BackColor = System.Drawing.Color.Teal;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(878, 106);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 29;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // textSearchBox
+            // 
+            this.textSearchBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textSearchBox.Location = new System.Drawing.Point(489, 108);
+            this.textSearchBox.Multiline = true;
+            this.textSearchBox.Name = "textSearchBox";
+            this.textSearchBox.Size = new System.Drawing.Size(231, 21);
+            this.textSearchBox.TabIndex = 28;
+            // 
             // AddLecturerInfoDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.selectColumnComboBox);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.textSearchBox);
             this.Controls.Add(this.btnAddLecturer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -146,6 +191,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.addLecturerDataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -158,5 +204,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView addLecturerDataGridView;
         private System.Windows.Forms.Button btnAddLecturer;
+        private System.Windows.Forms.ComboBox selectColumnComboBox;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox textSearchBox;
     }
 }

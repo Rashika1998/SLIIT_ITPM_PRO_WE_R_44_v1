@@ -42,10 +42,26 @@ namespace SLIIT_ITPM_WE_R_44_V1
             addSubjectDataGridView.DataSource = dt;
         }
 
+        void SearchBindData()
+        {
+            SqlCommand command = new SqlCommand("select * from AddSubject where " + selectColumnComboBox.Text + " like '" + textSearchBox.Text + "%'", con);
+            SqlDataAdapter sd = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            addSubjectDataGridView.DataSource = dt;
+
+        }
+
         private void AddSubjectInfoDisplay_Load(object sender, EventArgs e)
         {
             addSubjectDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             BindData();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            SearchBindData();
+
         }
     }
 }

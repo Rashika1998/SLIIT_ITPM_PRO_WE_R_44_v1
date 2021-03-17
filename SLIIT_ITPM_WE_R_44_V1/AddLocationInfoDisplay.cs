@@ -31,6 +31,16 @@ namespace SLIIT_ITPM_WE_R_44_V1
             locationDataGridView.DataSource = dt;
         }
 
+        void SearchBindData()
+        {
+            SqlCommand command = new SqlCommand("select * from AddLocation where " + selectColumnComboBox.Text + " like '" + textSearchBox.Text + "%'", con);
+            SqlDataAdapter sd = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            locationDataGridView.DataSource = dt;
+
+        }
+
 
         private void AddLocationInfoDisplay_Load(object sender, EventArgs e)
         {
@@ -42,6 +52,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             AddLocationInfo addLocationInfo = new AddLocationInfo();
             addLocationInfo.ShowDialog();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            SearchBindData();
         }
     }
 }

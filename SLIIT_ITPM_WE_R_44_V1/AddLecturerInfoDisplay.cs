@@ -31,6 +31,16 @@ namespace SLIIT_ITPM_WE_R_44_V1
         }
 
 
+        void SearchBindData()
+        {
+            SqlCommand command = new SqlCommand("select * from AddLecturer where " + selectColumnComboBox.Text + " like '" + textSearchBox.Text + "%'", con);
+            SqlDataAdapter sd = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            addLecturerDataGridView.DataSource = dt;
+
+        }
+
         private void AddLecturerInfoDisplay_Load(object sender, EventArgs e)
         {
             addLecturerDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -49,14 +59,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             dashboard.ShowDialog();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            SearchBindData();
         }
     }
 }

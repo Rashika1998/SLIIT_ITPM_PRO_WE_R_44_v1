@@ -30,6 +30,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.toUpdate = new System.Windows.Forms.Button();
             this.btnGenerateCode = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,8 +53,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.addTagGridView = new System.Windows.Forms.DataGridView();
-            this.toUpdate = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.selectColumnComboBox = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.textSearchBox = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addTagGridView)).BeginInit();
@@ -81,8 +84,34 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 94);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(984, 255);
+            this.panel2.Size = new System.Drawing.Size(984, 207);
             this.panel2.TabIndex = 24;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox1.Location = new System.Drawing.Point(406, 49);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(121, 41);
+            this.richTextBox1.TabIndex = 49;
+            this.richTextBox1.Text = "enter the Tag ID to get other details.";
+            // 
+            // toUpdate
+            // 
+            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
+            this.toUpdate.FlatAppearance.BorderSize = 0;
+            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toUpdate.ForeColor = System.Drawing.Color.White;
+            this.toUpdate.Location = new System.Drawing.Point(406, 19);
+            this.toUpdate.Name = "toUpdate";
+            this.toUpdate.Size = new System.Drawing.Size(75, 23);
+            this.toUpdate.TabIndex = 48;
+            this.toUpdate.Text = "Update?";
+            this.toUpdate.UseVisualStyleBackColor = false;
+            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
             // 
             // btnGenerateCode
             // 
@@ -159,7 +188,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(654, 183);
+            this.btnClear.Location = new System.Drawing.Point(654, 164);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(119, 32);
             this.btnClear.TabIndex = 41;
@@ -175,7 +204,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(506, 183);
+            this.btnDelete.Location = new System.Drawing.Point(506, 164);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(119, 32);
             this.btnDelete.TabIndex = 40;
@@ -191,7 +220,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(353, 183);
+            this.btnUpdate.Location = new System.Drawing.Point(353, 164);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(119, 32);
             this.btnUpdate.TabIndex = 39;
@@ -206,7 +235,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(192, 183);
+            this.btnSave.Location = new System.Drawing.Point(192, 164);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(119, 32);
             this.btnSave.TabIndex = 38;
@@ -337,31 +366,42 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addTagGridView.Size = new System.Drawing.Size(883, 276);
             this.addTagGridView.TabIndex = 25;
             // 
-            // toUpdate
+            // selectColumnComboBox
             // 
-            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
-            this.toUpdate.FlatAppearance.BorderSize = 0;
-            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toUpdate.ForeColor = System.Drawing.Color.White;
-            this.toUpdate.Location = new System.Drawing.Point(406, 19);
-            this.toUpdate.Name = "toUpdate";
-            this.toUpdate.Size = new System.Drawing.Size(75, 23);
-            this.toUpdate.TabIndex = 48;
-            this.toUpdate.Text = "Update?";
-            this.toUpdate.UseVisualStyleBackColor = false;
-            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
+            this.selectColumnComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.selectColumnComboBox.FormattingEnabled = true;
+            this.selectColumnComboBox.Items.AddRange(new object[] {
+            "TagName",
+            "RelatedTag"});
+            this.selectColumnComboBox.Location = new System.Drawing.Point(494, 322);
+            this.selectColumnComboBox.Name = "selectColumnComboBox";
+            this.selectColumnComboBox.Size = new System.Drawing.Size(146, 21);
+            this.selectColumnComboBox.TabIndex = 33;
             // 
-            // richTextBox1
+            // btnSearch
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.Gray;
-            this.richTextBox1.Location = new System.Drawing.Point(406, 49);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(121, 41);
-            this.richTextBox1.TabIndex = 49;
-            this.richTextBox1.Text = "enter the Tag ID to get other details.";
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSearch.BackColor = System.Drawing.Color.Teal;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(646, 320);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 32;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // textSearchBox
+            // 
+            this.textSearchBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textSearchBox.Location = new System.Drawing.Point(257, 322);
+            this.textSearchBox.Multiline = true;
+            this.textSearchBox.Name = "textSearchBox";
+            this.textSearchBox.Size = new System.Drawing.Size(231, 21);
+            this.textSearchBox.TabIndex = 31;
             // 
             // AddTagInfo
             // 
@@ -369,6 +409,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.selectColumnComboBox);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.textSearchBox);
             this.Controls.Add(this.addTagGridView);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -383,6 +426,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addTagGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -412,5 +456,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button toUpdate;
+        private System.Windows.Forms.ComboBox selectColumnComboBox;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox textSearchBox;
     }
 }

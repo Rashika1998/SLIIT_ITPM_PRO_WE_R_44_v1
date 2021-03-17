@@ -189,5 +189,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             con.Close();
             cleanInputFields();
         }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            DisplayNotAvailableTime displayNotAvailableTime = new DisplayNotAvailableTime();
+            displayNotAvailableTime.ShowDialog();
+        }
     }
 }

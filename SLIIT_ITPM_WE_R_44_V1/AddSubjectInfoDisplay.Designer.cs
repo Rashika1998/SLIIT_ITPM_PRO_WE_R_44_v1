@@ -36,6 +36,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label3 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.addStudentGroupLabel = new System.Windows.Forms.Label();
+            this.selectColumnComboBox = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.textSearchBox = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addSubjectDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -48,7 +51,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAddSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSubject.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddSubject.ForeColor = System.Drawing.Color.White;
-            this.btnAddSubject.Location = new System.Drawing.Point(33, 122);
+            this.btnAddSubject.Location = new System.Drawing.Point(33, 113);
             this.btnAddSubject.Name = "btnAddSubject";
             this.btnAddSubject.Size = new System.Drawing.Size(136, 32);
             this.btnAddSubject.TabIndex = 30;
@@ -125,12 +128,52 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroupLabel.TabIndex = 0;
             this.addStudentGroupLabel.Text = "Add Subject Information Display";
             // 
+            // selectColumnComboBox
+            // 
+            this.selectColumnComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.selectColumnComboBox.FormattingEnabled = true;
+            this.selectColumnComboBox.Items.AddRange(new object[] {
+            "OfferedYear",
+            "OfferedSemester"});
+            this.selectColumnComboBox.Location = new System.Drawing.Point(723, 122);
+            this.selectColumnComboBox.Name = "selectColumnComboBox";
+            this.selectColumnComboBox.Size = new System.Drawing.Size(146, 21);
+            this.selectColumnComboBox.TabIndex = 33;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSearch.BackColor = System.Drawing.Color.Teal;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(875, 120);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 32;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // textSearchBox
+            // 
+            this.textSearchBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textSearchBox.Location = new System.Drawing.Point(486, 122);
+            this.textSearchBox.Multiline = true;
+            this.textSearchBox.Name = "textSearchBox";
+            this.textSearchBox.Size = new System.Drawing.Size(231, 21);
+            this.textSearchBox.TabIndex = 31;
+            // 
             // AddSubjectInfoDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.selectColumnComboBox);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.textSearchBox);
             this.Controls.Add(this.btnAddSubject);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -144,6 +187,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -156,5 +200,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label addStudentGroupLabel;
+        private System.Windows.Forms.ComboBox selectColumnComboBox;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox textSearchBox;
     }
 }

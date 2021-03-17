@@ -58,12 +58,21 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand command = new SqlCommand("update AddLecturer set LecturerName = '" + txtLecturerName.Text + "' , Faculty = '" + facultyComboBox.Text + "' , Department = '" + departmentComboBox.Text + "' , Center = '" + centerComboBox.Text + "' , Building = '" + buildingComboBox.Text + "' , LecturerLevel = '" + levelComboBox.Text + "' , Rank = '" + textRank.Text + "' , UpdateDate = getdate() where EmpID = '" + int.Parse(empID.Text) + "'", con);
-            command.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("Successfully Updated.");
-            cleanInputFields();
+
+            if(empID.Text == "")
+            {
+                MessageBox.Show("Enter the empID");
+            }
+            else
+            {
+                con.Open();
+                SqlCommand command = new SqlCommand("update AddLecturer set LecturerName = '" + txtLecturerName.Text + "' , Faculty = '" + facultyComboBox.Text + "' , Department = '" + departmentComboBox.Text + "' , Center = '" + centerComboBox.Text + "' , Building = '" + buildingComboBox.Text + "' , LecturerLevel = '" + levelComboBox.Text + "' , Rank = '" + textRank.Text + "' , UpdateDate = getdate() where EmpID = '" + int.Parse(empID.Text) + "'", con);
+                command.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Successfully Updated.");
+                cleanInputFields();
+            }
+
         }
 
         private void btnView_Click(object sender, EventArgs e)

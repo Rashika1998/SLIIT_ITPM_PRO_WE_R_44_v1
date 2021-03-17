@@ -59,6 +59,15 @@ namespace SLIIT_ITPM_WE_R_44_V1
             addTagGridView.DataSource = dt;
         }
 
+        void SearchBindData()
+        {
+            SqlCommand command = new SqlCommand("select * from AddTag where " + selectColumnComboBox.Text + " like '" + textSearchBox.Text + "%'", con);
+            SqlDataAdapter sd = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            addTagGridView.DataSource = dt;
+
+        }
 
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -138,6 +147,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 MessageBox.Show("Enter the Tag ID");
             }
   
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            SearchBindData();
         }
     }
 }
