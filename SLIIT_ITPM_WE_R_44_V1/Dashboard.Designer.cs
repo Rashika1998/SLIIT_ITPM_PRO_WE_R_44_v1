@@ -197,7 +197,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel4.BackColor = System.Drawing.Color.Teal;
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(0, 290);
             this.panel4.Name = "panel4";
@@ -218,7 +218,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel7.BackColor = System.Drawing.Color.Teal;
             this.panel7.Controls.Add(this.label7);
             this.panel7.Location = new System.Drawing.Point(0, 562);
             this.panel7.Name = "panel7";
@@ -257,7 +257,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel6.BackColor = System.Drawing.Color.Teal;
             this.panel6.Controls.Add(this.label6);
             this.panel6.Location = new System.Drawing.Point(0, 475);
             this.panel6.Name = "panel6";
@@ -296,7 +296,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Controls.Add(this.label3);
             this.panel3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -318,7 +318,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel5.BackColor = System.Drawing.Color.Teal;
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(0, 371);
             this.panel5.Name = "panel5";
