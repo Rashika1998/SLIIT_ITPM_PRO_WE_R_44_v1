@@ -136,17 +136,47 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DisplayConsecutiveSessionWithRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayConsecutiveSessionWithRoom.Designer.cs">
+      <DependentUpon>DisplayConsecutiveSessionWithRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayConsecutive_Parallel_NonOverlappingSessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayConsecutive_Parallel_NonOverlappingSessions.Designer.cs">
+      <DependentUpon>DisplayConsecutive_Parallel_NonOverlappingSessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayManagedRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayManagedRooms.Designer.cs">
+      <DependentUpon>DisplayManagedRooms.cs</DependentUpon>
+    </Compile>
     <Compile Include="DisplayNotAvailableTime.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DisplayNotAvailableTime.Designer.cs">
       <DependentUpon>DisplayNotAvailableTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="DisplaySessionsWithRooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplaySessionsWithRooms.Designer.cs">
+      <DependentUpon>DisplaySessionsWithRooms.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideLines.Designer.cs">
+      <DependentUpon>GuideLines.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageSessionRoom.cs">
       <SubType>Form</SubType>
@@ -231,11 +261,26 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DisplayConsecutiveSessionWithRoom.resx">
+      <DependentUpon>DisplayConsecutiveSessionWithRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayConsecutive_Parallel_NonOverlappingSessions.resx">
+      <DependentUpon>DisplayConsecutive_Parallel_NonOverlappingSessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayManagedRooms.resx">
+      <DependentUpon>DisplayManagedRooms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DisplayNotAvailableTime.resx">
       <DependentUpon>DisplayNotAvailableTime.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DisplaySessionsWithRooms.resx">
+      <DependentUpon>DisplaySessionsWithRooms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideLines.resx">
+      <DependentUpon>GuideLines.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageSessionRoom.resx">
       <DependentUpon>ManageSessionRoom.cs</DependentUpon>

@@ -106,5 +106,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             DisplayNotAvailableTime displayNotAvailableTime = new DisplayNotAvailableTime();
             displayNotAvailableTime.ShowDialog();
         }
+
+        private void btnGuideLine_Click(object sender, EventArgs e)
+        {
+            GuideLines guideLines = new GuideLines();
+            guideLines.ShowDialog();
+        }
     }
 }

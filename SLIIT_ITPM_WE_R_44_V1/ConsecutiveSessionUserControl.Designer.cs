@@ -79,6 +79,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnView.TabIndex = 2;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // label2
             // 

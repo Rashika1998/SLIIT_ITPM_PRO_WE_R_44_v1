@@ -80,7 +80,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             //read values
             //set a while statement to set values for combo box
 
-            string selectSql1 = "select LocationID from AddLocation";
+            string selectSql1 = "select RoomName from AddLocation";
             SqlCommand com1 = new SqlCommand(selectSql1, con);
 
             try
@@ -92,9 +92,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
                     while (read.Read())
                     {
 
-                        roomID = (read["LocationID"].ToString());
+                        roomID = (read["RoomName"].ToString());
                         selectRoomComboBox.Items.Add(roomID);
-
 
                     }
                 }
@@ -128,6 +127,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
 
         string s_tag, s_l1, s_l2, s_hrs, s_min, s_no_std, s_sub, s_grp = string.Empty;
+
+        private void btnViewManagedSessions_Click(object sender, EventArgs e)
+        {
+            DisplayManagedRooms displayManagedRooms = new DisplayManagedRooms();
+            displayManagedRooms.ShowDialog();
+        }
+
         void showSelectedSessionDetails()
         {
             string selectSql1 = "select Tag , Lecturer1 , Lecturer2 , Hrs , Min , NoOfStudents , Subject , StudentGroup from AddSession where SessionID = '" + selectSessionComboBox.Text + "'";

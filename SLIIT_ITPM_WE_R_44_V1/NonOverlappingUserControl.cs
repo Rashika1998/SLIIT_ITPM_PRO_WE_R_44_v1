@@ -105,5 +105,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             nonOverlappingSessionDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             BindData();
         }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            DisplayConsecutive_Parallel_NonOverlappingSessions displayConsecutive_Parallel_NonOverlappingSessions = new DisplayConsecutive_Parallel_NonOverlappingSessions();
+            displayConsecutive_Parallel_NonOverlappingSessions.ShowDialog();
+        }
     }
 }

@@ -46,6 +46,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label3 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.addStudentGroupLabel = new System.Windows.Forms.Label();
+            this.btnViewManagedSessions = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +54,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Controls.Add(this.btnViewManagedSessions);
             this.panel2.Controls.Add(this.btnSelectedSession);
             this.panel2.Controls.Add(this.selectedSessions);
             this.panel2.Controls.Add(this.label2);
@@ -76,7 +78,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSelectedSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectedSession.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectedSession.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnSelectedSession.Location = new System.Drawing.Point(736, 262);
+            this.btnSelectedSession.Location = new System.Drawing.Point(736, 250);
             this.btnSelectedSession.Name = "btnSelectedSession";
             this.btnSelectedSession.Size = new System.Drawing.Size(162, 23);
             this.btnSelectedSession.TabIndex = 48;
@@ -87,7 +89,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // selectedSessions
             // 
             this.selectedSessions.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.selectedSessions.Location = new System.Drawing.Point(684, 127);
+            this.selectedSessions.Location = new System.Drawing.Point(684, 115);
             this.selectedSessions.Name = "selectedSessions";
             this.selectedSessions.Size = new System.Drawing.Size(214, 129);
             this.selectedSessions.TabIndex = 47;
@@ -98,7 +100,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(545, 127);
+            this.label2.Location = new System.Drawing.Point(545, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 21);
             this.label2.TabIndex = 46;
@@ -107,7 +109,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // selectRoomComboBox
             // 
             this.selectRoomComboBox.FormattingEnabled = true;
-            this.selectRoomComboBox.Location = new System.Drawing.Point(265, 130);
+            this.selectRoomComboBox.Location = new System.Drawing.Point(265, 118);
             this.selectRoomComboBox.Name = "selectRoomComboBox";
             this.selectRoomComboBox.Size = new System.Drawing.Size(214, 21);
             this.selectRoomComboBox.TabIndex = 45;
@@ -117,7 +119,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(262, 65);
+            this.label5.Location = new System.Drawing.Point(261, 76);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 15);
             this.label5.TabIndex = 44;
@@ -159,7 +161,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(113, 127);
+            this.label7.Location = new System.Drawing.Point(113, 115);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 21);
             this.label7.TabIndex = 33;
@@ -167,7 +169,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // sessionRoomID
             // 
-            this.sessionRoomID.Location = new System.Drawing.Point(265, 42);
+            this.sessionRoomID.Location = new System.Drawing.Point(264, 53);
             this.sessionRoomID.Name = "sessionRoomID";
             this.sessionRoomID.Size = new System.Drawing.Size(214, 20);
             this.sessionRoomID.TabIndex = 28;
@@ -177,7 +179,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(113, 41);
+            this.label4.Location = new System.Drawing.Point(112, 52);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 21);
             this.label4.TabIndex = 27;
@@ -186,7 +188,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // selectSessionComboBox
             // 
             this.selectSessionComboBox.FormattingEnabled = true;
-            this.selectSessionComboBox.Location = new System.Drawing.Point(675, 39);
+            this.selectSessionComboBox.Location = new System.Drawing.Point(674, 50);
             this.selectSessionComboBox.Name = "selectSessionComboBox";
             this.selectSessionComboBox.Size = new System.Drawing.Size(214, 21);
             this.selectSessionComboBox.TabIndex = 23;
@@ -196,7 +198,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(545, 39);
+            this.label1.Location = new System.Drawing.Point(544, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 21);
             this.label1.TabIndex = 21;
@@ -251,6 +253,21 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroupLabel.TabIndex = 0;
             this.addStudentGroupLabel.Text = "Manage Session Rooms";
             // 
+            // btnViewManagedSessions
+            // 
+            this.btnViewManagedSessions.BackColor = System.Drawing.Color.Teal;
+            this.btnViewManagedSessions.FlatAppearance.BorderSize = 0;
+            this.btnViewManagedSessions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewManagedSessions.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewManagedSessions.ForeColor = System.Drawing.Color.White;
+            this.btnViewManagedSessions.Location = new System.Drawing.Point(653, 378);
+            this.btnViewManagedSessions.Name = "btnViewManagedSessions";
+            this.btnViewManagedSessions.Size = new System.Drawing.Size(245, 32);
+            this.btnViewManagedSessions.TabIndex = 49;
+            this.btnViewManagedSessions.Text = "View Sessions with Rooms";
+            this.btnViewManagedSessions.UseVisualStyleBackColor = false;
+            this.btnViewManagedSessions.Click += new System.EventHandler(this.btnViewManagedSessions_Click);
+            // 
             // ManageSessionRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,5 +308,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label addStudentGroupLabel;
         private System.Windows.Forms.Button btnSelectedSession;
+        private System.Windows.Forms.Button btnViewManagedSessions;
     }
 }

@@ -59,6 +59,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroup = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnGuideLine = new System.Windows.Forms.Button();
             this.dashBoardPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -73,7 +74,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.dashBoardPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dashBoardPanel.BackColor = System.Drawing.Color.Gainsboro;
+            this.dashBoardPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dashBoardPanel.Controls.Add(this.btnGuideLine);
             this.dashBoardPanel.Controls.Add(this.btnContactUs);
             this.dashBoardPanel.Controls.Add(this.label8);
             this.dashBoardPanel.Controls.Add(this.label9);
@@ -89,7 +91,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnContactUs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnContactUs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnContactUs.FlatAppearance.BorderSize = 0;
-            this.btnContactUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
+            this.btnContactUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.btnContactUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnContactUs.Font = new System.Drawing.Font("Lucida Bright", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContactUs.ForeColor = System.Drawing.Color.Gray;
@@ -107,7 +109,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(452, 31);
+            this.label8.Location = new System.Drawing.Point(383, 30);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 18);
             this.label8.TabIndex = 6;
@@ -118,7 +120,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkGray;
-            this.label9.Location = new System.Drawing.Point(138, 55);
+            this.label9.Location = new System.Drawing.Point(152, 55);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(137, 15);
             this.label9.TabIndex = 5;
@@ -129,7 +131,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnAboutUs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAboutUs.FlatAppearance.BorderSize = 0;
-            this.btnAboutUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
+            this.btnAboutUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAboutUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAboutUs.Font = new System.Drawing.Font("Lucida Bright", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutUs.ForeColor = System.Drawing.Color.Gray;
@@ -506,6 +508,23 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Size = new System.Drawing.Size(740, 661);
             this.panel2.TabIndex = 2;
             // 
+            // btnGuideLine
+            // 
+            this.btnGuideLine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuideLine.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuideLine.FlatAppearance.BorderSize = 0;
+            this.btnGuideLine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnGuideLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuideLine.Font = new System.Drawing.Font("Lucida Bright", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuideLine.ForeColor = System.Drawing.Color.Gray;
+            this.btnGuideLine.Location = new System.Drawing.Point(511, 26);
+            this.btnGuideLine.Name = "btnGuideLine";
+            this.btnGuideLine.Size = new System.Drawing.Size(70, 27);
+            this.btnGuideLine.TabIndex = 8;
+            this.btnGuideLine.Text = "Guide";
+            this.btnGuideLine.UseVisualStyleBackColor = true;
+            this.btnGuideLine.Click += new System.EventHandler(this.btnGuideLine_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -570,5 +589,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnContactUs;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnGuideLine;
     }
 }
