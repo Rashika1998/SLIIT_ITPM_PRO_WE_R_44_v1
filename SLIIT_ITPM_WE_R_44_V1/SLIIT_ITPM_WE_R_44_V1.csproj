@@ -118,6 +118,12 @@
     <Compile Include="AddTagInfo.Designer.cs">
       <DependentUpon>AddTagInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddTagInfoDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTagInfoDisplay.Designer.cs">
+      <DependentUpon>AddTagInfoDisplay.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddWorkingDaysAndHoursInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddTagInfo.resx">
       <DependentUpon>AddTagInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTagInfoDisplay.resx">
+      <DependentUpon>AddTagInfoDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddWorkingDaysAndHoursInfo.resx">
       <DependentUpon>AddWorkingDaysAndHoursInfo.cs</DependentUpon>

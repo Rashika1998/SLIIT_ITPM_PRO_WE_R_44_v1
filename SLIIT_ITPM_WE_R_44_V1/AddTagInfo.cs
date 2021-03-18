@@ -45,30 +45,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             con.Close();
             cleanInputFields();
 
-            //Display data on gridview
-            BindData();
+            
         }
 
 
-        void BindData()
-        {
-            SqlCommand command = new SqlCommand("select * from AddTag", con);
-            SqlDataAdapter sd = new SqlDataAdapter(command);
-            DataTable dt = new DataTable();
-            sd.Fill(dt);
-            addTagGridView.DataSource = dt;
-        }
-
-        void SearchBindData()
-        {
-            SqlCommand command = new SqlCommand("select * from AddTag where " + selectColumnComboBox.Text + " like '" + textSearchBox.Text + "%'", con);
-            SqlDataAdapter sd = new SqlDataAdapter(command);
-            DataTable dt = new DataTable();
-            sd.Fill(dt);
-            addTagGridView.DataSource = dt;
-
-        }
-
+        
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -78,13 +59,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
             con.Close();
             MessageBox.Show("Successfully Updated.");
             cleanInputFields();
-            BindData();
+           
         }
 
         private void AddTagInfo_Load(object sender, EventArgs e)
         {
-            addTagGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            BindData();
+            
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -100,7 +80,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
                     command.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Successfully Deleted.");
-                    BindData();
+                    
 
                 }
 
@@ -151,7 +131,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            SearchBindData();
+            
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            AddTagInfoDisplay addTagInfoDisplay = new AddTagInfoDisplay();
+            addTagInfoDisplay.ShowDialog();
         }
     }
 }
