@@ -178,6 +178,12 @@
     <Compile Include="GuideLines.Designer.cs">
       <DependentUpon>GuideLines.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoomsWithNotAvailableTimeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoomsWithNotAvailableTimeUserControl.Designer.cs">
+      <DependentUpon>RoomsWithNotAvailableTimeUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageSessionRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GuideLines.resx">
       <DependentUpon>GuideLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomsWithNotAvailableTimeUserControl.resx">
+      <DependentUpon>RoomsWithNotAvailableTimeUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageSessionRoom.resx">
       <DependentUpon>ManageSessionRoom.cs</DependentUpon>

@@ -30,6 +30,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnViewManagedSessions = new System.Windows.Forms.Button();
             this.btnSelectedSession = new System.Windows.Forms.Button();
             this.selectedSessions = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label3 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.addStudentGroupLabel = new System.Windows.Forms.Label();
-            this.btnViewManagedSessions = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +71,21 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(984, 468);
             this.panel2.TabIndex = 28;
+            // 
+            // btnViewManagedSessions
+            // 
+            this.btnViewManagedSessions.BackColor = System.Drawing.Color.Teal;
+            this.btnViewManagedSessions.FlatAppearance.BorderSize = 0;
+            this.btnViewManagedSessions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewManagedSessions.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewManagedSessions.ForeColor = System.Drawing.Color.White;
+            this.btnViewManagedSessions.Location = new System.Drawing.Point(116, 241);
+            this.btnViewManagedSessions.Name = "btnViewManagedSessions";
+            this.btnViewManagedSessions.Size = new System.Drawing.Size(362, 32);
+            this.btnViewManagedSessions.TabIndex = 49;
+            this.btnViewManagedSessions.Text = "View Sessions with Rooms";
+            this.btnViewManagedSessions.UseVisualStyleBackColor = false;
+            this.btnViewManagedSessions.Click += new System.EventHandler(this.btnViewManagedSessions_Click);
             // 
             // btnSelectedSession
             // 
@@ -133,9 +148,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(779, 325);
+            this.btnClear.Location = new System.Drawing.Point(311, 183);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(119, 32);
+            this.btnClear.Size = new System.Drawing.Size(167, 32);
             this.btnClear.TabIndex = 41;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -148,9 +163,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(653, 325);
+            this.btnSave.Location = new System.Drawing.Point(117, 183);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(119, 32);
+            this.btnSave.Size = new System.Drawing.Size(166, 32);
             this.btnSave.TabIndex = 38;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -252,21 +267,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroupLabel.Size = new System.Drawing.Size(284, 32);
             this.addStudentGroupLabel.TabIndex = 0;
             this.addStudentGroupLabel.Text = "Manage Session Rooms";
-            // 
-            // btnViewManagedSessions
-            // 
-            this.btnViewManagedSessions.BackColor = System.Drawing.Color.Teal;
-            this.btnViewManagedSessions.FlatAppearance.BorderSize = 0;
-            this.btnViewManagedSessions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewManagedSessions.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewManagedSessions.ForeColor = System.Drawing.Color.White;
-            this.btnViewManagedSessions.Location = new System.Drawing.Point(653, 378);
-            this.btnViewManagedSessions.Name = "btnViewManagedSessions";
-            this.btnViewManagedSessions.Size = new System.Drawing.Size(245, 32);
-            this.btnViewManagedSessions.TabIndex = 49;
-            this.btnViewManagedSessions.Text = "View Sessions with Rooms";
-            this.btnViewManagedSessions.UseVisualStyleBackColor = false;
-            this.btnViewManagedSessions.Click += new System.EventHandler(this.btnViewManagedSessions_Click);
             // 
             // ManageSessionRoom
             // 

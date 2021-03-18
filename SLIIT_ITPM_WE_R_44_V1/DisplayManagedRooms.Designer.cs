@@ -37,6 +37,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnNotAvailableTimeAllocation = new System.Windows.Forms.Button();
             this.btnShowConsecutiveSession = new System.Windows.Forms.Button();
             this.btnShowSessionWithRoom = new System.Windows.Forms.Button();
+            this.roomsWithNotAvailableTimeUserControl1 = new SLIIT_ITPM_WE_R_44_V1.RoomsWithNotAvailableTimeUserControl();
             this.displayConsecutiveSessionWithRoom1 = new SLIIT_ITPM_WE_R_44_V1.DisplayConsecutiveSessionWithRoom();
             this.displaySessionsWithRooms1 = new SLIIT_ITPM_WE_R_44_V1.DisplaySessionsWithRooms();
             this.panel1.SuspendLayout();
@@ -88,9 +89,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroupLabel.ForeColor = System.Drawing.Color.White;
             this.addStudentGroupLabel.Location = new System.Drawing.Point(12, 23);
             this.addStudentGroupLabel.Name = "addStudentGroupLabel";
-            this.addStudentGroupLabel.Size = new System.Drawing.Size(338, 32);
+            this.addStudentGroupLabel.Size = new System.Drawing.Size(353, 32);
             this.addStudentGroupLabel.TabIndex = 0;
-            this.addStudentGroupLabel.Text = "Manage Session Rooms Info";
+            this.addStudentGroupLabel.Text = "Managed Session Rooms Info";
             // 
             // userControlType
             // 
@@ -118,6 +119,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnNotAvailableTimeAllocation.TabIndex = 37;
             this.btnNotAvailableTimeAllocation.Text = "Not Available Time";
             this.btnNotAvailableTimeAllocation.UseVisualStyleBackColor = false;
+            this.btnNotAvailableTimeAllocation.Click += new System.EventHandler(this.btnNotAvailableTimeAllocation_Click);
             // 
             // btnShowConsecutiveSession
             // 
@@ -151,6 +153,15 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnShowSessionWithRoom.UseVisualStyleBackColor = false;
             this.btnShowSessionWithRoom.Click += new System.EventHandler(this.btnShowSessionWithRoom_Click);
             // 
+            // roomsWithNotAvailableTimeUserControl1
+            // 
+            this.roomsWithNotAvailableTimeUserControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.roomsWithNotAvailableTimeUserControl1.BackColor = System.Drawing.Color.White;
+            this.roomsWithNotAvailableTimeUserControl1.Location = new System.Drawing.Point(35, 159);
+            this.roomsWithNotAvailableTimeUserControl1.Name = "roomsWithNotAvailableTimeUserControl1";
+            this.roomsWithNotAvailableTimeUserControl1.Size = new System.Drawing.Size(900, 457);
+            this.roomsWithNotAvailableTimeUserControl1.TabIndex = 41;
+            // 
             // displayConsecutiveSessionWithRoom1
             // 
             this.displayConsecutiveSessionWithRoom1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -175,6 +186,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.roomsWithNotAvailableTimeUserControl1);
             this.Controls.Add(this.displayConsecutiveSessionWithRoom1);
             this.Controls.Add(this.displaySessionsWithRooms1);
             this.Controls.Add(this.userControlType);
@@ -206,5 +218,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Button btnShowSessionWithRoom;
         private DisplaySessionsWithRooms displaySessionsWithRooms1;
         private DisplayConsecutiveSessionWithRoom displayConsecutiveSessionWithRoom1;
+        private RoomsWithNotAvailableTimeUserControl roomsWithNotAvailableTimeUserControl1;
     }
 }

@@ -20,7 +20,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             if (thursdayCheckBox.Checked)
             {
-                thursday = "Working";
+                thursday = "Thursday";
             }
             else
             {
@@ -32,7 +32,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             if (fridayCheckBox.Checked)
             {
-                friday = "Working";
+                friday = "Friday";
             }
             else
             {
@@ -44,7 +44,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             if (saturdayheckBox.Checked)
             {
-                saturday = "Working";
+                saturday = "Saturday";
             }
             else
             {
@@ -56,7 +56,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             if (sundayCheckBox.Checked)
             {
-                sunday = "Working";
+                sunday = "Sunday";
             }
             else
             {
@@ -70,7 +70,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             if (wednesdayCheckBox.Checked)
             {
-                wednesday = "Working";
+                wednesday = "Wednesday";
             }
             else
             {
@@ -83,7 +83,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             if (tuesdayCheckBox.Checked)
             {
-                tuesday = "Working";
+                tuesday = "Tuesday";
             }
             else
             {
@@ -95,7 +95,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             if (mondayCheckBox.Checked)
             {
-                monday = "working";
+                monday = "Monday";
             }
             else
             {
