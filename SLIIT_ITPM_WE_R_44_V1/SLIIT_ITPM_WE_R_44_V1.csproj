@@ -162,6 +162,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database_we_r_44_v1DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Database_we_r_44_v1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database_we_r_44_v1DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DisplayConsecutiveSessionWithRoom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -197,6 +202,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateTimeTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateTimeTables.Designer.cs">
+      <DependentUpon>GenerateTimeTables.cs</DependentUpon>
     </Compile>
     <Compile Include="GuideLines.cs">
       <SubType>Form</SubType>
@@ -314,6 +325,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GenerateTimeTables.resx">
+      <DependentUpon>GenerateTimeTables.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuideLines.resx">
       <DependentUpon>GuideLines.cs</DependentUpon>
     </EmbeddedResource>
@@ -357,6 +371,17 @@
     </None>
     <None Include="Database_we_r_44_v1DataSet.xss">
       <DependentUpon>Database_we_r_44_v1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database_we_r_44_v1DataSet1.xsc">
+      <DependentUpon>Database_we_r_44_v1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database_we_r_44_v1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database_we_r_44_v1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database_we_r_44_v1DataSet1.xss">
+      <DependentUpon>Database_we_r_44_v1DataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
