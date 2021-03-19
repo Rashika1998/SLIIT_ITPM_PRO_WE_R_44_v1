@@ -19,7 +19,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=ITPM_Y3S2_WE_R_44;User ID=sa;Password=rashika1998");
+        //SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=ITPM_Y3S2_WE_R_44;User ID=sa;Password=rashika1998");
+        //Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="F:\SLIIT Projects\GitHub\SLIIT_ITPM_PRO_WE_R_44_v1\SLIIT_ITPM_WE_R_44_V1\ITPM_Y3S2_WE_R_44.mdf";Integrated Security=True
+        //SqlConnection con = new SqlConnection("Data Source=(LocalDB)/MSSQLLocalDB;AttachDbFilename=|DataDirectory|/Database_we_r_44_v1.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
 
 
         private void btnDashboard_Click(object sender, EventArgs e)
