@@ -18,24 +18,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=ITPM_Y3S2_WE_R_44;User ID=sa;Password=rashika1998");
-
-
-        void BindData()
-        {
-            SqlCommand command = new SqlCommand("select * from AboutUs", con);
-            SqlDataAdapter sd = new SqlDataAdapter(command);
-            DataTable dt = new DataTable();
-            sd.Fill(dt);
-            aboutUsGridView.DataSource = dt;
-        }
-
-
+        
         private void AboutUs_Load(object sender, EventArgs e)
         {
-            aboutUsGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            aboutUsGridView.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            BindData();
+           
         }
     }
 }
