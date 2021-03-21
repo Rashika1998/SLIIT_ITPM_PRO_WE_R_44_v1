@@ -30,6 +30,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void InitializeComponent()
         {
             this.dashBoardPanel = new System.Windows.Forms.Panel();
+            this.btnGuideLine = new System.Windows.Forms.Button();
             this.btnContactUs = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -59,7 +60,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroup = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnGuideLine = new System.Windows.Forms.Button();
             this.dashBoardPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -85,6 +85,23 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.dashBoardPanel.Name = "dashBoardPanel";
             this.dashBoardPanel.Size = new System.Drawing.Size(740, 86);
             this.dashBoardPanel.TabIndex = 0;
+            // 
+            // btnGuideLine
+            // 
+            this.btnGuideLine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuideLine.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuideLine.FlatAppearance.BorderSize = 0;
+            this.btnGuideLine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnGuideLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuideLine.Font = new System.Drawing.Font("Lucida Bright", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuideLine.ForeColor = System.Drawing.Color.Gray;
+            this.btnGuideLine.Location = new System.Drawing.Point(511, 26);
+            this.btnGuideLine.Name = "btnGuideLine";
+            this.btnGuideLine.Size = new System.Drawing.Size(70, 27);
+            this.btnGuideLine.TabIndex = 8;
+            this.btnGuideLine.Text = "Guide";
+            this.btnGuideLine.UseVisualStyleBackColor = true;
+            this.btnGuideLine.Click += new System.EventHandler(this.btnGuideLine_Click);
             // 
             // btnContactUs
             // 
@@ -120,7 +137,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkGray;
-            this.label9.Location = new System.Drawing.Point(152, 55);
+            this.label9.Location = new System.Drawing.Point(89, 55);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(137, 15);
             this.label9.TabIndex = 5;
@@ -148,11 +165,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(21, 22);
+            this.label1.Location = new System.Drawing.Point(42, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 30);
+            this.label1.Size = new System.Drawing.Size(69, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Logo or Name";
+            this.label1.Text = "TTMS";
             // 
             // panel1
             // 
@@ -507,23 +524,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(740, 661);
             this.panel2.TabIndex = 2;
-            // 
-            // btnGuideLine
-            // 
-            this.btnGuideLine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuideLine.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuideLine.FlatAppearance.BorderSize = 0;
-            this.btnGuideLine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnGuideLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuideLine.Font = new System.Drawing.Font("Lucida Bright", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuideLine.ForeColor = System.Drawing.Color.Gray;
-            this.btnGuideLine.Location = new System.Drawing.Point(511, 26);
-            this.btnGuideLine.Name = "btnGuideLine";
-            this.btnGuideLine.Size = new System.Drawing.Size(70, 27);
-            this.btnGuideLine.TabIndex = 8;
-            this.btnGuideLine.Text = "Guide";
-            this.btnGuideLine.UseVisualStyleBackColor = true;
-            this.btnGuideLine.Click += new System.EventHandler(this.btnGuideLine_Click);
             // 
             // Dashboard
             // 

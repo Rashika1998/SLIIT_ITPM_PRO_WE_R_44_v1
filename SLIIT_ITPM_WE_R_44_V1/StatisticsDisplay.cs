@@ -212,5 +212,17 @@ namespace SLIIT_ITPM_WE_R_44_V1
             con.Close();
         }
 
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            createBarForCountLab();
+            createBarForCountLectureHall();
+            getLatestStudentGroup();
+            getLatestSubject();
+            getLatestLecturer();
+            getRegisteredLecturerCount();
+            getRegisteredStudentCount();
+            getRegisteredSubjectCount();
+            getRegisteredRoomCount();
+        }
     }
 }

@@ -15,6 +15,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
     {
 
         public string monday , tuesday , wednesday , thursday , friday , saturday , sunday;
+        public int getOnlyReccordIDValue;
 
         private void thursdayCheckBox_CheckedChanged(object sender, EventArgs e)
         {
@@ -106,6 +107,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void AddWorkingDaysAndHoursInfo_Load(object sender, EventArgs e)
         {
+            getWorkingDaysRecordCount();
+            getRecordID();
             workingDaysGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             BindData();
         }
@@ -128,6 +131,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
             //Display data on gridview
             BindData();
+            getWorkingDaysRecordCount();
         }
 
 
@@ -138,6 +142,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             DataTable dt = new DataTable();
             sd.Fill(dt);
             workingDaysGridView.DataSource = dt;
+            getWorkingDaysRecordCount();
         }
 
 
@@ -154,19 +159,69 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 con.Close();
                 MessageBox.Show("Successfully Deleted All The Data..");
                 BindData();
+                getWorkingDaysRecordCount();
             }
 
         }
 
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        public void getRecordID()
         {
             con.Open();
-            SqlCommand command = new SqlCommand("update AddWorkingDaysAndHours set NoOfWorkingDays = '" + noOfWorkingDays.Text + "' , Monday = '" + monday + "' , Tuesday = '" + tuesday + "' , Wednesday = '" + wednesday + "' , Thursday = '" + thursday + "' , Friday = '" + friday + "' , Saturday = '" + saturday + "' , Sunday = '" + sunday + "' , Hrs = '" + addHrs.Text + "' , Min = '" + addMin.Text + "' , UpdateDate = getdate() where RecordID = 100", con);
+            SqlCommand commandGetRecordID = new SqlCommand("SELECT RecordID from AddWorkingDaysAndHours", con);
+            getOnlyReccordIDValue = (int)commandGetRecordID.ExecuteScalar();
+            con.Close();
+        }
+
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+            //SqlCommand commandGetRecordID = new SqlCommand("SELECT RecordID from AddWorkingDaysAndHours", con);
+            //String recordID = (String)command.ExecuteScalar();
+
+
+            con.Open();
+            SqlCommand command = new SqlCommand("update AddWorkingDaysAndHours set NoOfWorkingDays = '" + noOfWorkingDays.Text + "' , Monday = '" + monday + "' , Tuesday = '" + tuesday + "' , Wednesday = '" + wednesday + "' , Thursday = '" + thursday + "' , Friday = '" + friday + "' , Saturday = '" + saturday + "' , Sunday = '" + sunday + "' , Hrs = '" + addHrs.Text + "' , Min = '" + addMin.Text + "' , UpdateDate = getdate() where RecordID = '" + getOnlyReccordIDValue + "'", con);
             command.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Successfully Updated.");
             BindData();
+            getWorkingDaysRecordCount();
+        }
+
+
+
+        public void getWorkingDaysRecordCount()
+        {
+
+            con.Open();
+            SqlCommand command = new SqlCommand("SELECT COUNT(RecordID) FROM AddWorkingDaysAndHours;", con);
+            Int32 count = Convert.ToInt32(command.ExecuteScalar());
+            con.Close();
+
+
+            if (count == 0)
+            {
+                btnSave.Enabled = true;
+                recordID.Enabled = true;
+            }
+            else if(count == 1)
+            {
+                btnSave.Enabled = false;
+                recordID.Enabled = false;
+
+            }
+            else
+            {
+                btnSave.Enabled = false;
+                recordID.Enabled = false;
+            }
+            
+            
+            //textRegisteredSubject.Text = Convert.ToString(count.ToString());
+            
+
         }
 
     }

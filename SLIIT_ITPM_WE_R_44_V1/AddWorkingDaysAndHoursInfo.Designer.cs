@@ -184,7 +184,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btnSave.Enabled = false;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -368,7 +367,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // recordID
             // 
-            this.recordID.Enabled = false;
             this.recordID.Location = new System.Drawing.Point(198, 23);
             this.recordID.Name = "recordID";
             this.recordID.Size = new System.Drawing.Size(194, 20);
