@@ -66,9 +66,15 @@ namespace SLIIT_ITPM_WE_R_44_V1
             aboutUs.ShowDialog();
         }
 
+
         private void Dashboard_Load(object sender, EventArgs e)
         {
 
+            if (MessageBox.Show("Get started with Guidline?", "Go here.", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GuideLines guideLines = new GuideLines();
+                guideLines.ShowDialog();
+            }
         }
 
         private void btnAddLocation_Click(object sender, EventArgs e)
@@ -111,6 +117,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             GuideLines guideLines = new GuideLines();
             guideLines.ShowDialog();
+            
         }
+
     }
 }

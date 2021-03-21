@@ -118,7 +118,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=ITPM_Y3S2_WE_R_44;User ID=sa;Password=rashika1998");
+        //SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=ITPM_Y3S2_WE_R_44;User ID=sa;Password=rashika1998");
+
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
 
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -154,7 +156,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             if (MessageBox.Show("Are You Sure to Delete All The Data ..?", "Delete Record", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 con.Open();
-                SqlCommand command = new SqlCommand("update AddWorkingDaysAndHours set NoOfWorkingDays = '' , Monday = '' , Tuesday = '' , Wednesday = '' , Thursday = '' , Friday = '' , Saturday = '' , Sunday = '' , Hrs = '' , Min = '' , UpdateDate = getdate() where RecordID = 100", con);
+                SqlCommand command = new SqlCommand("update AddWorkingDaysAndHours set NoOfWorkingDays = '' , Monday = '' , Tuesday = '' , Wednesday = '' , Thursday = '' , Friday = '' , Saturday = '' , Sunday = '' , Hrs = '' , Min = '' , UpdateDate = getdate() where RecordID = '"+getOnlyReccordIDValue+"'", con);
                 command.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Successfully Deleted All The Data..");
@@ -167,18 +169,25 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         public void getRecordID()
         {
-            con.Open();
-            SqlCommand commandGetRecordID = new SqlCommand("SELECT RecordID from AddWorkingDaysAndHours", con);
-            getOnlyReccordIDValue = (int)commandGetRecordID.ExecuteScalar();
+
+            try 
+            { 
+                con.Open();
+                SqlCommand commandGetRecordID = new SqlCommand("SELECT RecordID from AddWorkingDaysAndHours", con);
+                getOnlyReccordIDValue = (int)commandGetRecordID.ExecuteScalar();
+                //con.Close();
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show("Error: " + e);
+            }
+
             con.Close();
         }
 
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
-            //SqlCommand commandGetRecordID = new SqlCommand("SELECT RecordID from AddWorkingDaysAndHours", con);
-            //String recordID = (String)command.ExecuteScalar();
 
 
             con.Open();
@@ -195,32 +204,61 @@ namespace SLIIT_ITPM_WE_R_44_V1
         public void getWorkingDaysRecordCount()
         {
 
+            try { 
             con.Open();
             SqlCommand command = new SqlCommand("SELECT COUNT(RecordID) FROM AddWorkingDaysAndHours;", con);
             Int32 count = Convert.ToInt32(command.ExecuteScalar());
             con.Close();
 
 
-            if (count == 0)
-            {
-                btnSave.Enabled = true;
-                recordID.Enabled = true;
-            }
-            else if(count == 1)
-            {
-                btnSave.Enabled = false;
-                recordID.Enabled = false;
+                if (count == 0)
+                {
+                    //btnSave.Enabled = true;
+                    //recordID.Enabled = true;
+                    //btnSave.Visible = true;
+                    addWorkingDaysAndHours();
+                }
+                else if (count == 1)
+                {
+                    btnSave.Enabled = false;
+                    recordID.Enabled = false;
+                    btnSave.Visible = false;
+
+                }
+                else
+                {
+                    btnSave.Enabled = false;
+                    recordID.Enabled = false;
+                    btnSave.Visible = false;
+                }
+
+
 
             }
-            else
+            catch(Exception e)
             {
-                btnSave.Enabled = false;
-                recordID.Enabled = false;
+                MessageBox.Show("Error " + e);
             }
-            
-            
+
+            con.Close();
+
+
+
             //textRegisteredSubject.Text = Convert.ToString(count.ToString());
-            
+
+
+        }
+
+
+        private void addWorkingDaysAndHours()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
+
+            con.Open();
+            SqlCommand command = new SqlCommand("insert into AddWorkingDaysAndHours values ('" + 111 + "' , '" + "7" + "' , '" + "monday" + "' , '" + "tuesday" + "' , '" + "wednesday" + "' , '" + "thursday" + "' , '" + "friday" + "' , '" + "saturday" + "' , '" + "sunday" + "' , '" + "12" + "' , '" + "00" + "' , getdate() , getdate())", con);
+            command.ExecuteNonQuery();
+            //MessageBox.Show("Successfully Inserted.");
+            con.Close();
 
         }
 

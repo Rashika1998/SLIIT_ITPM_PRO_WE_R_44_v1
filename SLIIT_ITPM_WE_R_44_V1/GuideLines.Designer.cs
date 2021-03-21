@@ -81,6 +81,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GuideLines";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.GuideLines_Load);
             this.dashBoardPanel.ResumeLayout(false);
             this.dashBoardPanel.PerformLayout();
             this.ResumeLayout(false);

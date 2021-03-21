@@ -131,6 +131,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label8.Size = new System.Drawing.Size(122, 18);
             this.label8.TabIndex = 6;
             this.label8.Text = "ABC Company";
+            
             // 
             // label9
             // 
