@@ -70,7 +70,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void Dashboard_Load(object sender, EventArgs e)
         {
 
-            if (MessageBox.Show("Get started with Guidline?", "Go here.", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Important Notice For Administrator To Guide, Please Accept...!", "Important Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 GuideLines guideLines = new GuideLines();
                 guideLines.ShowDialog();

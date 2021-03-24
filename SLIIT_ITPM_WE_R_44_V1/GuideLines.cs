@@ -91,7 +91,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             try
             {
                 con.Open();
-                SqlCommand command = new SqlCommand("SELECT COUNT(StudentGroupID) FROM AddStudent;", con);
+                SqlCommand command = new SqlCommand("SELECT COUNT(StudentGroupID) FROM AddStudentGroup;", con);
                 Int32 count = Convert.ToInt32(command.ExecuteScalar());
                 con.Close();
 
