@@ -131,14 +131,13 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label8.Size = new System.Drawing.Size(122, 18);
             this.label8.TabIndex = 6;
             this.label8.Text = "ABC Company";
-            
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkGray;
-            this.label9.Location = new System.Drawing.Point(89, 55);
+            this.label9.Location = new System.Drawing.Point(104, 55);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(137, 15);
             this.label9.TabIndex = 5;
@@ -164,11 +163,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Lucida Bright", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.Location = new System.Drawing.Point(42, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 30);
+            this.label1.Size = new System.Drawing.Size(93, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "TTMS";
             // 
