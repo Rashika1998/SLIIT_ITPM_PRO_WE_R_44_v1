@@ -30,6 +30,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.toUpdate = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -60,8 +62,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label9 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.addStudentGroupLabel = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.toUpdate = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.noEvaluationHours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noLabHours)).BeginInit();
@@ -105,6 +105,32 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(984, 491);
             this.panel2.TabIndex = 25;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox2.Location = new System.Drawing.Point(278, 94);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(151, 41);
+            this.richTextBox2.TabIndex = 68;
+            this.richTextBox2.Text = "enter the lecturer ID to get other details.";
+            // 
+            // toUpdate
+            // 
+            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
+            this.toUpdate.FlatAppearance.BorderSize = 0;
+            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toUpdate.ForeColor = System.Drawing.Color.White;
+            this.toUpdate.Location = new System.Drawing.Point(197, 94);
+            this.toUpdate.Name = "toUpdate";
+            this.toUpdate.Size = new System.Drawing.Size(75, 23);
+            this.toUpdate.TabIndex = 67;
+            this.toUpdate.Text = "Update?";
+            this.toUpdate.UseVisualStyleBackColor = false;
+            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
             // 
             // label11
             // 
@@ -450,32 +476,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroupLabel.TabIndex = 0;
             this.addStudentGroupLabel.Text = "Add Subject Information";
             // 
-            // richTextBox2
-            // 
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.ForeColor = System.Drawing.Color.Gray;
-            this.richTextBox2.Location = new System.Drawing.Point(278, 94);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(151, 41);
-            this.richTextBox2.TabIndex = 68;
-            this.richTextBox2.Text = "enter the lecturer ID to get other details.";
-            // 
-            // toUpdate
-            // 
-            this.toUpdate.BackColor = System.Drawing.Color.DarkGray;
-            this.toUpdate.FlatAppearance.BorderSize = 0;
-            this.toUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toUpdate.ForeColor = System.Drawing.Color.White;
-            this.toUpdate.Location = new System.Drawing.Point(197, 94);
-            this.toUpdate.Name = "toUpdate";
-            this.toUpdate.Size = new System.Drawing.Size(75, 23);
-            this.toUpdate.TabIndex = 67;
-            this.toUpdate.Text = "Update?";
-            this.toUpdate.UseVisualStyleBackColor = false;
-            this.toUpdate.Click += new System.EventHandler(this.toUpdate_Click);
-            // 
             // AddSubjectInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -488,6 +488,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddSubjectInfo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AddSubjectInfo_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.noEvaluationHours)).EndInit();

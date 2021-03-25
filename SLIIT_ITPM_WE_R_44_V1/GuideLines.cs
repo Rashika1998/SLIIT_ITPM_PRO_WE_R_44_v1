@@ -22,8 +22,14 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             getWorkingDaysRecordCount();
             getAddStudentGroupRecordCount();
+            getAddLecturerRecordCount();
+            getAddLocationRecordCount();
+            getAddSubjectRecordCount();
         }
 
+
+
+        //Add default details
         private void addWorkingDaysAndHours()
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
@@ -46,6 +52,55 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         }
 
+        private void addLecturer()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
+
+            con.Open();
+            SqlCommand command = new SqlCommand("insert into AddLecturer values ('" + 100 + "' , '" + "Rathnayaka R.M.R.M." + "' , '" + "Computing" + "' , '" + "IT" + "' , '" + "Malabe" + "', '" + "A502" + "', '" + "1" + "' , '" + "100.1" + "', getdate() , getdate())", con);
+            command.ExecuteNonQuery();
+            con.Close();
+
+        }
+
+        private void addLocation()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
+
+            con.Open();
+            SqlCommand command = new SqlCommand("insert into AddLocation values ('" + 1000 + "' , '" + "Computing" + "' , '" + "A502" + "' , '" + "120" + "' , '" + "Laboratory" + "' , getdate() , getdate())", con);
+            command.ExecuteNonQuery();
+            con.Close();
+
+        }
+
+
+        private void addSubject()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
+
+            con.Open();
+            SqlCommand command = new SqlCommand("insert into AddSubject values ('" + 1000 + "' , '" + "Y1" + "' , '" + "S1" + "' , '" + "ITPM" + "' , '" + "Y1.S2.ITPM" + "' , '" + "2" + "' , '" + "1" + "' , '" + "1" + "' , '" + "2" + "' , getdate() , getdate())", con);
+            command.ExecuteNonQuery();
+            con.Close();
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //Check row counts
         public void getWorkingDaysRecordCount()
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
@@ -65,7 +120,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
                 else
                 {
-                    MessageBox.Show("welcome");
+                    //MessageBox.Show("welcome");
                 }
 
 
@@ -103,7 +158,116 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
                 else
                 {
-                    MessageBox.Show("welcome");
+                    //MessageBox.Show("welcome");
+                }
+
+
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error " + e);
+            }
+
+            con.Close();
+        }
+
+
+
+
+        public void getAddLecturerRecordCount()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
+
+            try
+            {
+                con.Open();
+                SqlCommand command = new SqlCommand("SELECT COUNT(EmpID) FROM AddLecturer;", con);
+                Int32 count = Convert.ToInt32(command.ExecuteScalar());
+                con.Close();
+
+
+                if (count == 0)
+                {
+                    addLecturer();
+                }
+
+                else
+                {
+                    //MessageBox.Show("welcome");
+                }
+
+
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error " + e);
+            }
+
+            con.Close();
+        }
+
+
+
+
+
+        public void getAddLocationRecordCount()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
+
+            try
+            {
+                con.Open();
+                SqlCommand command = new SqlCommand("SELECT COUNT(LocationID) FROM AddLocation;", con);
+                Int32 count = Convert.ToInt32(command.ExecuteScalar());
+                con.Close();
+
+
+                if (count == 0)
+                {
+                    addLocation();
+                }
+
+                else
+                {
+                    //MessageBox.Show("welcome");
+                }
+
+
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error " + e);
+            }
+
+            con.Close();
+        }
+
+
+
+
+        public void getAddSubjectRecordCount()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
+
+            try
+            {
+                con.Open();
+                SqlCommand command = new SqlCommand("SELECT COUNT(SubjectID) FROM AddSubject;", con);
+                Int32 count = Convert.ToInt32(command.ExecuteScalar());
+                con.Close();
+
+
+                if (count == 0)
+                {
+                    addSubject();
+                }
+
+                else
+                {
+                    //MessageBox.Show("welcome");
                 }
 
 
