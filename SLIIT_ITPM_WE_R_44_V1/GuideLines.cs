@@ -25,6 +25,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             getAddLecturerRecordCount();
             getAddLocationRecordCount();
             getAddSubjectRecordCount();
+            getAddTagRecordCount();
         }
 
 
@@ -81,6 +82,18 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
             con.Open();
             SqlCommand command = new SqlCommand("insert into AddSubject values ('" + 1000 + "' , '" + "Y1" + "' , '" + "S1" + "' , '" + "ITPM" + "' , '" + "Y1.S2.ITPM" + "' , '" + "2" + "' , '" + "1" + "' , '" + "1" + "' , '" + "2" + "' , getdate() , getdate())", con);
+            command.ExecuteNonQuery();
+            con.Close();
+
+        }
+
+
+        private void addTag()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
+
+            con.Open();
+            SqlCommand command = new SqlCommand("insert into AddTag values ('" + 111 + "' , '" + "Lec" + "' , '" + "001" + "' , '" + "Lecturer" + "' , getdate() , getdate())", con);
             command.ExecuteNonQuery();
             con.Close();
 
@@ -263,6 +276,40 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 if (count == 0)
                 {
                     addSubject();
+                }
+
+                else
+                {
+                    //MessageBox.Show("welcome");
+                }
+
+
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error " + e);
+            }
+
+            con.Close();
+        }
+
+
+        public void getAddTagRecordCount()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
+
+            try
+            {
+                con.Open();
+                SqlCommand command = new SqlCommand("SELECT COUNT(TagID) FROM AddTag;", con);
+                Int32 count = Convert.ToInt32(command.ExecuteScalar());
+                con.Close();
+
+
+                if (count == 0)
+                {
+                    addTag();
                 }
 
                 else
