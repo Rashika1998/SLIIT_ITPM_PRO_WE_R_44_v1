@@ -70,10 +70,18 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void Dashboard_Load(object sender, EventArgs e)
         {
 
-            if (MessageBox.Show("Important Notice For Administrator To Accept The License., Please Accept...!", "Important Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Important Message For Accepting The License, Please Accept...!", "Important Message...!", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 GuideLines guideLines = new GuideLines();
                 guideLines.ShowDialog();
+            }
+            else
+            {
+                if (MessageBox.Show("Please Accept This License Before You Use TTMS Application...!", "Warning...!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    GuideLines guideLines = new GuideLines();
+                    guideLines.ShowDialog();
+                }
             }
         }
 
