@@ -40,12 +40,43 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand command = new SqlCommand("insert into AddTag values ('" + int.Parse(tagID.Text) + "' , '" + tagName.Text + "' , '" + tagCode.Text + "' , '" + relatedTagComboBox.Text + "' , getdate() , getdate())", con);
-            command.ExecuteNonQuery();
-            MessageBox.Show("Successfully Inserted.");
-            con.Close();
-            cleanInputFields();
+
+            try
+            {
+
+                if(tagID.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Enter the tag ID");
+                }
+                if (tagName.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Enter the tag Name");
+                }
+                if (tagCode.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Enter the tag Code");
+                }
+                if (relatedTagComboBox.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Choose the related tag");
+                }
+                else
+                {
+                    con.Open();
+                    SqlCommand command = new SqlCommand("insert into AddTag values ('" + int.Parse(tagID.Text) + "' , '" + tagName.Text + "' , '" + tagCode.Text + "' , '" + relatedTagComboBox.Text + "' , getdate() , getdate())", con);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Successfully Inserted.");
+                    con.Close();
+                    cleanInputFields();
+                }
+           
+                
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error : " + ex);
+            }
+            
 
             
         }

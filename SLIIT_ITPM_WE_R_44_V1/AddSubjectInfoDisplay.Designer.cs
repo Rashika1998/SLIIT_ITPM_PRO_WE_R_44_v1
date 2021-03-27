@@ -46,7 +46,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // btnAddSubject
             // 
-            this.btnAddSubject.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnAddSubject.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAddSubject.BackColor = System.Drawing.Color.Teal;
             this.btnAddSubject.FlatAppearance.BorderSize = 0;
             this.btnAddSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSubject.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

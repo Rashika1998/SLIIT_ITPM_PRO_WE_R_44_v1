@@ -41,12 +41,49 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
             try
             {
-                con.Open();
-                SqlCommand command = new SqlCommand("INSERT INTO AddStudentGroup VALUES('" + int.Parse(studentGroupID.Text) + "' , '" + yearComboBox.Text + "' , '" + semesterComboBox.Text + "' , '" + programComboBox.Text + "' , '" + groupNumber.Text + "' , '" + subGroupNumber.Text + "' , '" + groupID.Text + "' , '" + subGroupID.Text + "' , getdate() , getdate())", con);
-                command.ExecuteNonQuery();
-                MessageBox.Show("Successfully Inserted.");
-                con.Close();
-                cleanInputFields();
+                if (studentGroupID.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Enter the student Group ID");
+                }
+                if (yearComboBox.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Enter the academic year");
+                }
+                if (semesterComboBox.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Enter the academic semester");
+                }
+                if (programComboBox.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Choose the program");
+                }
+                if (groupNumber.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Choose the group number");
+                }
+                if (subGroupNumber.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Choose the sub group number");
+                }
+                if (groupID.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Choose the group ID");
+                }
+                if (subGroupID.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Choose the sub group ID");
+                }
+                else
+                {
+
+
+                    con.Open();
+                    SqlCommand command = new SqlCommand("INSERT INTO AddStudentGroup VALUES('" + int.Parse(studentGroupID.Text) + "' , '" + yearComboBox.Text + "' , '" + semesterComboBox.Text + "' , '" + programComboBox.Text + "' , '" + groupNumber.Text + "' , '" + subGroupNumber.Text + "' , '" + groupID.Text + "' , '" + subGroupID.Text + "' , getdate() , getdate())", con);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Successfully Inserted.");
+                    con.Close();
+                    cleanInputFields();
+                }
 
             }
             catch(SqlException ex)
