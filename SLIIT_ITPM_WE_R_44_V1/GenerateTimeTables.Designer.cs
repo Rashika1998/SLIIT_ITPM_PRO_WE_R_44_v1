@@ -62,12 +62,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.wednesdayLabel, 3, 0);
             this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.tuesdayLabel, 2, 0);
             this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.mondayLabel, 1, 0);
-            this.tableLayoutPanelGenerateTimeTable.Location = new System.Drawing.Point(82, 116);
+            this.tableLayoutPanelGenerateTimeTable.Location = new System.Drawing.Point(36, 116);
             this.tableLayoutPanelGenerateTimeTable.Name = "tableLayoutPanelGenerateTimeTable";
             this.tableLayoutPanelGenerateTimeTable.RowCount = 2;
             this.tableLayoutPanelGenerateTimeTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.09091F));
             this.tableLayoutPanelGenerateTimeTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.90909F));
-            this.tableLayoutPanelGenerateTimeTable.Size = new System.Drawing.Size(867, 221);
+            this.tableLayoutPanelGenerateTimeTable.Size = new System.Drawing.Size(913, 221);
             this.tableLayoutPanelGenerateTimeTable.TabIndex = 0;
             // 
             // mondayLabel
@@ -76,7 +76,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.mondayLabel.AutoSize = true;
             this.mondayLabel.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mondayLabel.ForeColor = System.Drawing.Color.Gray;
-            this.mondayLabel.Location = new System.Drawing.Point(128, 1);
+            this.mondayLabel.Location = new System.Drawing.Point(137, 1);
             this.mondayLabel.Name = "mondayLabel";
             this.mondayLabel.Size = new System.Drawing.Size(68, 17);
             this.mondayLabel.TabIndex = 1;
@@ -88,7 +88,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.tuesdayLabel.AutoSize = true;
             this.tuesdayLabel.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tuesdayLabel.ForeColor = System.Drawing.Color.Gray;
-            this.tuesdayLabel.Location = new System.Drawing.Point(233, 1);
+            this.tuesdayLabel.Location = new System.Drawing.Point(248, 1);
             this.tuesdayLabel.Name = "tuesdayLabel";
             this.tuesdayLabel.Size = new System.Drawing.Size(75, 17);
             this.tuesdayLabel.TabIndex = 2;
@@ -100,7 +100,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.wednesdayLabel.AutoSize = true;
             this.wednesdayLabel.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wednesdayLabel.ForeColor = System.Drawing.Color.Gray;
-            this.wednesdayLabel.Location = new System.Drawing.Point(330, 1);
+            this.wednesdayLabel.Location = new System.Drawing.Point(351, 1);
             this.wednesdayLabel.Name = "wednesdayLabel";
             this.wednesdayLabel.Size = new System.Drawing.Size(97, 17);
             this.wednesdayLabel.TabIndex = 3;
@@ -112,7 +112,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.thursdayLabel.AutoSize = true;
             this.thursdayLabel.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thursdayLabel.ForeColor = System.Drawing.Color.Gray;
-            this.thursdayLabel.Location = new System.Drawing.Point(445, 1);
+            this.thursdayLabel.Location = new System.Drawing.Point(472, 1);
             this.thursdayLabel.Name = "thursdayLabel";
             this.thursdayLabel.Size = new System.Drawing.Size(82, 17);
             this.thursdayLabel.TabIndex = 4;
@@ -124,7 +124,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.fridayLabel.AutoSize = true;
             this.fridayLabel.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fridayLabel.ForeColor = System.Drawing.Color.Gray;
-            this.fridayLabel.Location = new System.Drawing.Point(566, 1);
+            this.fridayLabel.Location = new System.Drawing.Point(599, 1);
             this.fridayLabel.Name = "fridayLabel";
             this.fridayLabel.Size = new System.Drawing.Size(57, 17);
             this.fridayLabel.TabIndex = 5;
@@ -136,7 +136,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.saturdayLabel.AutoSize = true;
             this.saturdayLabel.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saturdayLabel.ForeColor = System.Drawing.Color.Gray;
-            this.saturdayLabel.Location = new System.Drawing.Point(664, 1);
+            this.saturdayLabel.Location = new System.Drawing.Point(703, 1);
             this.saturdayLabel.Name = "saturdayLabel";
             this.saturdayLabel.Size = new System.Drawing.Size(76, 17);
             this.saturdayLabel.TabIndex = 6;
@@ -148,7 +148,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.sundayLabel.AutoSize = true;
             this.sundayLabel.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sundayLabel.ForeColor = System.Drawing.Color.Gray;
-            this.sundayLabel.Location = new System.Drawing.Point(780, 1);
+            this.sundayLabel.Location = new System.Drawing.Point(824, 1);
             this.sundayLabel.Name = "sundayLabel";
             this.sundayLabel.Size = new System.Drawing.Size(63, 17);
             this.sundayLabel.TabIndex = 7;
@@ -160,7 +160,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.timeSlot.AutoSize = true;
             this.timeSlot.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeSlot.ForeColor = System.Drawing.Color.Gray;
-            this.timeSlot.Location = new System.Drawing.Point(15, 1);
+            this.timeSlot.Location = new System.Drawing.Point(18, 1);
             this.timeSlot.Name = "timeSlot";
             this.timeSlot.Size = new System.Drawing.Size(79, 17);
             this.timeSlot.TabIndex = 8;
