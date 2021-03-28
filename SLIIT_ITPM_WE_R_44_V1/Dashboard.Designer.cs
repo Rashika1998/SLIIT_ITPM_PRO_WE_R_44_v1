@@ -60,6 +60,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroup = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnGenerateTimeTables = new System.Windows.Forms.Button();
             this.dashBoardPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -75,6 +77,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.dashBoardPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dashBoardPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dashBoardPanel.Controls.Add(this.label10);
             this.dashBoardPanel.Controls.Add(this.btnGuideLine);
             this.dashBoardPanel.Controls.Add(this.btnContactUs);
             this.dashBoardPanel.Controls.Add(this.label8);
@@ -516,6 +519,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.btnGenerateTimeTables);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.dashBoardPanel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -524,6 +528,33 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(740, 661);
             this.panel2.TabIndex = 2;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.DimGray;
+            this.label10.Location = new System.Drawing.Point(130, 36);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(45, 15);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "V 0.0.1";
+            // 
+            // btnGenerateTimeTables
+            // 
+            this.btnGenerateTimeTables.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnGenerateTimeTables.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnGenerateTimeTables.FlatAppearance.BorderSize = 0;
+            this.btnGenerateTimeTables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerateTimeTables.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerateTimeTables.ForeColor = System.Drawing.Color.White;
+            this.btnGenerateTimeTables.Location = new System.Drawing.Point(60, 114);
+            this.btnGenerateTimeTables.Name = "btnGenerateTimeTables";
+            this.btnGenerateTimeTables.Size = new System.Drawing.Size(194, 32);
+            this.btnGenerateTimeTables.TabIndex = 6;
+            this.btnGenerateTimeTables.Text = "Generate Time Tables";
+            this.btnGenerateTimeTables.UseVisualStyleBackColor = false;
+            this.btnGenerateTimeTables.Click += new System.EventHandler(this.btnGenerateTimeTables_Click);
             // 
             // Dashboard
             // 
@@ -590,5 +621,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Button btnContactUs;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnGuideLine;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnGenerateTimeTables;
     }
 }

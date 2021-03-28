@@ -92,7 +92,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnView.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnView.ForeColor = System.Drawing.Color.White;
-            this.btnView.Location = new System.Drawing.Point(708, 331);
+            this.btnView.Location = new System.Drawing.Point(670, 299);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(144, 32);
             this.btnView.TabIndex = 50;
@@ -134,7 +134,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnGenerateCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerateCode.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateCode.ForeColor = System.Drawing.Color.White;
-            this.btnGenerateCode.Location = new System.Drawing.Point(703, 64);
+            this.btnGenerateCode.Location = new System.Drawing.Point(703, 76);
             this.btnGenerateCode.Name = "btnGenerateCode";
             this.btnGenerateCode.Size = new System.Drawing.Size(149, 32);
             this.btnGenerateCode.TabIndex = 47;
@@ -201,7 +201,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(708, 261);
+            this.btnClear.Location = new System.Drawing.Point(670, 261);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(144, 32);
             this.btnClear.TabIndex = 41;
@@ -217,7 +217,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(304, 261);
+            this.btnDelete.Location = new System.Drawing.Point(348, 261);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(144, 32);
             this.btnDelete.TabIndex = 40;
@@ -248,7 +248,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(110, 261);
+            this.btnSave.Location = new System.Drawing.Point(189, 261);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(144, 32);
             this.btnSave.TabIndex = 38;

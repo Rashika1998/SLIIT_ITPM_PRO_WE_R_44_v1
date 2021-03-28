@@ -16,5 +16,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
             InitializeComponent();
         }
+
+        private void GenerateTimeTables_Load(object sender, EventArgs e)
+        {
+            mondayLabel.Text = "Monday";
+        }
     }
 }
