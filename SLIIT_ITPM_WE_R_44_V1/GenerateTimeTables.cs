@@ -17,6 +17,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             InitializeComponent();
         }
 
+        //Get session details 
+        //check starting time of the session
+        //check date that lecturer is working
+        //use if else and a switch to addign values to lables
         private void GenerateTimeTables_Load(object sender, EventArgs e)
         {
             

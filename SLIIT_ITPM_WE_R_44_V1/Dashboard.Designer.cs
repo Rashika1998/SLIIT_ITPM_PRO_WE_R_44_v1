@@ -61,15 +61,15 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroup = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.btnGenerateTimeTables = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnGenerateTimeTables = new System.Windows.Forms.Button();
             this.dashBoardPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -84,7 +84,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.dashBoardPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dashBoardPanel.BackColor = System.Drawing.Color.LightGray;
+            this.dashBoardPanel.BackColor = System.Drawing.Color.Gainsboro;
             this.dashBoardPanel.Controls.Add(this.label10);
             this.dashBoardPanel.Controls.Add(this.btnGuideLine);
             this.dashBoardPanel.Controls.Add(this.btnContactUs);
@@ -159,7 +159,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gray;
-            this.label9.Location = new System.Drawing.Point(104, 55);
+            this.label9.Location = new System.Drawing.Point(130, 55);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(137, 15);
             this.label9.TabIndex = 5;
@@ -253,9 +253,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(3, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 18);
+            this.label4.Size = new System.Drawing.Size(129, 18);
             this.label4.TabIndex = 11;
-            this.label4.Text = "2 nd Section";
+            this.label4.Text = "Second Section";
             // 
             // panel7
             // 
@@ -274,9 +274,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(3, 10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 18);
+            this.label7.Size = new System.Drawing.Size(107, 18);
             this.label7.TabIndex = 11;
-            this.label7.Text = "5 th Section";
+            this.label7.Text = "Fifth Section";
             // 
             // btnManageSession
             // 
@@ -313,9 +313,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(3, 11);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 18);
+            this.label6.Size = new System.Drawing.Size(125, 18);
             this.label6.TabIndex = 11;
-            this.label6.Text = "4 th Section";
+            this.label6.Text = "Fourth Section";
             // 
             // sessionAndNotAvailableTimeAllocation
             // 
@@ -353,9 +353,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(3, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 18);
+            this.label3.Size = new System.Drawing.Size(112, 18);
             this.label3.TabIndex = 2;
-            this.label3.Text = "1 st Section ";
+            this.label3.Text = "First Section ";
             // 
             // panel5
             // 
@@ -374,9 +374,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(6, 10);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 18);
+            this.label5.Size = new System.Drawing.Size(112, 18);
             this.label5.TabIndex = 11;
-            this.label5.Text = "3 rd Section";
+            this.label5.Text = "Third Section";
             // 
             // btnStatisticsView
             // 
@@ -556,6 +556,78 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Size = new System.Drawing.Size(740, 661);
             this.panel2.TabIndex = 2;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Teal;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(29, 521);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(101, 32);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "Proceed ->";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label15.Location = new System.Drawing.Point(26, 486);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(369, 16);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "Make Sure You Have Updated All The Session Related To Locations. ";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label16.Location = new System.Drawing.Point(26, 461);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(236, 16);
+            this.label16.TabIndex = 17;
+            this.label16.Text = "Generate All The Time Tables By Locations. ";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(29, 355);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 32);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Proceed ->";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label12.Location = new System.Drawing.Point(26, 324);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(401, 16);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Make Sure You Have Updated All The Session Related To Student Groups. ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label14.Location = new System.Drawing.Point(26, 301);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(268, 16);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "Generate All The Time Tables By Student Groups. ";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -592,78 +664,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnGenerateTimeTables.Text = "Proceed ->";
             this.btnGenerateTimeTables.UseVisualStyleBackColor = false;
             this.btnGenerateTimeTables.Click += new System.EventHandler(this.btnGenerateTimeTables_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label12.Location = new System.Drawing.Point(26, 324);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(401, 16);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "Make Sure You Have Updated All The Session Related To Student Groups. ";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label14.Location = new System.Drawing.Point(26, 301);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(268, 16);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "Generate All The Time Tables By Student Groups. ";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(29, 355);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 32);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Proceed ->";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Teal;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(29, 521);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 32);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Proceed ->";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label15.Location = new System.Drawing.Point(26, 486);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(369, 16);
-            this.label15.TabIndex = 18;
-            this.label15.Text = "Make Sure You Have Updated All The Session Related To Locations. ";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label16.Location = new System.Drawing.Point(26, 461);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(236, 16);
-            this.label16.TabIndex = 17;
-            this.label16.Text = "Generate All The Time Tables By Locations. ";
             // 
             // Dashboard
             // 
