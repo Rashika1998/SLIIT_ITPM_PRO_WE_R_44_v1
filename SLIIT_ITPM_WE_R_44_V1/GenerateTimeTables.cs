@@ -32,5 +32,15 @@ namespace SLIIT_ITPM_WE_R_44_V1
             dashboard.ShowDialog();
             
         }
+
+
+        public void getSessionDetails()
+        {
+            //Get session details : Program, Lecturer 1 & 2, starting and ending time, Room
+        }
+
+
+
+
     }
 }

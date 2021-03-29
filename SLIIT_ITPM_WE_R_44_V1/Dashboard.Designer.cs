@@ -84,7 +84,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.dashBoardPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dashBoardPanel.BackColor = System.Drawing.Color.Gainsboro;
+            this.dashBoardPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.dashBoardPanel.Controls.Add(this.label10);
             this.dashBoardPanel.Controls.Add(this.btnGuideLine);
             this.dashBoardPanel.Controls.Add(this.btnContactUs);
