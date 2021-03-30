@@ -30,7 +30,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         //use if else and a switch to addign values to lables
         private void GenerateTimeTables_Load(object sender, EventArgs e)
         {
-            
+            getSessionDetails();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -45,29 +45,31 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
 
             String getStartingTime;
+            String getLecturer1and2;
 
             //Get session details : Program, Lecturer 1 & 2, starting and ending time, Room
 
             con.Open();
-            SqlCommand command1 = new SqlCommand("select Lecturer1 from AddSession", con);
+            SqlCommand command1 = new SqlCommand("select Lecturer1 , Lecturer2 from AddSession", con);
             SqlCommand command2 = new SqlCommand("select Lecturer2 from AddSession", con);
             SqlCommand command3 = new SqlCommand("select Hrs from AddSession", con);
             SqlCommand command4 = new SqlCommand("select Min from AddSession", con);
             SqlCommand command5 = new SqlCommand("select Subject from AddSession", con);
             SqlCommand command6 = new SqlCommand("select StudentGroup from AddSession", con);
-
-
-
+            con.Close();
 
 
             try
             {
                 con.Open();
 
-                using (SqlDataReader read = command3.ExecuteReader())
+                using (SqlDataReader read = command1.ExecuteReader())
                 {
                     while (read.Read())
                     {
+
+                        getLecturer1and2 = (read["Lecturer1"].ToString()) + (read["Lecturer2"].ToString());
+                        MessageBox.Show("Lecturer 1: " + getLecturer1and2);
 
                         //lecturer_name = (read["LecturerName"].ToString());
                         //selectLecturercomboBox1.Items.Add(lecturer_name);
