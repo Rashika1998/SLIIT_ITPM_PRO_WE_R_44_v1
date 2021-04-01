@@ -48,6 +48,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             String getLecturers;
             String getSubject;
             String getStudentGroup;
+            String getDay;
 
             //Get session details : Program, Lecturer 1 & 2, starting and ending time, Room
 
@@ -74,8 +75,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
                         getStartingTime = (read["Hrs"].ToString());
                         getSubject = (read["Subject"].ToString());
                         getStudentGroup = (read["StudentGroup"].ToString());
+                        getDay = (read["Min"].ToString());
 
-                        
+
+
+
 
                         //MessageBox.Show("Lecturer 1: " + getLecturer1and2);
                         //lecturer_name = (read["LecturerName"].ToString());
