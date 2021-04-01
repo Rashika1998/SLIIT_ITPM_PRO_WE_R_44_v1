@@ -77,8 +77,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
                         
 
-
-
                         //MessageBox.Show("Lecturer 1: " + getLecturer1and2);
                         //lecturer_name = (read["LecturerName"].ToString());
                         //selectLecturercomboBox1.Items.Add(lecturer_name);
