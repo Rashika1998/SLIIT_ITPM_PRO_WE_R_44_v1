@@ -173,7 +173,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.Color.DimGray;
-            this.label36.Location = new System.Drawing.Point(613, 136);
+            this.label36.Location = new System.Drawing.Point(624, 136);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(88, 15);
             this.label36.TabIndex = 19;
@@ -221,7 +221,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.DimGray;
-            this.label32.Location = new System.Drawing.Point(613, 103);
+            this.label32.Location = new System.Drawing.Point(624, 103);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(91, 15);
             this.label32.TabIndex = 15;
@@ -269,7 +269,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.DimGray;
-            this.label28.Location = new System.Drawing.Point(613, 73);
+            this.label28.Location = new System.Drawing.Point(624, 73);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(85, 15);
             this.label28.TabIndex = 11;
@@ -317,7 +317,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.DimGray;
-            this.label27.Location = new System.Drawing.Point(613, 44);
+            this.label27.Location = new System.Drawing.Point(624, 44);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(91, 15);
             this.label27.TabIndex = 7;
@@ -471,20 +471,21 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Teal;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label14.Location = new System.Drawing.Point(411, 420);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(30, 20);
+            this.label14.Size = new System.Drawing.Size(383, 15);
             this.label14.TabIndex = 17;
-            this.label14.Text = "Git";
+            this.label14.Text = "Git : https://github.com/Rashika1998/SLIIT_ITPM_PRO_WE_R_44_v1";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label13
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Teal;
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label13.Location = new System.Drawing.Point(411, 387);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(302, 20);
@@ -496,7 +497,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Teal;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label12.Location = new System.Drawing.Point(411, 353);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(42, 20);
@@ -508,7 +509,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Teal;
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label11.Location = new System.Drawing.Point(411, 320);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(27, 20);
@@ -520,7 +521,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Teal;
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label10.Location = new System.Drawing.Point(411, 289);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(140, 20);

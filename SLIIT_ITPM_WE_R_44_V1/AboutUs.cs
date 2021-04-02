@@ -23,5 +23,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
         {
            
         }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
