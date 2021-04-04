@@ -80,6 +80,39 @@ namespace SLIIT_ITPM_WE_R_44_V1
                         //    Consider Min as Day
                         //    Consider Hrs as Starting Time
 
+                        if(getDay == "Monday")
+                        {
+
+                        }
+                        else if(getDay == "Tuesday")
+                        {
+
+                        }
+                        else if(getDay == "Wednesday")
+                        {
+
+                        }
+                        else if(getDay == "Thursday")
+                        {
+                            
+                        }
+                        else if(getDay == "Friday")
+                        {
+
+                        }
+                        else if(getDay == "Saturday")
+                        {
+
+                        }
+                        else if(getDay == "Sunday")
+                        {
+
+                        }
+                        else
+                        {
+                            //No processes are running...!
+                        } 
+
 
 
                         //MessageBox.Show("Lecturer 1: " + getLecturer1and2);
