@@ -82,7 +82,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
                         if(getDay == "Monday")
                         {
-
+                            //Switch for each day 
+                            //Check Starting time
                         }
                         else if(getDay == "Tuesday")
                         {
