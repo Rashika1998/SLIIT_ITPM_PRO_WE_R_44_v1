@@ -73,7 +73,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
                     {
 
                         getLecturers = (read["Lecturer1"].ToString()) + " " + (read["Lecturer2"].ToString());
-                        getLecturers = (read["Hrs"].ToString());
+                        getStartingTime = (read["Hrs"].ToString());
                         getSubject = (read["Subject"].ToString());
                         getStudentGroup = (read["StudentGroup"].ToString());
                         getDay = (read["Min"].ToString());
@@ -87,6 +87,23 @@ namespace SLIIT_ITPM_WE_R_44_V1
                         {
                             //Switch for each day 
                             //Check Starting time
+
+                            switch (getStartingTime)
+                            {
+                                case "8.30":
+
+                                    label1.Text = sessionDetails;
+
+                                    break;
+                                case "9.30":
+                                    // code block
+                                    break;
+                                default:
+                                    // code block
+                                    break;
+                            }
+
+
                         }
                         else if(getDay == "Tuesday")
                         {
