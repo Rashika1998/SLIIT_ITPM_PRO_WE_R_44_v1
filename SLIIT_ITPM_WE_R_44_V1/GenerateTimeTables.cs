@@ -54,8 +54,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             //Get session details : Program, Lecturer 1 & 2, starting and ending time, Room
 
             con.Open();
-            SqlCommand command1 = new SqlCommand("select Lecturer1 , Lecturer2 from AddSession", con);
-            SqlCommand command2 = new SqlCommand("select Lecturer2 from AddSession", con);
+            SqlCommand command1 = new SqlCommand("select Lecturer1 , Lecturer2 , Hrs , Min , Subject , StudentGroup from AddSession", con);
+            
             SqlCommand command3 = new SqlCommand("select Hrs from AddSession", con);
             SqlCommand command4 = new SqlCommand("select Min from AddSession", con);
             SqlCommand command5 = new SqlCommand("select Subject from AddSession", con);
@@ -79,7 +79,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
                         getDay = (read["Min"].ToString());
 
 
-                        sessionDetails = getLecturers + "" + getLecturers + "" + getSubject + "" + getStudentGroup;
+                        sessionDetails = getLecturers + "\n" + getSubject + "-" + getStudentGroup;
                         //    Consider Min as Day
                         //    Consider Hrs as Starting Time
 
@@ -91,13 +91,41 @@ namespace SLIIT_ITPM_WE_R_44_V1
                             switch (getStartingTime)
                             {
                                 case "8.30":
-
-                                    label1.Text = sessionDetails;
-
+                                    l1.Text = sessionDetails;
                                     break;
+
                                 case "9.30":
-                                    // code block
+                                    l2.Text = sessionDetails;
                                     break;
+
+                                case "10.30":
+                                    l3.Text = sessionDetails;
+                                    break;
+
+                                case "11.30":
+                                    l4.Text = sessionDetails;
+                                    break;
+
+                                case "12.30":
+                                    l5.Text = sessionDetails;
+                                    break;
+
+                                case "13.30":
+                                    l6.Text = sessionDetails;
+                                    break;
+
+                                case "14.30":
+                                    l7.Text = sessionDetails;
+                                    break;
+
+                                case "15.30":
+                                    l8.Text = sessionDetails;
+                                    break;
+
+                                case "16.30":
+                                    l9.Text = sessionDetails;
+                                    break;
+
                                 default:
                                     // code block
                                     break;
