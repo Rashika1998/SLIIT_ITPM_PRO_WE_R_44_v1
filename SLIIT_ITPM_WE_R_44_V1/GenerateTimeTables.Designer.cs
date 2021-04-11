@@ -63,26 +63,26 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.l15 = new System.Windows.Forms.Label();
             this.l16 = new System.Windows.Forms.Label();
             this.l17 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
+            this.l19 = new System.Windows.Forms.Label();
+            this.l20 = new System.Windows.Forms.Label();
+            this.l21 = new System.Windows.Forms.Label();
+            this.l22 = new System.Windows.Forms.Label();
+            this.l23 = new System.Windows.Forms.Label();
+            this.l24 = new System.Windows.Forms.Label();
+            this.l25 = new System.Windows.Forms.Label();
+            this.l26 = new System.Windows.Forms.Label();
+            this.l28 = new System.Windows.Forms.Label();
+            this.l29 = new System.Windows.Forms.Label();
             this.l9 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
+            this.l30 = new System.Windows.Forms.Label();
+            this.l31 = new System.Windows.Forms.Label();
             this.l18 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
+            this.l32 = new System.Windows.Forms.Label();
+            this.l27 = new System.Windows.Forms.Label();
+            this.l33 = new System.Windows.Forms.Label();
+            this.l34 = new System.Windows.Forms.Label();
+            this.l35 = new System.Windows.Forms.Label();
+            this.l36 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
@@ -165,26 +165,26 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l15, 2, 6);
             this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l16, 2, 7);
             this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l17, 2, 8);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label11, 3, 1);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label26, 3, 2);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label25, 3, 3);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label23, 3, 4);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label24, 3, 5);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label27, 3, 6);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label21, 3, 7);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label20, 3, 8);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label22, 4, 1);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label29, 4, 2);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l19, 3, 1);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l20, 3, 2);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l21, 3, 3);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l22, 3, 4);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l23, 3, 5);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l24, 3, 6);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l25, 3, 7);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l26, 3, 8);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l28, 4, 1);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l29, 4, 2);
             this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l9, 1, 9);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label32, 4, 3);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label31, 4, 4);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l30, 4, 3);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l31, 4, 4);
             this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l18, 2, 9);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label30, 4, 5);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label33, 3, 9);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label38, 4, 6);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label37, 4, 7);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label39, 4, 8);
-            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label35, 4, 9);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l32, 4, 5);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l27, 3, 9);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l33, 4, 6);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l34, 4, 7);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l35, 4, 8);
+            this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.l36, 4, 9);
             this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label45, 5, 1);
             this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label43, 5, 4);
             this.tableLayoutPanelGenerateTimeTable.Controls.Add(this.label40, 5, 2);
@@ -609,115 +609,115 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.l17.TabIndex = 34;
             this.l17.Text = "label";
             // 
-            // label11
+            // l19
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(346, 46);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(29, 14);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "label";
+            this.l19.AutoSize = true;
+            this.l19.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l19.ForeColor = System.Drawing.Color.DimGray;
+            this.l19.Location = new System.Drawing.Point(346, 46);
+            this.l19.Name = "l19";
+            this.l19.Size = new System.Drawing.Size(29, 14);
+            this.l19.TabIndex = 29;
+            this.l19.Text = "label";
             // 
-            // label26
+            // l20
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.DimGray;
-            this.label26.Location = new System.Drawing.Point(346, 96);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(29, 14);
-            this.label26.TabIndex = 41;
-            this.label26.Text = "label";
+            this.l20.AutoSize = true;
+            this.l20.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l20.ForeColor = System.Drawing.Color.DimGray;
+            this.l20.Location = new System.Drawing.Point(346, 96);
+            this.l20.Name = "l20";
+            this.l20.Size = new System.Drawing.Size(29, 14);
+            this.l20.TabIndex = 41;
+            this.l20.Text = "label";
             // 
-            // label25
+            // l21
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.DimGray;
-            this.label25.Location = new System.Drawing.Point(346, 146);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(29, 14);
-            this.label25.TabIndex = 40;
-            this.label25.Text = "label";
+            this.l21.AutoSize = true;
+            this.l21.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l21.ForeColor = System.Drawing.Color.DimGray;
+            this.l21.Location = new System.Drawing.Point(346, 146);
+            this.l21.Name = "l21";
+            this.l21.Size = new System.Drawing.Size(29, 14);
+            this.l21.TabIndex = 40;
+            this.l21.Text = "label";
             // 
-            // label23
+            // l22
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.DimGray;
-            this.label23.Location = new System.Drawing.Point(346, 196);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(29, 14);
-            this.label23.TabIndex = 38;
-            this.label23.Text = "label";
+            this.l22.AutoSize = true;
+            this.l22.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l22.ForeColor = System.Drawing.Color.DimGray;
+            this.l22.Location = new System.Drawing.Point(346, 196);
+            this.l22.Name = "l22";
+            this.l22.Size = new System.Drawing.Size(29, 14);
+            this.l22.TabIndex = 38;
+            this.l22.Text = "label";
             // 
-            // label24
+            // l23
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.DimGray;
-            this.label24.Location = new System.Drawing.Point(346, 246);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(29, 14);
-            this.label24.TabIndex = 39;
-            this.label24.Text = "label";
+            this.l23.AutoSize = true;
+            this.l23.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l23.ForeColor = System.Drawing.Color.DimGray;
+            this.l23.Location = new System.Drawing.Point(346, 246);
+            this.l23.Name = "l23";
+            this.l23.Size = new System.Drawing.Size(29, 14);
+            this.l23.TabIndex = 39;
+            this.l23.Text = "label";
             // 
-            // label27
+            // l24
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.DimGray;
-            this.label27.Location = new System.Drawing.Point(346, 296);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(29, 14);
-            this.label27.TabIndex = 42;
-            this.label27.Text = "label";
+            this.l24.AutoSize = true;
+            this.l24.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l24.ForeColor = System.Drawing.Color.DimGray;
+            this.l24.Location = new System.Drawing.Point(346, 296);
+            this.l24.Name = "l24";
+            this.l24.Size = new System.Drawing.Size(29, 14);
+            this.l24.TabIndex = 42;
+            this.l24.Text = "label";
             // 
-            // label21
+            // l25
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.DimGray;
-            this.label21.Location = new System.Drawing.Point(346, 346);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(29, 14);
-            this.label21.TabIndex = 36;
-            this.label21.Text = "label";
+            this.l25.AutoSize = true;
+            this.l25.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l25.ForeColor = System.Drawing.Color.DimGray;
+            this.l25.Location = new System.Drawing.Point(346, 346);
+            this.l25.Name = "l25";
+            this.l25.Size = new System.Drawing.Size(29, 14);
+            this.l25.TabIndex = 36;
+            this.l25.Text = "label";
             // 
-            // label20
+            // l26
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.DimGray;
-            this.label20.Location = new System.Drawing.Point(346, 396);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(29, 14);
-            this.label20.TabIndex = 35;
-            this.label20.Text = "label";
+            this.l26.AutoSize = true;
+            this.l26.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l26.ForeColor = System.Drawing.Color.DimGray;
+            this.l26.Location = new System.Drawing.Point(346, 396);
+            this.l26.Name = "l26";
+            this.l26.Size = new System.Drawing.Size(29, 14);
+            this.l26.TabIndex = 35;
+            this.l26.Text = "label";
             // 
-            // label22
+            // l28
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.DimGray;
-            this.label22.Location = new System.Drawing.Point(460, 46);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(29, 14);
-            this.label22.TabIndex = 37;
-            this.label22.Text = "label";
+            this.l28.AutoSize = true;
+            this.l28.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l28.ForeColor = System.Drawing.Color.DimGray;
+            this.l28.Location = new System.Drawing.Point(460, 46);
+            this.l28.Name = "l28";
+            this.l28.Size = new System.Drawing.Size(29, 14);
+            this.l28.TabIndex = 37;
+            this.l28.Text = "label";
             // 
-            // label29
+            // l29
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.DimGray;
-            this.label29.Location = new System.Drawing.Point(460, 96);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(29, 14);
-            this.label29.TabIndex = 44;
-            this.label29.Text = "label";
+            this.l29.AutoSize = true;
+            this.l29.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l29.ForeColor = System.Drawing.Color.DimGray;
+            this.l29.Location = new System.Drawing.Point(460, 96);
+            this.l29.Name = "l29";
+            this.l29.Size = new System.Drawing.Size(29, 14);
+            this.l29.TabIndex = 44;
+            this.l29.Text = "label";
             // 
             // l9
             // 
@@ -730,27 +730,27 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.l9.TabIndex = 49;
             this.l9.Text = "label";
             // 
-            // label32
+            // l30
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.DimGray;
-            this.label32.Location = new System.Drawing.Point(460, 146);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(29, 14);
-            this.label32.TabIndex = 47;
-            this.label32.Text = "label";
+            this.l30.AutoSize = true;
+            this.l30.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l30.ForeColor = System.Drawing.Color.DimGray;
+            this.l30.Location = new System.Drawing.Point(460, 146);
+            this.l30.Name = "l30";
+            this.l30.Size = new System.Drawing.Size(29, 14);
+            this.l30.TabIndex = 47;
+            this.l30.Text = "label";
             // 
-            // label31
+            // l31
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.DimGray;
-            this.label31.Location = new System.Drawing.Point(460, 196);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(29, 14);
-            this.label31.TabIndex = 46;
-            this.label31.Text = "label";
+            this.l31.AutoSize = true;
+            this.l31.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l31.ForeColor = System.Drawing.Color.DimGray;
+            this.l31.Location = new System.Drawing.Point(460, 196);
+            this.l31.Name = "l31";
+            this.l31.Size = new System.Drawing.Size(29, 14);
+            this.l31.TabIndex = 46;
+            this.l31.Text = "label";
             // 
             // l18
             // 
@@ -763,71 +763,71 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.l18.TabIndex = 43;
             this.l18.Text = "label";
             // 
-            // label30
+            // l32
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.DimGray;
-            this.label30.Location = new System.Drawing.Point(460, 246);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(29, 14);
-            this.label30.TabIndex = 45;
-            this.label30.Text = "label";
+            this.l32.AutoSize = true;
+            this.l32.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l32.ForeColor = System.Drawing.Color.DimGray;
+            this.l32.Location = new System.Drawing.Point(460, 246);
+            this.l32.Name = "l32";
+            this.l32.Size = new System.Drawing.Size(29, 14);
+            this.l32.TabIndex = 45;
+            this.l32.Text = "label";
             // 
-            // label33
+            // l27
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.DimGray;
-            this.label33.Location = new System.Drawing.Point(346, 446);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(29, 14);
-            this.label33.TabIndex = 48;
-            this.label33.Text = "label";
+            this.l27.AutoSize = true;
+            this.l27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l27.ForeColor = System.Drawing.Color.DimGray;
+            this.l27.Location = new System.Drawing.Point(346, 446);
+            this.l27.Name = "l27";
+            this.l27.Size = new System.Drawing.Size(29, 14);
+            this.l27.TabIndex = 48;
+            this.l27.Text = "label";
             // 
-            // label38
+            // l33
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.DimGray;
-            this.label38.Location = new System.Drawing.Point(460, 296);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(29, 14);
-            this.label38.TabIndex = 53;
-            this.label38.Text = "label";
+            this.l33.AutoSize = true;
+            this.l33.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l33.ForeColor = System.Drawing.Color.DimGray;
+            this.l33.Location = new System.Drawing.Point(460, 296);
+            this.l33.Name = "l33";
+            this.l33.Size = new System.Drawing.Size(29, 14);
+            this.l33.TabIndex = 53;
+            this.l33.Text = "label";
             // 
-            // label37
+            // l34
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.DimGray;
-            this.label37.Location = new System.Drawing.Point(460, 346);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(29, 14);
-            this.label37.TabIndex = 52;
-            this.label37.Text = "label";
+            this.l34.AutoSize = true;
+            this.l34.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l34.ForeColor = System.Drawing.Color.DimGray;
+            this.l34.Location = new System.Drawing.Point(460, 346);
+            this.l34.Name = "l34";
+            this.l34.Size = new System.Drawing.Size(29, 14);
+            this.l34.TabIndex = 52;
+            this.l34.Text = "label";
             // 
-            // label39
+            // l35
             // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.DimGray;
-            this.label39.Location = new System.Drawing.Point(460, 396);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(29, 14);
-            this.label39.TabIndex = 54;
-            this.label39.Text = "label";
+            this.l35.AutoSize = true;
+            this.l35.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l35.ForeColor = System.Drawing.Color.DimGray;
+            this.l35.Location = new System.Drawing.Point(460, 396);
+            this.l35.Name = "l35";
+            this.l35.Size = new System.Drawing.Size(29, 14);
+            this.l35.TabIndex = 54;
+            this.l35.Text = "label";
             // 
-            // label35
+            // l36
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.DimGray;
-            this.label35.Location = new System.Drawing.Point(460, 446);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(29, 14);
-            this.label35.TabIndex = 50;
-            this.label35.Text = "label";
+            this.l36.AutoSize = true;
+            this.l36.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l36.ForeColor = System.Drawing.Color.DimGray;
+            this.l36.Location = new System.Drawing.Point(460, 446);
+            this.l36.Name = "l36";
+            this.l36.Size = new System.Drawing.Size(29, 14);
+            this.l36.TabIndex = 50;
+            this.l36.Text = "label";
             // 
             // label45
             // 
@@ -1237,26 +1237,26 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label l15;
         private System.Windows.Forms.Label l16;
         private System.Windows.Forms.Label l17;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label l19;
+        private System.Windows.Forms.Label l20;
+        private System.Windows.Forms.Label l21;
+        private System.Windows.Forms.Label l22;
+        private System.Windows.Forms.Label l23;
+        private System.Windows.Forms.Label l24;
+        private System.Windows.Forms.Label l25;
+        private System.Windows.Forms.Label l26;
+        private System.Windows.Forms.Label l28;
+        private System.Windows.Forms.Label l29;
         private System.Windows.Forms.Label l9;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label l30;
+        private System.Windows.Forms.Label l31;
         private System.Windows.Forms.Label l18;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label l32;
+        private System.Windows.Forms.Label l27;
+        private System.Windows.Forms.Label l33;
+        private System.Windows.Forms.Label l34;
+        private System.Windows.Forms.Label l35;
+        private System.Windows.Forms.Label l36;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label40;
