@@ -55,7 +55,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             //Get session details : Program, Lecturer 1 & 2, starting and ending time, Room
 
             con.Open();
-            SqlCommand command1 = new SqlCommand("select as.Lecturer1 , as.Lecturer2 , as.Hrs , as.Min , as.Subject , as.StudentGroup , msr.SessionRoom from AddSession as, ManageSessionRoom msr where as.SessionID = msr.SessionID", con);
+            SqlCommand command1 = new SqlCommand("SELECT AddSession.Lecturer1 , AddSession.Lecturer2 , AddSession.Hrs , AddSession.Min , AddSession.Subject , AddSession.StudentGroup , ManageSessionRoom.SessionRoom FROM AddSession, ManageSessionRoom WHERE AddSession.SessionID = ManageSessionRoom.SessionID", con);
             
             SqlCommand command3 = new SqlCommand("select Hrs from AddSession", con);
             SqlCommand command4 = new SqlCommand("select Min from AddSession", con);
@@ -74,12 +74,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
                     while (read.Read())
                     {
 
-                        getLecturers = (read["as.Lecturer1"].ToString()) + " " + (read["as.Lecturer2"].ToString());
-                        getStartingTime = (read["as.Hrs"].ToString());
-                        getSubject = (read["as.Subject"].ToString());
-                        getStudentGroup = (read["as.StudentGroup"].ToString());
-                        getDay = (read["as.Min"].ToString());
-                        getRoom = (read["msr.SessionRoom"].ToString());
+                        getLecturers = (read["Lecturer1"].ToString()) + " " + (read["Lecturer2"].ToString());
+                        getStartingTime = (read["Hrs"].ToString());
+                        getSubject = (read["Subject"].ToString());
+                        getStudentGroup = (read["StudentGroup"].ToString());
+                        getDay = (read["Min"].ToString());
+                        getRoom = (read["SessionRoom"].ToString());
 
 
                         sessionDetails = getLecturers + "\n" + getSubject + "-" + getStudentGroup + " " + getRoom;
