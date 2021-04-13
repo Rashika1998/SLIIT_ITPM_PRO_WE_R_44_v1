@@ -34,6 +34,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnDashboard = new System.Windows.Forms.Button();
             this.addSessionInfoLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.toUpdate = new System.Windows.Forms.Button();
             this.btnShowSelectedLecturers = new System.Windows.Forms.Button();
@@ -67,7 +68,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addHour = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -147,6 +147,17 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(862, 231);
             this.panel2.TabIndex = 2;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Gray;
+            this.label15.Location = new System.Drawing.Point(180, 65);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(48, 13);
+            this.label15.TabIndex = 69;
+            this.label15.Text = "ex : 1001";
             // 
             // richTextBox2
             // 
@@ -359,7 +370,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(31, 17);
             this.label14.TabIndex = 17;
-            this.label14.Text = "min";
+            this.label14.Text = "Day";
             // 
             // addMin
             // 
@@ -375,9 +386,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label7.ForeColor = System.Drawing.Color.Gray;
             this.label7.Location = new System.Drawing.Point(247, 42);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 17);
+            this.label7.Size = new System.Drawing.Size(39, 17);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Hrs";
+            this.label7.Text = "S.Hrs";
             // 
             // noOfStudent
             // 
@@ -537,17 +548,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label13.Size = new System.Drawing.Size(53, 17);
             this.label13.TabIndex = 0;
             this.label13.Text = "Step 02";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Gray;
-            this.label15.Location = new System.Drawing.Point(180, 65);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(48, 13);
-            this.label15.TabIndex = 69;
-            this.label15.Text = "ex : 1001";
             // 
             // AddSessionInfo
             // 
