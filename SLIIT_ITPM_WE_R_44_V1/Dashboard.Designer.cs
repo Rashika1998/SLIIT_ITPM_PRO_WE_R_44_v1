@@ -574,7 +574,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label15.ForeColor = System.Drawing.Color.DimGray;
             this.label15.Location = new System.Drawing.Point(26, 486);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(369, 16);
@@ -585,7 +585,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label16.ForeColor = System.Drawing.Color.DimGray;
             this.label16.Location = new System.Drawing.Point(26, 461);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(236, 16);
@@ -610,7 +610,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label12.ForeColor = System.Drawing.Color.DimGray;
             this.label12.Location = new System.Drawing.Point(26, 324);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(401, 16);
@@ -621,7 +621,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label14.ForeColor = System.Drawing.Color.DimGray;
             this.label14.Location = new System.Drawing.Point(26, 301);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(268, 16);
@@ -632,7 +632,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label13.ForeColor = System.Drawing.Color.DimGray;
             this.label13.Location = new System.Drawing.Point(26, 147);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(366, 16);
@@ -643,7 +643,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label11.ForeColor = System.Drawing.Color.DimGray;
             this.label11.Location = new System.Drawing.Point(26, 120);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(257, 16);
