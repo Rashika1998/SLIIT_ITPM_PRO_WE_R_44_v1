@@ -70,6 +70,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btnGenerateTimeTables = new System.Windows.Forms.Button();
+            this.generateTimeTableByLecturer = new System.Windows.Forms.Button();
             this.dashBoardPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -538,6 +539,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.generateTimeTableByLecturer);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label16);
@@ -657,13 +659,28 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnGenerateTimeTables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerateTimeTables.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateTimeTables.ForeColor = System.Drawing.Color.White;
-            this.btnGenerateTimeTables.Location = new System.Drawing.Point(29, 177);
+            this.btnGenerateTimeTables.Location = new System.Drawing.Point(614, 104);
             this.btnGenerateTimeTables.Name = "btnGenerateTimeTables";
             this.btnGenerateTimeTables.Size = new System.Drawing.Size(101, 32);
             this.btnGenerateTimeTables.TabIndex = 6;
             this.btnGenerateTimeTables.Text = "Proceed ->";
             this.btnGenerateTimeTables.UseVisualStyleBackColor = false;
             this.btnGenerateTimeTables.Click += new System.EventHandler(this.btnGenerateTimeTables_Click);
+            // 
+            // generateTimeTableByLecturer
+            // 
+            this.generateTimeTableByLecturer.BackColor = System.Drawing.Color.Teal;
+            this.generateTimeTableByLecturer.FlatAppearance.BorderSize = 0;
+            this.generateTimeTableByLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.generateTimeTableByLecturer.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.generateTimeTableByLecturer.ForeColor = System.Drawing.Color.White;
+            this.generateTimeTableByLecturer.Location = new System.Drawing.Point(29, 177);
+            this.generateTimeTableByLecturer.Name = "generateTimeTableByLecturer";
+            this.generateTimeTableByLecturer.Size = new System.Drawing.Size(101, 32);
+            this.generateTimeTableByLecturer.TabIndex = 20;
+            this.generateTimeTableByLecturer.Text = "Proceed ->";
+            this.generateTimeTableByLecturer.UseVisualStyleBackColor = false;
+            this.generateTimeTableByLecturer.Click += new System.EventHandler(this.generateTimeTableByLecturer_Click);
             // 
             // Dashboard
             // 
@@ -740,5 +757,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button generateTimeTableByLecturer;
     }
 }

@@ -134,6 +134,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             generateTimeTables.ShowDialog();
         }
 
-        
+        private void generateTimeTableByLecturer_Click(object sender, EventArgs e)
+        {
+            GenerateTimeTableByLecturer generateTimeTableByLecturer = new GenerateTimeTableByLecturer();
+            generateTimeTableByLecturer.ShowDialog();
+        }
     }
 }
