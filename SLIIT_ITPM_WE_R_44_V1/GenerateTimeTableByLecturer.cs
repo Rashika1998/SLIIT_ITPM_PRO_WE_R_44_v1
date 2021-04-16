@@ -26,6 +26,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private void GenerateTimeTableByLecturer_Load(object sender, EventArgs e)
         {
             getSessionDetails();
+            setLecturerNameComboBoxValues();
         }
 
 
@@ -413,6 +414,43 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
 
         }
+
+        //Newly added into the system
+        string lecturerName = string.Empty;
+        void setLecturerNameComboBoxValues()
+        {
+
+            //Steps to create this function
+            //read values
+            //set a while statement to set values for combo box
+
+
+            string selectSql = "select LecturerName from AddLecturer";
+            SqlCommand com = new SqlCommand(selectSql, con);
+
+            try
+            {
+                con.Open();
+
+                using (SqlDataReader read = com.ExecuteReader())
+                {
+                    while (read.Read())
+                    {
+
+                        lecturerName = (read["LecturerName"].ToString());
+                        selectLecturerComboBox.Items.Add(lecturerName);
+
+                    }
+                }
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
+
 
 
     }

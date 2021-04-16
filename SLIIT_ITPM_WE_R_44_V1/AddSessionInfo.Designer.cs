@@ -482,6 +482,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.selectGroupComboBox.Name = "selectGroupComboBox";
             this.selectGroupComboBox.Size = new System.Drawing.Size(194, 21);
             this.selectGroupComboBox.TabIndex = 6;
+            this.selectGroupComboBox.SelectedIndexChanged += new System.EventHandler(this.selectGroupComboBox_SelectedIndexChanged);
             // 
             // label10
             // 

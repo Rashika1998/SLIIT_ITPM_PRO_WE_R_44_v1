@@ -114,6 +114,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.l62 = new System.Windows.Forms.Label();
             this.l54 = new System.Windows.Forms.Label();
             this.l63 = new System.Windows.Forms.Label();
+            this.selectLecturerComboBox = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanelGenerateTimeTable.SuspendLayout();
             this.SuspendLayout();
@@ -163,9 +165,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.addStudentGroupLabel.ForeColor = System.Drawing.Color.White;
             this.addStudentGroupLabel.Location = new System.Drawing.Point(12, 23);
             this.addStudentGroupLabel.Name = "addStudentGroupLabel";
-            this.addStudentGroupLabel.Size = new System.Drawing.Size(138, 32);
+            this.addStudentGroupLabel.Size = new System.Drawing.Size(274, 32);
             this.addStudentGroupLabel.TabIndex = 0;
-            this.addStudentGroupLabel.Text = "Time Table";
+            this.addStudentGroupLabel.Text = "Time Table By Lecturer";
             // 
             // tableLayoutPanelGenerateTimeTable
             // 
@@ -1175,12 +1177,42 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.l63.TabIndex = 80;
             this.l63.Text = ".";
             // 
+            // selectLecturerComboBox
+            // 
+            this.selectLecturerComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.selectLecturerComboBox.FormattingEnabled = true;
+            this.selectLecturerComboBox.Items.AddRange(new object[] {
+            "Tag",
+            "Lecturer1",
+            "Lecturer2"});
+            this.selectLecturerComboBox.Location = new System.Drawing.Point(692, 103);
+            this.selectLecturerComboBox.Name = "selectLecturerComboBox";
+            this.selectLecturerComboBox.Size = new System.Drawing.Size(181, 21);
+            this.selectLecturerComboBox.TabIndex = 9;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.BackColor = System.Drawing.Color.Teal;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(879, 101);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 8;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            // 
             // GenerateTimeTableByLecturer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.selectLecturerComboBox);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanelGenerateTimeTable);
             this.Name = "GenerateTimeTableByLecturer";
@@ -1281,5 +1313,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         private System.Windows.Forms.Label l62;
         private System.Windows.Forms.Label l54;
         private System.Windows.Forms.Label l63;
+        private System.Windows.Forms.ComboBox selectLecturerComboBox;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

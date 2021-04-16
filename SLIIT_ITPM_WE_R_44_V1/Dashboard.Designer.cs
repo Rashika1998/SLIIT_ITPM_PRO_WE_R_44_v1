@@ -601,7 +601,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(29, 355);
+            this.button1.Location = new System.Drawing.Point(29, 383);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 32);
             this.button1.TabIndex = 16;
@@ -613,7 +613,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.Location = new System.Drawing.Point(26, 324);
+            this.label12.Location = new System.Drawing.Point(26, 352);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(401, 16);
             this.label12.TabIndex = 15;
@@ -624,7 +624,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(26, 301);
+            this.label14.Location = new System.Drawing.Point(26, 329);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(268, 16);
             this.label14.TabIndex = 14;
@@ -635,7 +635,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(26, 147);
+            this.label13.Location = new System.Drawing.Point(26, 218);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(366, 16);
             this.label13.TabIndex = 12;
@@ -646,7 +646,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(26, 120);
+            this.label11.Location = new System.Drawing.Point(26, 191);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(257, 16);
             this.label11.TabIndex = 10;
@@ -654,16 +654,16 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // btnGenerateTimeTables
             // 
-            this.btnGenerateTimeTables.BackColor = System.Drawing.Color.Teal;
+            this.btnGenerateTimeTables.BackColor = System.Drawing.Color.Gray;
             this.btnGenerateTimeTables.FlatAppearance.BorderSize = 0;
             this.btnGenerateTimeTables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerateTimeTables.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateTimeTables.ForeColor = System.Drawing.Color.White;
-            this.btnGenerateTimeTables.Location = new System.Drawing.Point(614, 104);
+            this.btnGenerateTimeTables.Location = new System.Drawing.Point(34, 114);
             this.btnGenerateTimeTables.Name = "btnGenerateTimeTables";
             this.btnGenerateTimeTables.Size = new System.Drawing.Size(101, 32);
             this.btnGenerateTimeTables.TabIndex = 6;
-            this.btnGenerateTimeTables.Text = "Proceed ->";
+            this.btnGenerateTimeTables.Text = "Time Table";
             this.btnGenerateTimeTables.UseVisualStyleBackColor = false;
             this.btnGenerateTimeTables.Click += new System.EventHandler(this.btnGenerateTimeTables_Click);
             // 
@@ -674,7 +674,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.generateTimeTableByLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.generateTimeTableByLecturer.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generateTimeTableByLecturer.ForeColor = System.Drawing.Color.White;
-            this.generateTimeTableByLecturer.Location = new System.Drawing.Point(29, 177);
+            this.generateTimeTableByLecturer.Location = new System.Drawing.Point(29, 248);
             this.generateTimeTableByLecturer.Name = "generateTimeTableByLecturer";
             this.generateTimeTableByLecturer.Size = new System.Drawing.Size(101, 32);
             this.generateTimeTableByLecturer.TabIndex = 20;
