@@ -25,9 +25,45 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void GenerateTimeTableByLecturer_Load(object sender, EventArgs e)
         {
-            getSessionDetails();
+            //getSessionDetails();
             setLecturerNameComboBoxValues();
         }
+
+        //Newly added into the system
+        public string lecturerName = string.Empty;
+        void setLecturerNameComboBoxValues()
+        {
+
+            //Steps to create this function
+            //read values
+            //set a while statement to set values for combo box
+
+
+            string selectSql = "select LecturerName from AddLecturer";
+            SqlCommand com = new SqlCommand(selectSql, con);
+
+            try
+            {
+                con.Open();
+
+                using (SqlDataReader read = com.ExecuteReader())
+                {
+                    while (read.Read())
+                    {
+
+                        lecturerName = (read["LecturerName"].ToString());
+                        selectLecturerComboBox.Items.Add(lecturerName);
+
+                    }
+                }
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
 
 
         public void getSessionDetails()
@@ -44,12 +80,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
             //Get session details : Program, Lecturer 1 & 2, starting and ending time, Room
 
             con.Open();
-            SqlCommand command1 = new SqlCommand("SELECT AddSession.Lecturer1 , AddSession.Lecturer2 , AddSession.Hrs , AddSession.Min , AddSession.Subject , AddSession.StudentGroup , ManageSessionRoom.SessionRoom FROM AddSession, ManageSessionRoom WHERE AddSession.SessionID = ManageSessionRoom.SessionID", con);
+            SqlCommand command1 = new SqlCommand("SELECT AddSession.Lecturer1 , AddSession.Lecturer2 , AddSession.Hrs , AddSession.Min , AddSession.Subject , AddSession.StudentGroup , ManageSessionRoom.SessionRoom FROM AddSession, ManageSessionRoom WHERE AddSession.SessionID = ManageSessionRoom.SessionID and AddSession.Lecturer1 = " + lecturerName+"", con);
 
-            SqlCommand command3 = new SqlCommand("select Hrs from AddSession", con);
-            SqlCommand command4 = new SqlCommand("select Min from AddSession", con);
-            SqlCommand command5 = new SqlCommand("select Subject from AddSession", con);
-            SqlCommand command6 = new SqlCommand("select StudentGroup from AddSession", con);
+            
             con.Close();
 
 
@@ -415,43 +448,9 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         }
 
-        //Newly added into the system
-        string lecturerName = string.Empty;
-        void setLecturerNameComboBoxValues()
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-
-            //Steps to create this function
-            //read values
-            //set a while statement to set values for combo box
-
-
-            string selectSql = "select LecturerName from AddLecturer";
-            SqlCommand com = new SqlCommand(selectSql, con);
-
-            try
-            {
-                con.Open();
-
-                using (SqlDataReader read = com.ExecuteReader())
-                {
-                    while (read.Read())
-                    {
-
-                        lecturerName = (read["LecturerName"].ToString());
-                        selectLecturerComboBox.Items.Add(lecturerName);
-
-                    }
-                }
-            }
-            finally
-            {
-                con.Close();
-            }
+            getSessionDetails();
         }
-
-
-
-
-
     }
 }

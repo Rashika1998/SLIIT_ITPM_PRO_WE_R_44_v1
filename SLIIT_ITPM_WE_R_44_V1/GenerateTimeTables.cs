@@ -137,7 +137,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
 
                         }
-                        else if(getDay == "Tuesday")
+                        if(getDay == "Tuesday")
                         {
                             switch (getStartingTime)
                             {
@@ -182,7 +182,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
                                     break;
                             }
                         }
-                        else if(getDay == "Wednesday")
+                        if(getDay == "Wednesday")
                         {
                             switch (getStartingTime)
                             {
@@ -227,7 +227,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
                                     break;
                             }
                         }
-                        else if(getDay == "Thursday")
+                        if(getDay == "Thursday")
                         {
                             switch (getStartingTime)
                             {
@@ -272,7 +272,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
                                     break;
                             }
                         }
-                        else if(getDay == "Friday")
+                        if(getDay == "Friday")
                         {
                             switch (getStartingTime)
                             {
@@ -317,7 +317,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
                                     break;
                             }
                         }
-                        else if(getDay == "Saturday")
+                        if(getDay == "Saturday")
                         {
                             switch (getStartingTime)
                             {
@@ -362,7 +362,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
                                     break;
                             }
                         }
-                        else if(getDay == "Sunday")
+                        if(getDay == "Sunday")
                         {
                             switch (getStartingTime)
                             {

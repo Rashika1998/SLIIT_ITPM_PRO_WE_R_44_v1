@@ -1204,6 +1204,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.btnSearch.TabIndex = 8;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // GenerateTimeTableByLecturer
             // 
