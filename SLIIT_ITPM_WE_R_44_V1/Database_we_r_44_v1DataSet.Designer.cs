@@ -24,7 +24,7 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class Database_we_r_44_v1DataSet : global::System.Data.DataSet {
         
-        private AddTagDataTable tableAddTag;
+        private AddNotAvailableTimeAndRoomDataTable tableAddNotAvailableTimeAndRoom;
         
         private AddConsecutiveSessionDataTable tableAddConsecutiveSession;
         
@@ -43,6 +43,8 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         private AddStudentGroupDataTable tableAddStudentGroup;
         
         private AddSubjectDataTable tableAddSubject;
+        
+        private AddTagDataTable tableAddTag;
         
         private AddWorkingDaysAndHoursDataTable tableAddWorkingDaysAndHours;
         
@@ -76,8 +78,8 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["AddTag"] != null)) {
-                    base.Tables.Add(new AddTagDataTable(ds.Tables["AddTag"]));
+                if ((ds.Tables["AddNotAvailableTimeAndRoom"] != null)) {
+                    base.Tables.Add(new AddNotAvailableTimeAndRoomDataTable(ds.Tables["AddNotAvailableTimeAndRoom"]));
                 }
                 if ((ds.Tables["AddConsecutiveSession"] != null)) {
                     base.Tables.Add(new AddConsecutiveSessionDataTable(ds.Tables["AddConsecutiveSession"]));
@@ -105,6 +107,9 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
                 }
                 if ((ds.Tables["AddSubject"] != null)) {
                     base.Tables.Add(new AddSubjectDataTable(ds.Tables["AddSubject"]));
+                }
+                if ((ds.Tables["AddTag"] != null)) {
+                    base.Tables.Add(new AddTagDataTable(ds.Tables["AddTag"]));
                 }
                 if ((ds.Tables["AddWorkingDaysAndHours"] != null)) {
                     base.Tables.Add(new AddWorkingDaysAndHoursDataTable(ds.Tables["AddWorkingDaysAndHours"]));
@@ -134,9 +139,9 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public AddTagDataTable AddTag {
+        public AddNotAvailableTimeAndRoomDataTable AddNotAvailableTimeAndRoom {
             get {
-                return this.tableAddTag;
+                return this.tableAddNotAvailableTimeAndRoom;
             }
         }
         
@@ -234,6 +239,16 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public AddTagDataTable AddTag {
+            get {
+                return this.tableAddTag;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public AddWorkingDaysAndHoursDataTable AddWorkingDaysAndHours {
             get {
                 return this.tableAddWorkingDaysAndHours;
@@ -317,8 +332,8 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["AddTag"] != null)) {
-                    base.Tables.Add(new AddTagDataTable(ds.Tables["AddTag"]));
+                if ((ds.Tables["AddNotAvailableTimeAndRoom"] != null)) {
+                    base.Tables.Add(new AddNotAvailableTimeAndRoomDataTable(ds.Tables["AddNotAvailableTimeAndRoom"]));
                 }
                 if ((ds.Tables["AddConsecutiveSession"] != null)) {
                     base.Tables.Add(new AddConsecutiveSessionDataTable(ds.Tables["AddConsecutiveSession"]));
@@ -346,6 +361,9 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
                 }
                 if ((ds.Tables["AddSubject"] != null)) {
                     base.Tables.Add(new AddSubjectDataTable(ds.Tables["AddSubject"]));
+                }
+                if ((ds.Tables["AddTag"] != null)) {
+                    base.Tables.Add(new AddTagDataTable(ds.Tables["AddTag"]));
                 }
                 if ((ds.Tables["AddWorkingDaysAndHours"] != null)) {
                     base.Tables.Add(new AddWorkingDaysAndHoursDataTable(ds.Tables["AddWorkingDaysAndHours"]));
@@ -386,10 +404,10 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableAddTag = ((AddTagDataTable)(base.Tables["AddTag"]));
+            this.tableAddNotAvailableTimeAndRoom = ((AddNotAvailableTimeAndRoomDataTable)(base.Tables["AddNotAvailableTimeAndRoom"]));
             if ((initTable == true)) {
-                if ((this.tableAddTag != null)) {
-                    this.tableAddTag.InitVars();
+                if ((this.tableAddNotAvailableTimeAndRoom != null)) {
+                    this.tableAddNotAvailableTimeAndRoom.InitVars();
                 }
             }
             this.tableAddConsecutiveSession = ((AddConsecutiveSessionDataTable)(base.Tables["AddConsecutiveSession"]));
@@ -446,6 +464,12 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
                     this.tableAddSubject.InitVars();
                 }
             }
+            this.tableAddTag = ((AddTagDataTable)(base.Tables["AddTag"]));
+            if ((initTable == true)) {
+                if ((this.tableAddTag != null)) {
+                    this.tableAddTag.InitVars();
+                }
+            }
             this.tableAddWorkingDaysAndHours = ((AddWorkingDaysAndHoursDataTable)(base.Tables["AddWorkingDaysAndHours"]));
             if ((initTable == true)) {
                 if ((this.tableAddWorkingDaysAndHours != null)) {
@@ -468,8 +492,8 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             this.Namespace = "http://tempuri.org/Database_we_r_44_v1DataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableAddTag = new AddTagDataTable();
-            base.Tables.Add(this.tableAddTag);
+            this.tableAddNotAvailableTimeAndRoom = new AddNotAvailableTimeAndRoomDataTable();
+            base.Tables.Add(this.tableAddNotAvailableTimeAndRoom);
             this.tableAddConsecutiveSession = new AddConsecutiveSessionDataTable();
             base.Tables.Add(this.tableAddConsecutiveSession);
             this.tableAddLecturer = new AddLecturerDataTable();
@@ -488,6 +512,8 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             base.Tables.Add(this.tableAddStudentGroup);
             this.tableAddSubject = new AddSubjectDataTable();
             base.Tables.Add(this.tableAddSubject);
+            this.tableAddTag = new AddTagDataTable();
+            base.Tables.Add(this.tableAddTag);
             this.tableAddWorkingDaysAndHours = new AddWorkingDaysAndHoursDataTable();
             base.Tables.Add(this.tableAddWorkingDaysAndHours);
             this.tableManageSessionRoom = new ManageSessionRoomDataTable();
@@ -496,7 +522,7 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeAddTag() {
+        private bool ShouldSerializeAddNotAvailableTimeAndRoom() {
             return false;
         }
         
@@ -551,6 +577,12 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializeAddSubject() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeAddTag() {
             return false;
         }
         
@@ -622,7 +654,7 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void AddTagRowChangeEventHandler(object sender, AddTagRowChangeEvent e);
+        public delegate void AddNotAvailableTimeAndRoomRowChangeEventHandler(object sender, AddNotAvailableTimeAndRoomRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void AddConsecutiveSessionRowChangeEventHandler(object sender, AddConsecutiveSessionRowChangeEvent e);
@@ -652,6 +684,9 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         public delegate void AddSubjectRowChangeEventHandler(object sender, AddSubjectRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void AddTagRowChangeEventHandler(object sender, AddTagRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void AddWorkingDaysAndHoursRowChangeEventHandler(object sender, AddWorkingDaysAndHoursRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -662,15 +697,17 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class AddTagDataTable : global::System.Data.TypedTableBase<AddTagRow> {
+        public partial class AddNotAvailableTimeAndRoomDataTable : global::System.Data.TypedTableBase<AddNotAvailableTimeAndRoomRow> {
             
-            private global::System.Data.DataColumn columnTagID;
+            private global::System.Data.DataColumn columnAllocationID;
             
-            private global::System.Data.DataColumn columnTagName;
+            private global::System.Data.DataColumn columnSelectRoom;
             
-            private global::System.Data.DataColumn columnTagCode;
+            private global::System.Data.DataColumn columnSelectDay;
             
-            private global::System.Data.DataColumn columnRelatedTag;
+            private global::System.Data.DataColumn columnStartTime;
+            
+            private global::System.Data.DataColumn columnEndTime;
             
             private global::System.Data.DataColumn columnInsertDate;
             
@@ -678,8 +715,8 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public AddTagDataTable() {
-                this.TableName = "AddTag";
+            public AddNotAvailableTimeAndRoomDataTable() {
+                this.TableName = "AddNotAvailableTimeAndRoom";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -687,7 +724,7 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal AddTagDataTable(global::System.Data.DataTable table) {
+            internal AddNotAvailableTimeAndRoomDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -704,40 +741,48 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected AddTagDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected AddNotAvailableTimeAndRoomDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TagIDColumn {
+            public global::System.Data.DataColumn AllocationIDColumn {
                 get {
-                    return this.columnTagID;
+                    return this.columnAllocationID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TagNameColumn {
+            public global::System.Data.DataColumn SelectRoomColumn {
                 get {
-                    return this.columnTagName;
+                    return this.columnSelectRoom;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TagCodeColumn {
+            public global::System.Data.DataColumn SelectDayColumn {
                 get {
-                    return this.columnTagCode;
+                    return this.columnSelectDay;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn RelatedTagColumn {
+            public global::System.Data.DataColumn StartTimeColumn {
                 get {
-                    return this.columnRelatedTag;
+                    return this.columnStartTime;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn EndTimeColumn {
+                get {
+                    return this.columnEndTime;
                 }
             }
             
@@ -768,57 +813,58 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public AddTagRow this[int index] {
+            public AddNotAvailableTimeAndRoomRow this[int index] {
                 get {
-                    return ((AddTagRow)(this.Rows[index]));
+                    return ((AddNotAvailableTimeAndRoomRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event AddTagRowChangeEventHandler AddTagRowChanging;
+            public event AddNotAvailableTimeAndRoomRowChangeEventHandler AddNotAvailableTimeAndRoomRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event AddTagRowChangeEventHandler AddTagRowChanged;
+            public event AddNotAvailableTimeAndRoomRowChangeEventHandler AddNotAvailableTimeAndRoomRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event AddTagRowChangeEventHandler AddTagRowDeleting;
+            public event AddNotAvailableTimeAndRoomRowChangeEventHandler AddNotAvailableTimeAndRoomRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event AddTagRowChangeEventHandler AddTagRowDeleted;
+            public event AddNotAvailableTimeAndRoomRowChangeEventHandler AddNotAvailableTimeAndRoomRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddAddTagRow(AddTagRow row) {
+            public void AddAddNotAvailableTimeAndRoomRow(AddNotAvailableTimeAndRoomRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public AddTagRow AddAddTagRow(int TagID, string TagName, string TagCode, string RelatedTag, System.DateTime InsertDate, System.DateTime UpdateDate) {
-                AddTagRow rowAddTagRow = ((AddTagRow)(this.NewRow()));
+            public AddNotAvailableTimeAndRoomRow AddAddNotAvailableTimeAndRoomRow(int AllocationID, string SelectRoom, string SelectDay, string StartTime, string EndTime, System.DateTime InsertDate, System.DateTime UpdateDate) {
+                AddNotAvailableTimeAndRoomRow rowAddNotAvailableTimeAndRoomRow = ((AddNotAvailableTimeAndRoomRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        TagID,
-                        TagName,
-                        TagCode,
-                        RelatedTag,
+                        AllocationID,
+                        SelectRoom,
+                        SelectDay,
+                        StartTime,
+                        EndTime,
                         InsertDate,
                         UpdateDate};
-                rowAddTagRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowAddTagRow);
-                return rowAddTagRow;
+                rowAddNotAvailableTimeAndRoomRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAddNotAvailableTimeAndRoomRow);
+                return rowAddNotAvailableTimeAndRoomRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public AddTagRow FindByTagID(int TagID) {
-                return ((AddTagRow)(this.Rows.Find(new object[] {
-                            TagID})));
+            public AddNotAvailableTimeAndRoomRow FindByAllocationID(int AllocationID) {
+                return ((AddNotAvailableTimeAndRoomRow)(this.Rows.Find(new object[] {
+                            AllocationID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                AddTagDataTable cln = ((AddTagDataTable)(base.Clone()));
+                AddNotAvailableTimeAndRoomDataTable cln = ((AddNotAvailableTimeAndRoomDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -826,16 +872,17 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new AddTagDataTable();
+                return new AddNotAvailableTimeAndRoomDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnTagID = base.Columns["TagID"];
-                this.columnTagName = base.Columns["TagName"];
-                this.columnTagCode = base.Columns["TagCode"];
-                this.columnRelatedTag = base.Columns["RelatedTag"];
+                this.columnAllocationID = base.Columns["AllocationID"];
+                this.columnSelectRoom = base.Columns["SelectRoom"];
+                this.columnSelectDay = base.Columns["SelectDay"];
+                this.columnStartTime = base.Columns["StartTime"];
+                this.columnEndTime = base.Columns["EndTime"];
                 this.columnInsertDate = base.Columns["InsertDate"];
                 this.columnUpdateDate = base.Columns["UpdateDate"];
             }
@@ -843,51 +890,54 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnTagID = new global::System.Data.DataColumn("TagID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTagID);
-                this.columnTagName = new global::System.Data.DataColumn("TagName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTagName);
-                this.columnTagCode = new global::System.Data.DataColumn("TagCode", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTagCode);
-                this.columnRelatedTag = new global::System.Data.DataColumn("RelatedTag", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRelatedTag);
+                this.columnAllocationID = new global::System.Data.DataColumn("AllocationID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAllocationID);
+                this.columnSelectRoom = new global::System.Data.DataColumn("SelectRoom", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSelectRoom);
+                this.columnSelectDay = new global::System.Data.DataColumn("SelectDay", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSelectDay);
+                this.columnStartTime = new global::System.Data.DataColumn("StartTime", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStartTime);
+                this.columnEndTime = new global::System.Data.DataColumn("EndTime", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEndTime);
                 this.columnInsertDate = new global::System.Data.DataColumn("InsertDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnInsertDate);
                 this.columnUpdateDate = new global::System.Data.DataColumn("UpdateDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUpdateDate);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnTagID}, true));
-                this.columnTagID.AllowDBNull = false;
-                this.columnTagID.Unique = true;
-                this.columnTagName.MaxLength = 100;
-                this.columnTagCode.MaxLength = 100;
-                this.columnRelatedTag.MaxLength = 100;
+                                this.columnAllocationID}, true));
+                this.columnAllocationID.AllowDBNull = false;
+                this.columnAllocationID.Unique = true;
+                this.columnSelectRoom.MaxLength = 100;
+                this.columnSelectDay.MaxLength = 100;
+                this.columnStartTime.MaxLength = 100;
+                this.columnEndTime.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public AddTagRow NewAddTagRow() {
-                return ((AddTagRow)(this.NewRow()));
+            public AddNotAvailableTimeAndRoomRow NewAddNotAvailableTimeAndRoomRow() {
+                return ((AddNotAvailableTimeAndRoomRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new AddTagRow(builder);
+                return new AddNotAvailableTimeAndRoomRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(AddTagRow);
+                return typeof(AddNotAvailableTimeAndRoomRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.AddTagRowChanged != null)) {
-                    this.AddTagRowChanged(this, new AddTagRowChangeEvent(((AddTagRow)(e.Row)), e.Action));
+                if ((this.AddNotAvailableTimeAndRoomRowChanged != null)) {
+                    this.AddNotAvailableTimeAndRoomRowChanged(this, new AddNotAvailableTimeAndRoomRowChangeEvent(((AddNotAvailableTimeAndRoomRow)(e.Row)), e.Action));
                 }
             }
             
@@ -895,8 +945,8 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.AddTagRowChanging != null)) {
-                    this.AddTagRowChanging(this, new AddTagRowChangeEvent(((AddTagRow)(e.Row)), e.Action));
+                if ((this.AddNotAvailableTimeAndRoomRowChanging != null)) {
+                    this.AddNotAvailableTimeAndRoomRowChanging(this, new AddNotAvailableTimeAndRoomRowChangeEvent(((AddNotAvailableTimeAndRoomRow)(e.Row)), e.Action));
                 }
             }
             
@@ -904,8 +954,8 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.AddTagRowDeleted != null)) {
-                    this.AddTagRowDeleted(this, new AddTagRowChangeEvent(((AddTagRow)(e.Row)), e.Action));
+                if ((this.AddNotAvailableTimeAndRoomRowDeleted != null)) {
+                    this.AddNotAvailableTimeAndRoomRowDeleted(this, new AddNotAvailableTimeAndRoomRowChangeEvent(((AddNotAvailableTimeAndRoomRow)(e.Row)), e.Action));
                 }
             }
             
@@ -913,14 +963,14 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.AddTagRowDeleting != null)) {
-                    this.AddTagRowDeleting(this, new AddTagRowChangeEvent(((AddTagRow)(e.Row)), e.Action));
+                if ((this.AddNotAvailableTimeAndRoomRowDeleting != null)) {
+                    this.AddNotAvailableTimeAndRoomRowDeleting(this, new AddNotAvailableTimeAndRoomRowChangeEvent(((AddNotAvailableTimeAndRoomRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveAddTagRow(AddTagRow row) {
+            public void RemoveAddNotAvailableTimeAndRoomRow(AddNotAvailableTimeAndRoomRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -947,7 +997,7 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "AddTagDataTable";
+                attribute2.FixedValue = "AddNotAvailableTimeAndRoomDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -4113,6 +4163,337 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class AddTagDataTable : global::System.Data.TypedTableBase<AddTagRow> {
+            
+            private global::System.Data.DataColumn columnTagID;
+            
+            private global::System.Data.DataColumn columnTagName;
+            
+            private global::System.Data.DataColumn columnTagCode;
+            
+            private global::System.Data.DataColumn columnRelatedTag;
+            
+            private global::System.Data.DataColumn columnInsertDate;
+            
+            private global::System.Data.DataColumn columnUpdateDate;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AddTagDataTable() {
+                this.TableName = "AddTag";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal AddTagDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected AddTagDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TagIDColumn {
+                get {
+                    return this.columnTagID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TagNameColumn {
+                get {
+                    return this.columnTagName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TagCodeColumn {
+                get {
+                    return this.columnTagCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn RelatedTagColumn {
+                get {
+                    return this.columnRelatedTag;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn InsertDateColumn {
+                get {
+                    return this.columnInsertDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn UpdateDateColumn {
+                get {
+                    return this.columnUpdateDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AddTagRow this[int index] {
+                get {
+                    return ((AddTagRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event AddTagRowChangeEventHandler AddTagRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event AddTagRowChangeEventHandler AddTagRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event AddTagRowChangeEventHandler AddTagRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event AddTagRowChangeEventHandler AddTagRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddAddTagRow(AddTagRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AddTagRow AddAddTagRow(int TagID, string TagName, string TagCode, string RelatedTag, System.DateTime InsertDate, System.DateTime UpdateDate) {
+                AddTagRow rowAddTagRow = ((AddTagRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        TagID,
+                        TagName,
+                        TagCode,
+                        RelatedTag,
+                        InsertDate,
+                        UpdateDate};
+                rowAddTagRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAddTagRow);
+                return rowAddTagRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AddTagRow FindByTagID(int TagID) {
+                return ((AddTagRow)(this.Rows.Find(new object[] {
+                            TagID})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                AddTagDataTable cln = ((AddTagDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new AddTagDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnTagID = base.Columns["TagID"];
+                this.columnTagName = base.Columns["TagName"];
+                this.columnTagCode = base.Columns["TagCode"];
+                this.columnRelatedTag = base.Columns["RelatedTag"];
+                this.columnInsertDate = base.Columns["InsertDate"];
+                this.columnUpdateDate = base.Columns["UpdateDate"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnTagID = new global::System.Data.DataColumn("TagID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTagID);
+                this.columnTagName = new global::System.Data.DataColumn("TagName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTagName);
+                this.columnTagCode = new global::System.Data.DataColumn("TagCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTagCode);
+                this.columnRelatedTag = new global::System.Data.DataColumn("RelatedTag", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRelatedTag);
+                this.columnInsertDate = new global::System.Data.DataColumn("InsertDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnInsertDate);
+                this.columnUpdateDate = new global::System.Data.DataColumn("UpdateDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUpdateDate);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnTagID}, true));
+                this.columnTagID.AllowDBNull = false;
+                this.columnTagID.Unique = true;
+                this.columnTagName.MaxLength = 100;
+                this.columnTagCode.MaxLength = 100;
+                this.columnRelatedTag.MaxLength = 100;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AddTagRow NewAddTagRow() {
+                return ((AddTagRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new AddTagRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(AddTagRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.AddTagRowChanged != null)) {
+                    this.AddTagRowChanged(this, new AddTagRowChangeEvent(((AddTagRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.AddTagRowChanging != null)) {
+                    this.AddTagRowChanging(this, new AddTagRowChangeEvent(((AddTagRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.AddTagRowDeleted != null)) {
+                    this.AddTagRowDeleted(this, new AddTagRowChangeEvent(((AddTagRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.AddTagRowDeleting != null)) {
+                    this.AddTagRowDeleting(this, new AddTagRowChangeEvent(((AddTagRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveAddTagRow(AddTagRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Database_we_r_44_v1DataSet ds = new Database_we_r_44_v1DataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "AddTagDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class AddWorkingDaysAndHoursDataTable : global::System.Data.TypedTableBase<AddWorkingDaysAndHoursRow> {
             
             private global::System.Data.DataColumn columnRecordID;
@@ -4968,73 +5349,92 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class AddTagRow : global::System.Data.DataRow {
+        public partial class AddNotAvailableTimeAndRoomRow : global::System.Data.DataRow {
             
-            private AddTagDataTable tableAddTag;
+            private AddNotAvailableTimeAndRoomDataTable tableAddNotAvailableTimeAndRoom;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal AddTagRow(global::System.Data.DataRowBuilder rb) : 
+            internal AddNotAvailableTimeAndRoomRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableAddTag = ((AddTagDataTable)(this.Table));
+                this.tableAddNotAvailableTimeAndRoom = ((AddNotAvailableTimeAndRoomDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int TagID {
+            public int AllocationID {
                 get {
-                    return ((int)(this[this.tableAddTag.TagIDColumn]));
+                    return ((int)(this[this.tableAddNotAvailableTimeAndRoom.AllocationIDColumn]));
                 }
                 set {
-                    this[this.tableAddTag.TagIDColumn] = value;
+                    this[this.tableAddNotAvailableTimeAndRoom.AllocationIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string TagName {
-                get {
-                    try {
-                        return ((string)(this[this.tableAddTag.TagNameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TagName\' in table \'AddTag\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableAddTag.TagNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string TagCode {
+            public string SelectRoom {
                 get {
                     try {
-                        return ((string)(this[this.tableAddTag.TagCodeColumn]));
+                        return ((string)(this[this.tableAddNotAvailableTimeAndRoom.SelectRoomColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TagCode\' in table \'AddTag\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SelectRoom\' in table \'AddNotAvailableTimeAndRoom\' is DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tableAddTag.TagCodeColumn] = value;
+                    this[this.tableAddNotAvailableTimeAndRoom.SelectRoomColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string RelatedTag {
+            public string SelectDay {
                 get {
                     try {
-                        return ((string)(this[this.tableAddTag.RelatedTagColumn]));
+                        return ((string)(this[this.tableAddNotAvailableTimeAndRoom.SelectDayColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'RelatedTag\' in table \'AddTag\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SelectDay\' in table \'AddNotAvailableTimeAndRoom\' is DBNull." +
+                                "", e);
                     }
                 }
                 set {
-                    this[this.tableAddTag.RelatedTagColumn] = value;
+                    this[this.tableAddNotAvailableTimeAndRoom.SelectDayColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string StartTime {
+                get {
+                    try {
+                        return ((string)(this[this.tableAddNotAvailableTimeAndRoom.StartTimeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'StartTime\' in table \'AddNotAvailableTimeAndRoom\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableAddNotAvailableTimeAndRoom.StartTimeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string EndTime {
+                get {
+                    try {
+                        return ((string)(this[this.tableAddNotAvailableTimeAndRoom.EndTimeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EndTime\' in table \'AddNotAvailableTimeAndRoom\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAddNotAvailableTimeAndRoom.EndTimeColumn] = value;
                 }
             }
             
@@ -5043,14 +5443,15 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             public System.DateTime InsertDate {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableAddTag.InsertDateColumn]));
+                        return ((global::System.DateTime)(this[this.tableAddNotAvailableTimeAndRoom.InsertDateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'InsertDate\' in table \'AddTag\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'InsertDate\' in table \'AddNotAvailableTimeAndRoom\' is DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tableAddTag.InsertDateColumn] = value;
+                    this[this.tableAddNotAvailableTimeAndRoom.InsertDateColumn] = value;
                 }
             }
             
@@ -5059,75 +5460,88 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
             public System.DateTime UpdateDate {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableAddTag.UpdateDateColumn]));
+                        return ((global::System.DateTime)(this[this.tableAddNotAvailableTimeAndRoom.UpdateDateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'UpdateDate\' in table \'AddTag\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'UpdateDate\' in table \'AddNotAvailableTimeAndRoom\' is DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tableAddTag.UpdateDateColumn] = value;
+                    this[this.tableAddNotAvailableTimeAndRoom.UpdateDateColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsTagNameNull() {
-                return this.IsNull(this.tableAddTag.TagNameColumn);
+            public bool IsSelectRoomNull() {
+                return this.IsNull(this.tableAddNotAvailableTimeAndRoom.SelectRoomColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetTagNameNull() {
-                this[this.tableAddTag.TagNameColumn] = global::System.Convert.DBNull;
+            public void SetSelectRoomNull() {
+                this[this.tableAddNotAvailableTimeAndRoom.SelectRoomColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsTagCodeNull() {
-                return this.IsNull(this.tableAddTag.TagCodeColumn);
+            public bool IsSelectDayNull() {
+                return this.IsNull(this.tableAddNotAvailableTimeAndRoom.SelectDayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetTagCodeNull() {
-                this[this.tableAddTag.TagCodeColumn] = global::System.Convert.DBNull;
+            public void SetSelectDayNull() {
+                this[this.tableAddNotAvailableTimeAndRoom.SelectDayColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsRelatedTagNull() {
-                return this.IsNull(this.tableAddTag.RelatedTagColumn);
+            public bool IsStartTimeNull() {
+                return this.IsNull(this.tableAddNotAvailableTimeAndRoom.StartTimeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetRelatedTagNull() {
-                this[this.tableAddTag.RelatedTagColumn] = global::System.Convert.DBNull;
+            public void SetStartTimeNull() {
+                this[this.tableAddNotAvailableTimeAndRoom.StartTimeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsEndTimeNull() {
+                return this.IsNull(this.tableAddNotAvailableTimeAndRoom.EndTimeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetEndTimeNull() {
+                this[this.tableAddNotAvailableTimeAndRoom.EndTimeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsInsertDateNull() {
-                return this.IsNull(this.tableAddTag.InsertDateColumn);
+                return this.IsNull(this.tableAddNotAvailableTimeAndRoom.InsertDateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetInsertDateNull() {
-                this[this.tableAddTag.InsertDateColumn] = global::System.Convert.DBNull;
+                this[this.tableAddNotAvailableTimeAndRoom.InsertDateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsUpdateDateNull() {
-                return this.IsNull(this.tableAddTag.UpdateDateColumn);
+                return this.IsNull(this.tableAddNotAvailableTimeAndRoom.UpdateDateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetUpdateDateNull() {
-                this[this.tableAddTag.UpdateDateColumn] = global::System.Convert.DBNull;
+                this[this.tableAddNotAvailableTimeAndRoom.UpdateDateColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -6882,6 +7296,172 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+        public partial class AddTagRow : global::System.Data.DataRow {
+            
+            private AddTagDataTable tableAddTag;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal AddTagRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableAddTag = ((AddTagDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int TagID {
+                get {
+                    return ((int)(this[this.tableAddTag.TagIDColumn]));
+                }
+                set {
+                    this[this.tableAddTag.TagIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string TagName {
+                get {
+                    try {
+                        return ((string)(this[this.tableAddTag.TagNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TagName\' in table \'AddTag\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAddTag.TagNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string TagCode {
+                get {
+                    try {
+                        return ((string)(this[this.tableAddTag.TagCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TagCode\' in table \'AddTag\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAddTag.TagCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string RelatedTag {
+                get {
+                    try {
+                        return ((string)(this[this.tableAddTag.RelatedTagColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RelatedTag\' in table \'AddTag\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAddTag.RelatedTagColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime InsertDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableAddTag.InsertDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'InsertDate\' in table \'AddTag\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAddTag.InsertDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime UpdateDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableAddTag.UpdateDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UpdateDate\' in table \'AddTag\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAddTag.UpdateDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsTagNameNull() {
+                return this.IsNull(this.tableAddTag.TagNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetTagNameNull() {
+                this[this.tableAddTag.TagNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsTagCodeNull() {
+                return this.IsNull(this.tableAddTag.TagCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetTagCodeNull() {
+                this[this.tableAddTag.TagCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsRelatedTagNull() {
+                return this.IsNull(this.tableAddTag.RelatedTagColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetRelatedTagNull() {
+                this[this.tableAddTag.RelatedTagColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsInsertDateNull() {
+                return this.IsNull(this.tableAddTag.InsertDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetInsertDateNull() {
+                this[this.tableAddTag.InsertDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsUpdateDateNull() {
+                return this.IsNull(this.tableAddTag.UpdateDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetUpdateDateNull() {
+                this[this.tableAddTag.UpdateDateColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
         public partial class AddWorkingDaysAndHoursRow : global::System.Data.DataRow {
             
             private AddWorkingDaysAndHoursDataTable tableAddWorkingDaysAndHours;
@@ -7580,22 +8160,22 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class AddTagRowChangeEvent : global::System.EventArgs {
+        public class AddNotAvailableTimeAndRoomRowChangeEvent : global::System.EventArgs {
             
-            private AddTagRow eventRow;
+            private AddNotAvailableTimeAndRoomRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public AddTagRowChangeEvent(AddTagRow row, global::System.Data.DataRowAction action) {
+            public AddNotAvailableTimeAndRoomRowChangeEvent(AddNotAvailableTimeAndRoomRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public AddTagRow Row {
+            public AddNotAvailableTimeAndRoomRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -7920,6 +8500,40 @@ namespace SLIIT_ITPM_WE_R_44_V1 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class AddTagRowChangeEvent : global::System.EventArgs {
+            
+            private AddTagRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AddTagRowChangeEvent(AddTagRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AddTagRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public class AddWorkingDaysAndHoursRowChangeEvent : global::System.EventArgs {
             
             private AddWorkingDaysAndHoursRow eventRow;
@@ -7997,7 +8611,7 @@ namespace SLIIT_ITPM_WE_R_44_V1.Database_we_r_44_v1DataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class AddTagTableAdapter : global::System.ComponentModel.Component {
+    public partial class AddNotAvailableTimeAndRoomTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -8011,7 +8625,7 @@ namespace SLIIT_ITPM_WE_R_44_V1.Database_we_r_44_v1DataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public AddTagTableAdapter() {
+        public AddNotAvailableTimeAndRoomTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -8108,58 +8722,65 @@ namespace SLIIT_ITPM_WE_R_44_V1.Database_we_r_44_v1DataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "AddTag";
-            tableMapping.ColumnMappings.Add("TagID", "TagID");
-            tableMapping.ColumnMappings.Add("TagName", "TagName");
-            tableMapping.ColumnMappings.Add("TagCode", "TagCode");
-            tableMapping.ColumnMappings.Add("RelatedTag", "RelatedTag");
+            tableMapping.DataSetTable = "AddNotAvailableTimeAndRoom";
+            tableMapping.ColumnMappings.Add("AllocationID", "AllocationID");
+            tableMapping.ColumnMappings.Add("SelectRoom", "SelectRoom");
+            tableMapping.ColumnMappings.Add("SelectDay", "SelectDay");
+            tableMapping.ColumnMappings.Add("StartTime", "StartTime");
+            tableMapping.ColumnMappings.Add("EndTime", "EndTime");
             tableMapping.ColumnMappings.Add("InsertDate", "InsertDate");
             tableMapping.ColumnMappings.Add("UpdateDate", "UpdateDate");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[AddTag] WHERE (([TagID] = @Original_TagID) AND ((@IsNull_TagName = 1 AND [TagName] IS NULL) OR ([TagName] = @Original_TagName)) AND ((@IsNull_TagCode = 1 AND [TagCode] IS NULL) OR ([TagCode] = @Original_TagCode)) AND ((@IsNull_RelatedTag = 1 AND [RelatedTag] IS NULL) OR ([RelatedTag] = @Original_RelatedTag)) AND ((@IsNull_InsertDate = 1 AND [InsertDate] IS NULL) OR ([InsertDate] = @Original_InsertDate)) AND ((@IsNull_UpdateDate = 1 AND [UpdateDate] IS NULL) OR ([UpdateDate] = @Original_UpdateDate)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[AddNotAvailableTimeAndRoom] WHERE (([AllocationID] = @Original_AllocationID) AND ((@IsNull_SelectRoom = 1 AND [SelectRoom] IS NULL) OR ([SelectRoom] = @Original_SelectRoom)) AND ((@IsNull_SelectDay = 1 AND [SelectDay] IS NULL) OR ([SelectDay] = @Original_SelectDay)) AND ((@IsNull_StartTime = 1 AND [StartTime] IS NULL) OR ([StartTime] = @Original_StartTime)) AND ((@IsNull_EndTime = 1 AND [EndTime] IS NULL) OR ([EndTime] = @Original_EndTime)) AND ((@IsNull_InsertDate = 1 AND [InsertDate] IS NULL) OR ([InsertDate] = @Original_InsertDate)) AND ((@IsNull_UpdateDate = 1 AND [UpdateDate] IS NULL) OR ([UpdateDate] = @Original_UpdateDate)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TagName", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TagCode", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagCode", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_RelatedTag", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RelatedTag", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AllocationID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AllocationID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SelectRoom", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectRoom", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SelectRoom", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectRoom", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SelectDay", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectDay", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SelectDay", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectDay", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_StartTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StartTime", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_StartTime", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StartTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_EndTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EndTime", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EndTime", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EndTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_InsertDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_InsertDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_UpdateDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UpdateDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UpdateDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UpdateDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[AddTag] ([TagID], [TagName], [TagCode], [RelatedTag], [InsertDate], [UpdateDate]) VALUES (@TagID, @TagName, @TagCode, @RelatedTag, @InsertDate, @UpdateDate);
-SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag WHERE (TagID = @TagID)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[AddNotAvailableTimeAndRoom] ([AllocationID], [SelectRoom], [SelectDay], [StartTime], [EndTime], [InsertDate], [UpdateDate]) VALUES (@AllocationID, @SelectRoom, @SelectDay, @StartTime, @EndTime, @InsertDate, @UpdateDate);
+SELECT AllocationID, SelectRoom, SelectDay, StartTime, EndTime, InsertDate, UpdateDate FROM AddNotAvailableTimeAndRoom WHERE (AllocationID = @AllocationID)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagCode", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RelatedTag", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AllocationID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AllocationID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SelectRoom", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectRoom", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SelectDay", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectDay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StartTime", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StartTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EndTime", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EndTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@InsertDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UpdateDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UpdateDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[AddTag] SET [TagID] = @TagID, [TagName] = @TagName, [TagCode] = @TagCode, [RelatedTag] = @RelatedTag, [InsertDate] = @InsertDate, [UpdateDate] = @UpdateDate WHERE (([TagID] = @Original_TagID) AND ((@IsNull_TagName = 1 AND [TagName] IS NULL) OR ([TagName] = @Original_TagName)) AND ((@IsNull_TagCode = 1 AND [TagCode] IS NULL) OR ([TagCode] = @Original_TagCode)) AND ((@IsNull_RelatedTag = 1 AND [RelatedTag] IS NULL) OR ([RelatedTag] = @Original_RelatedTag)) AND ((@IsNull_InsertDate = 1 AND [InsertDate] IS NULL) OR ([InsertDate] = @Original_InsertDate)) AND ((@IsNull_UpdateDate = 1 AND [UpdateDate] IS NULL) OR ([UpdateDate] = @Original_UpdateDate)));
-SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag WHERE (TagID = @TagID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[AddNotAvailableTimeAndRoom] SET [AllocationID] = @AllocationID, [SelectRoom] = @SelectRoom, [SelectDay] = @SelectDay, [StartTime] = @StartTime, [EndTime] = @EndTime, [InsertDate] = @InsertDate, [UpdateDate] = @UpdateDate WHERE (([AllocationID] = @Original_AllocationID) AND ((@IsNull_SelectRoom = 1 AND [SelectRoom] IS NULL) OR ([SelectRoom] = @Original_SelectRoom)) AND ((@IsNull_SelectDay = 1 AND [SelectDay] IS NULL) OR ([SelectDay] = @Original_SelectDay)) AND ((@IsNull_StartTime = 1 AND [StartTime] IS NULL) OR ([StartTime] = @Original_StartTime)) AND ((@IsNull_EndTime = 1 AND [EndTime] IS NULL) OR ([EndTime] = @Original_EndTime)) AND ((@IsNull_InsertDate = 1 AND [InsertDate] IS NULL) OR ([InsertDate] = @Original_InsertDate)) AND ((@IsNull_UpdateDate = 1 AND [UpdateDate] IS NULL) OR ([UpdateDate] = @Original_UpdateDate)));
+SELECT AllocationID, SelectRoom, SelectDay, StartTime, EndTime, InsertDate, UpdateDate FROM AddNotAvailableTimeAndRoom WHERE (AllocationID = @AllocationID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagCode", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RelatedTag", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AllocationID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AllocationID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SelectRoom", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectRoom", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SelectDay", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectDay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StartTime", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StartTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EndTime", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EndTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@InsertDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UpdateDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UpdateDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TagName", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TagCode", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagCode", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_RelatedTag", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RelatedTag", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AllocationID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AllocationID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SelectRoom", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectRoom", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SelectRoom", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectRoom", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SelectDay", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectDay", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SelectDay", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SelectDay", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_StartTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StartTime", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_StartTime", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StartTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_EndTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EndTime", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EndTime", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EndTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_InsertDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_InsertDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_UpdateDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UpdateDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -8179,8 +8800,8 @@ SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag W
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM dbo.AddTa" +
-                "g";
+            this._commandCollection[0].CommandText = "SELECT AllocationID, SelectRoom, SelectDay, StartTime, EndTime, InsertDate, Updat" +
+                "eDate FROM dbo.AddNotAvailableTimeAndRoom";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -8188,7 +8809,7 @@ SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Database_we_r_44_v1DataSet.AddTagDataTable dataTable) {
+        public virtual int Fill(Database_we_r_44_v1DataSet.AddNotAvailableTimeAndRoomDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8201,9 +8822,9 @@ SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Database_we_r_44_v1DataSet.AddTagDataTable GetData() {
+        public virtual Database_we_r_44_v1DataSet.AddNotAvailableTimeAndRoomDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Database_we_r_44_v1DataSet.AddTagDataTable dataTable = new Database_we_r_44_v1DataSet.AddTagDataTable();
+            Database_we_r_44_v1DataSet.AddNotAvailableTimeAndRoomDataTable dataTable = new Database_we_r_44_v1DataSet.AddNotAvailableTimeAndRoomDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8211,7 +8832,7 @@ SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag W
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Database_we_r_44_v1DataSet.AddTagDataTable dataTable) {
+        public virtual int Update(Database_we_r_44_v1DataSet.AddNotAvailableTimeAndRoomDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -8219,7 +8840,7 @@ SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(Database_we_r_44_v1DataSet dataSet) {
-            return this.Adapter.Update(dataSet, "AddTag");
+            return this.Adapter.Update(dataSet, "AddNotAvailableTimeAndRoom");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8241,47 +8862,55 @@ SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_TagID, string Original_TagName, string Original_TagCode, string Original_RelatedTag, global::System.Nullable<global::System.DateTime> Original_InsertDate, global::System.Nullable<global::System.DateTime> Original_UpdateDate) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_TagID));
-            if ((Original_TagName == null)) {
+        public virtual int Delete(int Original_AllocationID, string Original_SelectRoom, string Original_SelectDay, string Original_StartTime, string Original_EndTime, global::System.Nullable<global::System.DateTime> Original_InsertDate, global::System.Nullable<global::System.DateTime> Original_UpdateDate) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_AllocationID));
+            if ((Original_SelectRoom == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_TagName));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_SelectRoom));
             }
-            if ((Original_TagCode == null)) {
+            if ((Original_SelectDay == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_TagCode));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_SelectDay));
             }
-            if ((Original_RelatedTag == null)) {
+            if ((Original_StartTime == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_RelatedTag));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_StartTime));
             }
-            if ((Original_InsertDate.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((System.DateTime)(Original_InsertDate.Value));
-            }
-            else {
+            if ((Original_EndTime == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((Original_UpdateDate.HasValue == true)) {
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_EndTime));
+            }
+            if ((Original_InsertDate.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((System.DateTime)(Original_UpdateDate.Value));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((System.DateTime)(Original_InsertDate.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((Original_UpdateDate.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((System.DateTime)(Original_UpdateDate.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8303,37 +8932,43 @@ SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int TagID, string TagName, string TagCode, string RelatedTag, global::System.Nullable<global::System.DateTime> InsertDate, global::System.Nullable<global::System.DateTime> UpdateDate) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(TagID));
-            if ((TagName == null)) {
+        public virtual int Insert(int AllocationID, string SelectRoom, string SelectDay, string StartTime, string EndTime, global::System.Nullable<global::System.DateTime> InsertDate, global::System.Nullable<global::System.DateTime> UpdateDate) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(AllocationID));
+            if ((SelectRoom == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(TagName));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(SelectRoom));
             }
-            if ((TagCode == null)) {
+            if ((SelectDay == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(TagCode));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(SelectDay));
             }
-            if ((RelatedTag == null)) {
+            if ((StartTime == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(RelatedTag));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(StartTime));
             }
-            if ((InsertDate.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(InsertDate.Value));
-            }
-            else {
+            if ((EndTime == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((UpdateDate.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(UpdateDate.Value));
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(EndTime));
+            }
+            if ((InsertDate.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(InsertDate.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((UpdateDate.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((System.DateTime)(UpdateDate.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8355,78 +8990,92 @@ SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int TagID, string TagName, string TagCode, string RelatedTag, global::System.Nullable<global::System.DateTime> InsertDate, global::System.Nullable<global::System.DateTime> UpdateDate, int Original_TagID, string Original_TagName, string Original_TagCode, string Original_RelatedTag, global::System.Nullable<global::System.DateTime> Original_InsertDate, global::System.Nullable<global::System.DateTime> Original_UpdateDate) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(TagID));
-            if ((TagName == null)) {
+        public virtual int Update(int AllocationID, string SelectRoom, string SelectDay, string StartTime, string EndTime, global::System.Nullable<global::System.DateTime> InsertDate, global::System.Nullable<global::System.DateTime> UpdateDate, int Original_AllocationID, string Original_SelectRoom, string Original_SelectDay, string Original_StartTime, string Original_EndTime, global::System.Nullable<global::System.DateTime> Original_InsertDate, global::System.Nullable<global::System.DateTime> Original_UpdateDate) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(AllocationID));
+            if ((SelectRoom == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(TagName));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(SelectRoom));
             }
-            if ((TagCode == null)) {
+            if ((SelectDay == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(TagCode));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(SelectDay));
             }
-            if ((RelatedTag == null)) {
+            if ((StartTime == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(RelatedTag));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(StartTime));
             }
-            if ((InsertDate.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(InsertDate.Value));
-            }
-            else {
+            if ((EndTime == null)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((UpdateDate.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(UpdateDate.Value));
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(EndTime));
+            }
+            if ((InsertDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(InsertDate.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_TagID));
-            if ((Original_TagName == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            if ((UpdateDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((System.DateTime)(UpdateDate.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_TagName));
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((Original_TagCode == null)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_TagCode));
-            }
-            if ((Original_RelatedTag == null)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_AllocationID));
+            if ((Original_SelectRoom == null)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_RelatedTag));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_SelectRoom));
+            }
+            if ((Original_SelectDay == null)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_SelectDay));
+            }
+            if ((Original_StartTime == null)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_StartTime));
+            }
+            if ((Original_EndTime == null)) {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_EndTime));
             }
             if ((Original_InsertDate.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((System.DateTime)(Original_InsertDate.Value));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((System.DateTime)(Original_InsertDate.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
             if ((Original_UpdateDate.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((System.DateTime)(Original_UpdateDate.Value));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((System.DateTime)(Original_UpdateDate.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8448,8 +9097,8 @@ SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string TagName, string TagCode, string RelatedTag, global::System.Nullable<global::System.DateTime> InsertDate, global::System.Nullable<global::System.DateTime> UpdateDate, int Original_TagID, string Original_TagName, string Original_TagCode, string Original_RelatedTag, global::System.Nullable<global::System.DateTime> Original_InsertDate, global::System.Nullable<global::System.DateTime> Original_UpdateDate) {
-            return this.Update(Original_TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate, Original_TagID, Original_TagName, Original_TagCode, Original_RelatedTag, Original_InsertDate, Original_UpdateDate);
+        public virtual int Update(string SelectRoom, string SelectDay, string StartTime, string EndTime, global::System.Nullable<global::System.DateTime> InsertDate, global::System.Nullable<global::System.DateTime> UpdateDate, int Original_AllocationID, string Original_SelectRoom, string Original_SelectDay, string Original_StartTime, string Original_EndTime, global::System.Nullable<global::System.DateTime> Original_InsertDate, global::System.Nullable<global::System.DateTime> Original_UpdateDate) {
+            return this.Update(Original_AllocationID, SelectRoom, SelectDay, StartTime, EndTime, InsertDate, UpdateDate, Original_AllocationID, Original_SelectRoom, Original_SelectDay, Original_StartTime, Original_EndTime, Original_InsertDate, Original_UpdateDate);
         }
     }
     
@@ -13166,6 +13815,471 @@ SELECT SubjectID, OfferedYear, OfferedSemester, SubjectName, SubjectCode, NoOfLe
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class AddTagTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public AddTagTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "AddTag";
+            tableMapping.ColumnMappings.Add("TagID", "TagID");
+            tableMapping.ColumnMappings.Add("TagName", "TagName");
+            tableMapping.ColumnMappings.Add("TagCode", "TagCode");
+            tableMapping.ColumnMappings.Add("RelatedTag", "RelatedTag");
+            tableMapping.ColumnMappings.Add("InsertDate", "InsertDate");
+            tableMapping.ColumnMappings.Add("UpdateDate", "UpdateDate");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[AddTag] WHERE (([TagID] = @Original_TagID) AND ((@IsNull_TagName = 1 AND [TagName] IS NULL) OR ([TagName] = @Original_TagName)) AND ((@IsNull_TagCode = 1 AND [TagCode] IS NULL) OR ([TagCode] = @Original_TagCode)) AND ((@IsNull_RelatedTag = 1 AND [RelatedTag] IS NULL) OR ([RelatedTag] = @Original_RelatedTag)) AND ((@IsNull_InsertDate = 1 AND [InsertDate] IS NULL) OR ([InsertDate] = @Original_InsertDate)) AND ((@IsNull_UpdateDate = 1 AND [UpdateDate] IS NULL) OR ([UpdateDate] = @Original_UpdateDate)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TagName", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TagCode", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagCode", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_RelatedTag", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RelatedTag", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_InsertDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_InsertDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_UpdateDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UpdateDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UpdateDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UpdateDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[AddTag] ([TagID], [TagName], [TagCode], [RelatedTag], [InsertDate], [UpdateDate]) VALUES (@TagID, @TagName, @TagCode, @RelatedTag, @InsertDate, @UpdateDate);
+SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag WHERE (TagID = @TagID)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagCode", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RelatedTag", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@InsertDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UpdateDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UpdateDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[AddTag] SET [TagID] = @TagID, [TagName] = @TagName, [TagCode] = @TagCode, [RelatedTag] = @RelatedTag, [InsertDate] = @InsertDate, [UpdateDate] = @UpdateDate WHERE (([TagID] = @Original_TagID) AND ((@IsNull_TagName = 1 AND [TagName] IS NULL) OR ([TagName] = @Original_TagName)) AND ((@IsNull_TagCode = 1 AND [TagCode] IS NULL) OR ([TagCode] = @Original_TagCode)) AND ((@IsNull_RelatedTag = 1 AND [RelatedTag] IS NULL) OR ([RelatedTag] = @Original_RelatedTag)) AND ((@IsNull_InsertDate = 1 AND [InsertDate] IS NULL) OR ([InsertDate] = @Original_InsertDate)) AND ((@IsNull_UpdateDate = 1 AND [UpdateDate] IS NULL) OR ([UpdateDate] = @Original_UpdateDate)));
+SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM AddTag WHERE (TagID = @TagID)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TagCode", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RelatedTag", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@InsertDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UpdateDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UpdateDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TagName", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TagCode", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TagCode", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TagCode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_RelatedTag", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RelatedTag", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RelatedTag", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_InsertDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_InsertDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InsertDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_UpdateDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UpdateDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UpdateDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UpdateDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::SLIIT_ITPM_WE_R_44_V1.Properties.Settings.Default.cn;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate FROM dbo.AddTa" +
+                "g";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(Database_we_r_44_v1DataSet.AddTagDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual Database_we_r_44_v1DataSet.AddTagDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            Database_we_r_44_v1DataSet.AddTagDataTable dataTable = new Database_we_r_44_v1DataSet.AddTagDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(Database_we_r_44_v1DataSet.AddTagDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(Database_we_r_44_v1DataSet dataSet) {
+            return this.Adapter.Update(dataSet, "AddTag");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_TagID, string Original_TagName, string Original_TagCode, string Original_RelatedTag, global::System.Nullable<global::System.DateTime> Original_InsertDate, global::System.Nullable<global::System.DateTime> Original_UpdateDate) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_TagID));
+            if ((Original_TagName == null)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_TagName));
+            }
+            if ((Original_TagCode == null)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_TagCode));
+            }
+            if ((Original_RelatedTag == null)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_RelatedTag));
+            }
+            if ((Original_InsertDate.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((System.DateTime)(Original_InsertDate.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((Original_UpdateDate.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((System.DateTime)(Original_UpdateDate.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int TagID, string TagName, string TagCode, string RelatedTag, global::System.Nullable<global::System.DateTime> InsertDate, global::System.Nullable<global::System.DateTime> UpdateDate) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(TagID));
+            if ((TagName == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(TagName));
+            }
+            if ((TagCode == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(TagCode));
+            }
+            if ((RelatedTag == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(RelatedTag));
+            }
+            if ((InsertDate.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(InsertDate.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((UpdateDate.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(UpdateDate.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int TagID, string TagName, string TagCode, string RelatedTag, global::System.Nullable<global::System.DateTime> InsertDate, global::System.Nullable<global::System.DateTime> UpdateDate, int Original_TagID, string Original_TagName, string Original_TagCode, string Original_RelatedTag, global::System.Nullable<global::System.DateTime> Original_InsertDate, global::System.Nullable<global::System.DateTime> Original_UpdateDate) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(TagID));
+            if ((TagName == null)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(TagName));
+            }
+            if ((TagCode == null)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(TagCode));
+            }
+            if ((RelatedTag == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(RelatedTag));
+            }
+            if ((InsertDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(InsertDate.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((UpdateDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(UpdateDate.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_TagID));
+            if ((Original_TagName == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_TagName));
+            }
+            if ((Original_TagCode == null)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_TagCode));
+            }
+            if ((Original_RelatedTag == null)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_RelatedTag));
+            }
+            if ((Original_InsertDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((System.DateTime)(Original_InsertDate.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((Original_UpdateDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((System.DateTime)(Original_UpdateDate.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string TagName, string TagCode, string RelatedTag, global::System.Nullable<global::System.DateTime> InsertDate, global::System.Nullable<global::System.DateTime> UpdateDate, int Original_TagID, string Original_TagName, string Original_TagCode, string Original_RelatedTag, global::System.Nullable<global::System.DateTime> Original_InsertDate, global::System.Nullable<global::System.DateTime> Original_UpdateDate) {
+            return this.Update(Original_TagID, TagName, TagCode, RelatedTag, InsertDate, UpdateDate, Original_TagID, Original_TagName, Original_TagCode, Original_RelatedTag, Original_InsertDate, Original_UpdateDate);
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class AddWorkingDaysAndHoursTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -14692,7 +15806,7 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
         
         private UpdateOrderOption _updateOrder;
         
-        private AddTagTableAdapter _addTagTableAdapter;
+        private AddNotAvailableTimeAndRoomTableAdapter _addNotAvailableTimeAndRoomTableAdapter;
         
         private AddConsecutiveSessionTableAdapter _addConsecutiveSessionTableAdapter;
         
@@ -14711,6 +15825,8 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
         private AddStudentGroupTableAdapter _addStudentGroupTableAdapter;
         
         private AddSubjectTableAdapter _addSubjectTableAdapter;
+        
+        private AddTagTableAdapter _addTagTableAdapter;
         
         private AddWorkingDaysAndHoursTableAdapter _addWorkingDaysAndHoursTableAdapter;
         
@@ -14736,12 +15852,12 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public AddTagTableAdapter AddTagTableAdapter {
+        public AddNotAvailableTimeAndRoomTableAdapter AddNotAvailableTimeAndRoomTableAdapter {
             get {
-                return this._addTagTableAdapter;
+                return this._addNotAvailableTimeAndRoomTableAdapter;
             }
             set {
-                this._addTagTableAdapter = value;
+                this._addNotAvailableTimeAndRoomTableAdapter = value;
             }
         }
         
@@ -14876,6 +15992,20 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
+        public AddTagTableAdapter AddTagTableAdapter {
+            get {
+                return this._addTagTableAdapter;
+            }
+            set {
+                this._addTagTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
         public AddWorkingDaysAndHoursTableAdapter AddWorkingDaysAndHoursTableAdapter {
             get {
                 return this._addWorkingDaysAndHoursTableAdapter;
@@ -14918,9 +16048,9 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._addTagTableAdapter != null) 
-                            && (this._addTagTableAdapter.Connection != null))) {
-                    return this._addTagTableAdapter.Connection;
+                if (((this._addNotAvailableTimeAndRoomTableAdapter != null) 
+                            && (this._addNotAvailableTimeAndRoomTableAdapter.Connection != null))) {
+                    return this._addNotAvailableTimeAndRoomTableAdapter.Connection;
                 }
                 if (((this._addConsecutiveSessionTableAdapter != null) 
                             && (this._addConsecutiveSessionTableAdapter.Connection != null))) {
@@ -14958,6 +16088,10 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
                             && (this._addSubjectTableAdapter.Connection != null))) {
                     return this._addSubjectTableAdapter.Connection;
                 }
+                if (((this._addTagTableAdapter != null) 
+                            && (this._addTagTableAdapter.Connection != null))) {
+                    return this._addTagTableAdapter.Connection;
+                }
                 if (((this._addWorkingDaysAndHoursTableAdapter != null) 
                             && (this._addWorkingDaysAndHoursTableAdapter.Connection != null))) {
                     return this._addWorkingDaysAndHoursTableAdapter.Connection;
@@ -14979,7 +16113,7 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._addTagTableAdapter != null)) {
+                if ((this._addNotAvailableTimeAndRoomTableAdapter != null)) {
                     count = (count + 1);
                 }
                 if ((this._addConsecutiveSessionTableAdapter != null)) {
@@ -15009,6 +16143,9 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
                 if ((this._addSubjectTableAdapter != null)) {
                     count = (count + 1);
                 }
+                if ((this._addTagTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 if ((this._addWorkingDaysAndHoursTableAdapter != null)) {
                     count = (count + 1);
                 }
@@ -15026,12 +16163,12 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateUpdatedRows(Database_we_r_44_v1DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._addTagTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.AddTag.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._addNotAvailableTimeAndRoomTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.AddNotAvailableTimeAndRoom.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._addTagTableAdapter.Update(updatedRows));
+                    result = (result + this._addNotAvailableTimeAndRoomTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -15116,6 +16253,15 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._addTagTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.AddTag.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._addTagTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._addWorkingDaysAndHoursTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.AddWorkingDaysAndHours.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -15144,11 +16290,11 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateInsertedRows(Database_we_r_44_v1DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._addTagTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.AddTag.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._addNotAvailableTimeAndRoomTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.AddNotAvailableTimeAndRoom.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._addTagTableAdapter.Update(addedRows));
+                    result = (result + this._addNotAvailableTimeAndRoomTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -15224,6 +16370,14 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._addTagTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.AddTag.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._addTagTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._addWorkingDaysAndHoursTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.AddWorkingDaysAndHours.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -15263,6 +16417,14 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._addWorkingDaysAndHoursTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._addTagTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.AddTag.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._addTagTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -15338,11 +16500,11 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._addTagTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.AddTag.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._addNotAvailableTimeAndRoomTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.AddNotAvailableTimeAndRoom.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._addTagTableAdapter.Update(deletedRows));
+                    result = (result + this._addNotAvailableTimeAndRoomTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -15385,8 +16547,8 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._addTagTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._addTagTableAdapter.Connection) == false))) {
+            if (((this._addNotAvailableTimeAndRoomTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._addNotAvailableTimeAndRoomTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -15435,6 +16597,11 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
+            if (((this._addTagTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._addTagTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
             if (((this._addWorkingDaysAndHoursTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._addWorkingDaysAndHoursTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
@@ -15477,13 +16644,13 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._addTagTableAdapter != null)) {
-                    revertConnections.Add(this._addTagTableAdapter, this._addTagTableAdapter.Connection);
-                    this._addTagTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._addTagTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._addTagTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._addTagTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._addTagTableAdapter.Adapter);
+                if ((this._addNotAvailableTimeAndRoomTableAdapter != null)) {
+                    revertConnections.Add(this._addNotAvailableTimeAndRoomTableAdapter, this._addNotAvailableTimeAndRoomTableAdapter.Connection);
+                    this._addNotAvailableTimeAndRoomTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._addNotAvailableTimeAndRoomTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._addNotAvailableTimeAndRoomTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._addNotAvailableTimeAndRoomTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._addNotAvailableTimeAndRoomTableAdapter.Adapter);
                     }
                 }
                 if ((this._addConsecutiveSessionTableAdapter != null)) {
@@ -15567,6 +16734,15 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
                         adaptersWithAcceptChangesDuringUpdate.Add(this._addSubjectTableAdapter.Adapter);
                     }
                 }
+                if ((this._addTagTableAdapter != null)) {
+                    revertConnections.Add(this._addTagTableAdapter, this._addTagTableAdapter.Connection);
+                    this._addTagTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._addTagTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._addTagTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._addTagTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._addTagTableAdapter.Adapter);
+                    }
+                }
                 if ((this._addWorkingDaysAndHoursTableAdapter != null)) {
                     revertConnections.Add(this._addWorkingDaysAndHoursTableAdapter, this._addWorkingDaysAndHoursTableAdapter.Connection);
                     this._addWorkingDaysAndHoursTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
@@ -15643,9 +16819,9 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._addTagTableAdapter != null)) {
-                    this._addTagTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._addTagTableAdapter]));
-                    this._addTagTableAdapter.Transaction = null;
+                if ((this._addNotAvailableTimeAndRoomTableAdapter != null)) {
+                    this._addNotAvailableTimeAndRoomTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._addNotAvailableTimeAndRoomTableAdapter]));
+                    this._addNotAvailableTimeAndRoomTableAdapter.Transaction = null;
                 }
                 if ((this._addConsecutiveSessionTableAdapter != null)) {
                     this._addConsecutiveSessionTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._addConsecutiveSessionTableAdapter]));
@@ -15682,6 +16858,10 @@ SELECT SessionRoomID, SessionID, Tag, Lecturer1, Lecturer2, Duration, NoOfStuden
                 if ((this._addSubjectTableAdapter != null)) {
                     this._addSubjectTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._addSubjectTableAdapter]));
                     this._addSubjectTableAdapter.Transaction = null;
+                }
+                if ((this._addTagTableAdapter != null)) {
+                    this._addTagTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._addTagTableAdapter]));
+                    this._addTagTableAdapter.Transaction = null;
                 }
                 if ((this._addWorkingDaysAndHoursTableAdapter != null)) {
                     this._addWorkingDaysAndHoursTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._addWorkingDaysAndHoursTableAdapter]));
