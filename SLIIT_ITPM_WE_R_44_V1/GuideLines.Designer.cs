@@ -97,8 +97,8 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Bright", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(440, 132);
+            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label2.Location = new System.Drawing.Point(440, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 31);
             this.label2.TabIndex = 5;
