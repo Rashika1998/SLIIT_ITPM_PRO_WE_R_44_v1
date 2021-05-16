@@ -110,7 +110,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(116, 302);
+            this.label3.Location = new System.Drawing.Point(116, 270);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(246, 18);
             this.label3.TabIndex = 6;
@@ -122,7 +122,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(116, 329);
+            this.label4.Location = new System.Drawing.Point(116, 297);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(517, 18);
             this.label4.TabIndex = 7;
