@@ -123,11 +123,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
 
 
-                buildingNameComboBox.Text = building_name;
-                textRoomName.Text = room_name;
-                capacityComboBox.Text = capacity;
-                
-
                 if(room_type == "Lecture Hall")
                 {
                     lectureHallRadioButton.Checked = true;
