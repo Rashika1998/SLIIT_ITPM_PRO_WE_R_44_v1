@@ -71,7 +71,12 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-           
+            con.Open();
+            SqlCommand command = new SqlCommand("update AddLocation set BuildingName = '" + buildingNameComboBox.Text + "' , RoomName = '" + textRoomName.Text + "' , Capacity = '" + capacityComboBox.Text + "' , RoomType = '" + roomType + "' , UpdateDate = getdate() where LocationID = '" + int.Parse(locationID.Text) + "'", con);
+            command.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Successfully Updated.");
+            cleanInputFields();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
