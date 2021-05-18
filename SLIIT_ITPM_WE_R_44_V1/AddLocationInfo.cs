@@ -143,10 +143,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             }
         }
 
-        private void AddLocationInfo_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
