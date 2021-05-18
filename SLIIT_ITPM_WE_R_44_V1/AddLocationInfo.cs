@@ -61,7 +61,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void laboratoryRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            roomType = "Laboratory";
+            
         }
 
         private void btnClear_Click(object sender, EventArgs e)
