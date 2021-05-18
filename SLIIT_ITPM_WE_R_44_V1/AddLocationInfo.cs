@@ -56,7 +56,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         private void lectureHallRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-          
+            roomType = "Lecture Hall";
         }
 
         private void laboratoryRadioButton_CheckedChanged(object sender, EventArgs e)
