@@ -44,15 +44,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             addLocationInfoDisplay.ShowDialog();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            con.Open();
-            SqlCommand command = new SqlCommand("insert into AddLocation values ('" + int.Parse(locationID.Text) + "' , '" + buildingNameComboBox.Text + "' , '" + textRoomName.Text + "' , '" + capacityComboBox.Text + "' , '" + roomType + "' , getdate() , getdate())", con);
-            command.ExecuteNonQuery();
-            MessageBox.Show("Successfully Inserted.");
-            cleanInputFields();
-            con.Close();
-        }
+        
 
         private void lectureHallRadioButton_CheckedChanged(object sender, EventArgs e)
         {
