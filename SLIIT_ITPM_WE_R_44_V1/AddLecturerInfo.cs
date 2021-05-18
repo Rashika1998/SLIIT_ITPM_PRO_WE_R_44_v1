@@ -88,7 +88,28 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         }
 
-        
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (empID.Text != "")
+            {
+
+                if (MessageBox.Show("Are you sure to delete ..?", "Delete Record", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+
+                    con.Open();
+                    SqlCommand command = new SqlCommand("Delete AddLecturer where EmpID = '" + int.Parse(empID.Text) + "'", con);
+                    command.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Successfully Deleted.");
+
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Enter The Employee ID here...!");
+            }
+        }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
