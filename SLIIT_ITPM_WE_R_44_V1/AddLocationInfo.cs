@@ -27,8 +27,16 @@ namespace SLIIT_ITPM_WE_R_44_V1
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
 
 
+        public void cleanInputFields()
+        {
+            locationID.Text = "";
+            buildingNameComboBox.Text = "";
+            textRoomName.Text = "";
+            capacityComboBox.Text = "";
+            lectureHallRadioButton.Checked = false;
+            laboratoryRadioButton.Checked = false;
+        }
 
-        
 
 
         private void btnView_Click(object sender, EventArgs e)
