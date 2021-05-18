@@ -116,11 +116,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 
 
 
-                String building_name = command1.ExecuteScalar().ToString();
-                String room_name = command2.ExecuteScalar().ToString();
-                String capacity = command3.ExecuteScalar().ToString();
-                String room_type = command4.ExecuteScalar().ToString();
-
+                
 
 
                 buildingNameComboBox.Text = building_name;
