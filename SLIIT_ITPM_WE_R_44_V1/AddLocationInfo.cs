@@ -121,9 +121,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 String capacity = command3.ExecuteScalar().ToString();
                 String room_type = command4.ExecuteScalar().ToString();
 
+                buildingNameComboBox.Text = building_name;
+                textRoomName.Text = room_name;
+                capacityComboBox.Text = capacity;
 
-
-                if(room_type == "Lecture Hall")
+                if (room_type == "Lecture Hall")
                 {
                     lectureHallRadioButton.Checked = true;
                 }
