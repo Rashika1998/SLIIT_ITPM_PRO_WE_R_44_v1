@@ -148,9 +148,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
     }
 }
