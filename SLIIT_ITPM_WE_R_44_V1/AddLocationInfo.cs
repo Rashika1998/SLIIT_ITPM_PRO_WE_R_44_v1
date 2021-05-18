@@ -28,15 +28,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
 
 
-        public void cleanInputFields()
-        {
-            locationID.Text = "";
-            buildingNameComboBox.Text = "";
-            textRoomName.Text = "";
-            capacityComboBox.Text = "";
-            lectureHallRadioButton.Checked = false;
-            laboratoryRadioButton.Checked = false;
-        }
+        
 
 
         private void btnView_Click(object sender, EventArgs e)
