@@ -55,7 +55,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             addLecturerInfo.ShowDialog();
         }
 
-       
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.ShowDialog();
+        }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
