@@ -84,7 +84,17 @@ namespace SLIIT_ITPM_WE_R_44_V1
             if (locationID.Text != "")
             {
 
-               
+                if (MessageBox.Show("Are you sure to delete ..?", "Delete Record", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+
+                    con.Open();
+                    SqlCommand command = new SqlCommand("Delete AddLocation where LocationID = '" + int.Parse(locationID.Text) + "'", con);
+                    command.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Successfully Deleted.");
+                    cleanInputFields();
+
+                }
 
             }
             else
