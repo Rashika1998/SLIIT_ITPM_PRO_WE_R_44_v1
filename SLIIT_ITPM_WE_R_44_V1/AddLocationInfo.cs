@@ -38,12 +38,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         }
 
 
-
-        private void btnView_Click(object sender, EventArgs e)
-        {
-            AddLocationInfoDisplay addLocationInfoDisplay = new AddLocationInfoDisplay();
-            addLocationInfoDisplay.ShowDialog();
-        }
+        
 
         private void btnSave_Click(object sender, EventArgs e)
         {
