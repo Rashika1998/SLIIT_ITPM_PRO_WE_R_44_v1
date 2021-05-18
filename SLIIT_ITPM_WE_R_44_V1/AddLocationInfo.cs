@@ -108,6 +108,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
             if (locationID.Text != "")
             {
 
+                con.Open();
+                SqlCommand command1 = new SqlCommand("select BuildingName from AddLocation where LocationID = '" + int.Parse(locationID.Text) + "' ", con);
+                SqlCommand command2 = new SqlCommand("select RoomName from AddLocation where LocationID = '" + int.Parse(locationID.Text) + "' ", con);
+                SqlCommand command3 = new SqlCommand("select Capacity from AddLocation where LocationID = '" + int.Parse(locationID.Text) + "' ", con);
+                SqlCommand command4 = new SqlCommand("select RoomType from AddLocation where LocationID = '" + int.Parse(locationID.Text) + "' ", con);
                 
 
 
