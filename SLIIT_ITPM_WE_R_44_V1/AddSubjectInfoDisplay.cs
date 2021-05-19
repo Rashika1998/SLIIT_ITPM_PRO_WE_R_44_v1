@@ -53,7 +53,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         }
 
-        
+        private void AddSubjectInfoDisplay_Load(object sender, EventArgs e)
+        {
+            addSubjectDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            BindData();
+        }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
