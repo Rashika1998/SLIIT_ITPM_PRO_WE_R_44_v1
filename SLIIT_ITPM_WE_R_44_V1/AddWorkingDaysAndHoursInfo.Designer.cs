@@ -246,7 +246,16 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // sundayCheckBox
             // 
-            
+            this.sundayCheckBox.AutoSize = true;
+            this.sundayCheckBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sundayCheckBox.ForeColor = System.Drawing.Color.Gray;
+            this.sundayCheckBox.Location = new System.Drawing.Point(412, 253);
+            this.sundayCheckBox.Name = "sundayCheckBox";
+            this.sundayCheckBox.Size = new System.Drawing.Size(66, 19);
+            this.sundayCheckBox.TabIndex = 21;
+            this.sundayCheckBox.Text = "Sunday";
+            this.sundayCheckBox.UseVisualStyleBackColor = true;
+            this.sundayCheckBox.CheckedChanged += new System.EventHandler(this.sundayCheckBox_CheckedChanged);
             // 
             // saturdayheckBox
             // 
