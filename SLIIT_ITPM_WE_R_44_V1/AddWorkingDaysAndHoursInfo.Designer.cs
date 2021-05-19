@@ -228,7 +228,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // addHrs
             // 
-            
+            this.addHrs.Location = new System.Drawing.Point(198, 348);
+            this.addHrs.Name = "addHrs";
+            this.addHrs.Size = new System.Drawing.Size(91, 20);
+            this.addHrs.TabIndex = 23;
             // 
             // label4
             // 
