@@ -69,16 +69,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         }
 
 
-        public void getRegisteredSubjectCount()
-        {
-
-            con.Open();
-            SqlCommand command = new SqlCommand("SELECT COUNT(SubjectID) FROM AddSubject;", con);
-            Int32 count = Convert.ToInt32(command.ExecuteScalar());
-            textRegisteredSubject.Text = Convert.ToString(count.ToString());
-            con.Close();
-
-        }
+        
 
 
         public void getRegisteredRoomCount()
