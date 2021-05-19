@@ -27,7 +27,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
 
 
-
         public void cleanInputFields()
         {
             locationID.Text = "";
@@ -122,14 +121,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 String capacity = command3.ExecuteScalar().ToString();
                 String room_type = command4.ExecuteScalar().ToString();
 
-
-
                 buildingNameComboBox.Text = building_name;
                 textRoomName.Text = room_name;
                 capacityComboBox.Text = capacity;
-                
 
-                if(room_type == "Lecture Hall")
+                if (room_type == "Lecture Hall")
                 {
                     lectureHallRadioButton.Checked = true;
                 }
@@ -137,7 +133,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
                 {
                     laboratoryRadioButton.Checked = true;
                 }
-
 
                 con.Close();
 
@@ -149,6 +144,11 @@ namespace SLIIT_ITPM_WE_R_44_V1
         }
 
         private void AddLocationInfo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
