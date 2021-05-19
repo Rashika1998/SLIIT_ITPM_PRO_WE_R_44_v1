@@ -367,7 +367,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // recordID
             // 
-            
+            this.recordID.Location = new System.Drawing.Point(198, 23);
+            this.recordID.Name = "recordID";
+            this.recordID.Size = new System.Drawing.Size(194, 20);
+            this.recordID.TabIndex = 10;
             // 
             // label2
             // 
