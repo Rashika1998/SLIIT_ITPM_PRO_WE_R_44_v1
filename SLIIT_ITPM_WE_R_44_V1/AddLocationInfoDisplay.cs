@@ -49,11 +49,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             BindData();
         }
 
-        private void btnAddLocation_Click(object sender, EventArgs e)
-        {
-            AddLocationInfo addLocationInfo = new AddLocationInfo();
-            addLocationInfo.ShowDialog();
-        }
+        
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
