@@ -183,19 +183,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(762, 13);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(101, 40);
-            this.btnSave.TabIndex = 27;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Visible = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            
             // 
             // label6
             // 
