@@ -147,16 +147,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
 
         //Get latest detatail we added into the system.
 
-        public void getLatestLecturer()
-        {
-
-            con.Open();
-            SqlCommand command = new SqlCommand("SELECT TOP 1 LecturerName FROM AddLecturer ORDER BY InsertDate DESC;", con);
-            String latestValue = (String)command.ExecuteScalar();
-            textLatestLecturer.Text = latestValue;
-            con.Close();
-
-        }
+        
 
 
         public void getLatestStudentGroup()
