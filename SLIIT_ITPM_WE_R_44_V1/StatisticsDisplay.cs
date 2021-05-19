@@ -116,11 +116,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             addStudentGroupInfoDisplay.ShowDialog();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-            AddSubjectInfoDisplay addSubjectInfoDisplay = new AddSubjectInfoDisplay();
-            addSubjectInfoDisplay.ShowDialog();
-        }
+        
 
         private void textRegisteredSubject_Click(object sender, EventArgs e)
         {
