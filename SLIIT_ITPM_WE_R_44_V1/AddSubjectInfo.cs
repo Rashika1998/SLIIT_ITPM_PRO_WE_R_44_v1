@@ -107,10 +107,6 @@ namespace SLIIT_ITPM_WE_R_44_V1
             }
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            cleanInputFields();
-        }
 
         private void toUpdate_Click(object sender, EventArgs e)
         {
