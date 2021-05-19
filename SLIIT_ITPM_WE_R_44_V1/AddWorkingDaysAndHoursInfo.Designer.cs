@@ -210,7 +210,10 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // addMin
             // 
-            
+            this.addMin.Location = new System.Drawing.Point(347, 348);
+            this.addMin.Name = "addMin";
+            this.addMin.Size = new System.Drawing.Size(91, 20);
+            this.addMin.TabIndex = 25;
             // 
             // label5
             // 
