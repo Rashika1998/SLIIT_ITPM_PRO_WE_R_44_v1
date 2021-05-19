@@ -23,14 +23,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database_we_r_44_v1.mdf;Integrated Security=True");
 
 
-        void BindData()
-        {
-            SqlCommand command = new SqlCommand("select * from AddLocation", con);
-            SqlDataAdapter sd = new SqlDataAdapter(command);
-            DataTable dt = new DataTable();
-            sd.Fill(dt);
-            locationDataGridView.DataSource = dt;
-        }
+        
 
         void SearchBindData()
         {
