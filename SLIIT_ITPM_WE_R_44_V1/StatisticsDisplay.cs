@@ -31,18 +31,7 @@ namespace SLIIT_ITPM_WE_R_44_V1
             dashboard.ShowDialog();
         }
 
-        private void StatisticsDisplay_Load(object sender, EventArgs e)
-        {
-            getRegisteredLecturerCount();
-            getRegisteredStudentCount();
-            getRegisteredSubjectCount();
-            getRegisteredRoomCount();
-            getLatestLecturer();
-            getLatestStudentGroup();
-            getLatestSubject();
-            createBarForCountLectureHall();
-            createBarForCountLab();
-        }
+        
 
 
         public void getRegisteredLecturerCount()
