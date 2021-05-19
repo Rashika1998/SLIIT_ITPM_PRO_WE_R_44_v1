@@ -324,7 +324,17 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // mondayCheckBox
             // 
-            
+            this.mondayCheckBox.AutoSize = true;
+            this.mondayCheckBox.BackColor = System.Drawing.Color.White;
+            this.mondayCheckBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mondayCheckBox.ForeColor = System.Drawing.Color.Gray;
+            this.mondayCheckBox.Location = new System.Drawing.Point(198, 210);
+            this.mondayCheckBox.Name = "mondayCheckBox";
+            this.mondayCheckBox.Size = new System.Drawing.Size(70, 19);
+            this.mondayCheckBox.TabIndex = 15;
+            this.mondayCheckBox.Text = "Monday";
+            this.mondayCheckBox.UseVisualStyleBackColor = false;
+            this.mondayCheckBox.CheckedChanged += new System.EventHandler(this.mondayCheckBox_CheckedChanged);
             // 
             // noOfWorkingDays
             // 
