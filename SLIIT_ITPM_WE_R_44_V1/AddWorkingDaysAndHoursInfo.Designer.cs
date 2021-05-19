@@ -259,7 +259,16 @@ namespace SLIIT_ITPM_WE_R_44_V1
             // 
             // saturdayheckBox
             // 
-            
+            this.saturdayheckBox.AutoSize = true;
+            this.saturdayheckBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saturdayheckBox.ForeColor = System.Drawing.Color.Gray;
+            this.saturdayheckBox.Location = new System.Drawing.Point(303, 253);
+            this.saturdayheckBox.Name = "saturdayheckBox";
+            this.saturdayheckBox.Size = new System.Drawing.Size(73, 19);
+            this.saturdayheckBox.TabIndex = 20;
+            this.saturdayheckBox.Text = "Saturday";
+            this.saturdayheckBox.UseVisualStyleBackColor = true;
+            this.saturdayheckBox.CheckedChanged += new System.EventHandler(this.saturdayheckBox_CheckedChanged);
             // 
             // fridayCheckBox
             // 
